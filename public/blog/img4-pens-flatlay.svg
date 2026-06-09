@@ -1,0 +1,146 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <!-- Fountain pen gradient -->
+    <linearGradient id="fpGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8980a"/>
+      <stop offset="50%" stop-color="#f0c030"/>
+      <stop offset="100%" stop-color="#c8980a"/>
+    </linearGradient>
+    <linearGradient id="fpBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d50"/>
+      <stop offset="50%" stop-color="#1a1a38"/>
+      <stop offset="100%" stop-color="#0d0d25"/>
+    </linearGradient>
+    <!-- Gel pen gradient -->
+    <linearGradient id="gelBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <!-- Fineliner gradient -->
+    <linearGradient id="fineBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <filter id="penShadow4">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.20)"/>
+    </filter>
+    <!-- notebook paper lines for base -->
+    <pattern id="subtle" x="0" y="0" width="800" height="28" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="27" x2="800" y2="27" stroke="#e2e8f0" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg4)"/>
+  <rect width="800" height="400" fill="url(#subtle)" opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1e293b">Best Pens for Handwriting Improvement</text>
+  <line x1="120" y1="50" x2="680" y2="50" stroke="#cbd5e1" stroke-width="1.2"/>
+
+  <!-- ══ PEN 1: Fountain Pen ══ -->
+  <g transform="translate(80,80)" filter="url(#penShadow4)">
+    <!-- Body -->
+    <rect x="0" y="11" width="480" height="28" rx="14" fill="url(#fpBody)"/>
+    <!-- Gold trim bands -->
+    <rect x="180" y="11" width="16" height="28" fill="url(#fpGold)"/>
+    <rect x="200" y="11" width="6" height="28" fill="url(#fpGold)" opacity="0.7"/>
+    <!-- Cap section (left side) -->
+    <rect x="0" y="11" width="130" height="28" rx="14 0 0 14" fill="#1a1a38"/>
+    <rect x="105" y="11" width="16" height="28" fill="url(#fpGold)"/>
+    <!-- Clip -->
+    <rect x="4" y="5" width="5" height="100" rx="2" fill="url(#fpGold)" opacity="0.9"/>
+    <circle cx="6.5" cy="5" r="6" fill="url(#fpGold)"/>
+    <!-- Grip section (right of center) -->
+    <rect x="320" y="11" width="100" height="28" rx="0" fill="#0f0f28"/>
+    <!-- Grip lines -->
+    <line x1="330" y1="11" x2="330" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <line x1="343" y1="11" x2="343" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <line x1="356" y1="11" x2="356" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <line x1="369" y1="11" x2="369" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <line x1="382" y1="11" x2="382" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <line x1="395" y1="11" x2="395" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <line x1="408" y1="11" x2="408" y2="39" stroke="#2d2d50" stroke-width="2"/>
+    <!-- Nib section -->
+    <path d="M420,11 L480,25 L420,39 Z" fill="#1a1a38"/>
+    <path d="M450,19 L480,25 L450,31 Z" fill="url(#fpGold)" opacity="0.9"/>
+    <ellipse cx="480" cy="25" r="4" fill="#c8c8d0"/>
+  </g>
+
+  <!-- Pen 1 label -->
+  <rect x="80" y="150" width="180" height="52" rx="10" fill="#1e293b"/>
+  <text x="170" y="171" text-anchor="middle" font-size="15" font-weight="700" fill="white">🖋 Fountain Pen</text>
+  <text x="170" y="191" text-anchor="middle" font-size="11" fill="#94a3b8">Best: serious improvement</text>
+
+  <!-- Rating stars -->
+  <text x="330" y="191" font-size="14" fill="#f59e0b">★★★★★</text>
+  <text x="480" y="191" font-size="11" fill="#64748b" font-style="italic">Low pressure · fluid ink</text>
+
+  <!-- ══ PEN 2: Gel Pen (Pilot G2) ══ -->
+  <g transform="translate(80,215)" filter="url(#penShadow4)">
+    <!-- Body -->
+    <rect x="0" y="7" width="445" height="24" rx="12" fill="url(#gelBody)"/>
+    <!-- White label area -->
+    <rect x="120" y="7" width="190" height="24" rx="0" fill="#3b82f6"/>
+    <rect x="140" y="11" width="140" height="16" rx="4" fill="white" opacity="0.15"/>
+    <text x="210" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="white" letter-spacing="1">PILOT G2</text>
+    <!-- Clip -->
+    <rect x="3" y="0" width="4" height="90" rx="2" fill="#93c5fd" opacity="0.8"/>
+    <circle cx="5" cy="0" r="5" fill="#93c5fd"/>
+    <!-- Cap end -->
+    <rect x="0" y="7" width="90" height="24" rx="12 0 0 12" fill="#1d4ed8"/>
+    <!-- Grip (clear/rubber texture) -->
+    <rect x="345" y="7" width="70" height="24" rx="0" fill="#1e40af" opacity="0.8"/>
+    <!-- Tip cone -->
+    <path d="M415,7 L445,19 L415,31 Z" fill="#1d4ed8"/>
+    <circle cx="445" cy="19" r="3" fill="#60a5fa"/>
+    <!-- Rubber grip dots pattern -->
+    <circle cx="352" cy="19" r="2" fill="#1d4ed8" opacity="0.5"/>
+    <circle cx="360" cy="19" r="2" fill="#1d4ed8" opacity="0.5"/>
+    <circle cx="368" cy="19" r="2" fill="#1d4ed8" opacity="0.5"/>
+    <circle cx="376" cy="19" r="2" fill="#1d4ed8" opacity="0.5"/>
+    <circle cx="384" cy="19" r="2" fill="#1d4ed8" opacity="0.5"/>
+    <circle cx="392" cy="19" r="2" fill="#1d4ed8" opacity="0.5"/>
+  </g>
+
+  <!-- Pen 2 label -->
+  <rect x="80" y="272" width="178" height="52" rx="10" fill="#1d4ed8"/>
+  <text x="169" y="293" text-anchor="middle" font-size="15" font-weight="700" fill="white">✒ Gel Pen</text>
+  <text x="169" y="313" text-anchor="middle" font-size="11" fill="#bfdbfe">Pilot G2 recommended</text>
+
+  <!-- Rating -->
+  <text x="330" y="313" font-size="14" fill="#f59e0b">★★★★☆</text>
+  <text x="480" y="313" font-size="11" fill="#64748b" font-style="italic">Most accessible · ~$3</text>
+
+  <!-- ══ PEN 3: Staedtler Fineliner ══ -->
+  <g transform="translate(80,345)" filter="url(#penShadow4)">
+    <!-- Body -->
+    <rect x="0" y="6" width="390" height="22" rx="11" fill="url(#fineBody)"/>
+    <!-- Label band -->
+    <rect x="80" y="6" width="220" height="22" fill="#ef4444"/>
+    <rect x="100" y="9" width="160" height="16" rx="3" fill="white" opacity="0.12"/>
+    <text x="190" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="white" letter-spacing="1.5">STAEDTLER  0.3</text>
+    <!-- Cap left -->
+    <rect x="0" y="6" width="80" height="22" rx="11 0 0 11" fill="#b91c1c"/>
+    <!-- Gold band at cap join -->
+    <rect x="76" y="6" width="8" height="22" fill="#fbbf24" opacity="0.7"/>
+    <!-- Clip -->
+    <rect x="2" y="0" width="4" height="78" rx="2" fill="#fca5a5" opacity="0.9"/>
+    <circle cx="4" cy="0" r="4" fill="#fca5a5"/>
+    <!-- Tip (fine point) -->
+    <path d="M370,6 L390,17 L370,28 Z" fill="#b91c1c"/>
+    <circle cx="390" cy="17" r="2" fill="#1f2937"/>
+  </g>
+
+  <!-- Pen 3 label -->
+  <rect x="80" y="370" width="178" height="24" rx="8" fill="#dc2626" opacity="0.9"/>
+  <text x="169" y="387" text-anchor="middle" font-size="13" font-weight="700" fill="white">✏ Felt Tip Fineliner</text>
+
+  <!-- Rating -->
+  <text x="330" y="387" font-size="14" fill="#f59e0b">★★★☆☆</text>
+  <text x="480" y="387" font-size="11" fill="#64748b" font-style="italic">Best for beginners · zero pressure</text>
+</svg>

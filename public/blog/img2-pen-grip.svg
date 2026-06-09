@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8eeff"/>
+    </linearGradient>
+    <linearGradient id="penBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b5bdb"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fddbb4"/>
+      <stop offset="100%" stop-color="#f0b882"/>
+    </linearGradient>
+    <filter id="softDrop">
+      <feDropShadow dx="2" dy="3" stdDeviation="5" flood-color="rgba(0,0,50,0.18)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#1e3a8a" letter-spacing="0.5">Correct Pen Grip — The Tripod Method</text>
+  <line x1="160" y1="54" x2="640" y2="54" stroke="#c7d2fe" stroke-width="1.5"/>
+
+  <!-- ── Pen (horizontal, center) ── -->
+  <!-- Pen tip points right -->
+  <g transform="translate(120,190)" filter="url(#softDrop)">
+    <!-- Pen body -->
+    <rect x="0" y="18" width="490" height="22" rx="11" fill="url(#penBody)"/>
+    <!-- Gold ring -->
+    <rect x="300" y="18" width="12" height="22" fill="#d4a020"/>
+    <!-- Grip section (textured) -->
+    <rect x="350" y="18" width="80" height="22" rx="0" fill="#162d6e"/>
+    <line x1="360" y1="18" x2="360" y2="40" stroke="#1e3a8a" stroke-width="2" opacity="0.5"/>
+    <line x1="375" y1="18" x2="375" y2="40" stroke="#1e3a8a" stroke-width="2" opacity="0.5"/>
+    <line x1="390" y1="18" x2="390" y2="40" stroke="#1e3a8a" stroke-width="2" opacity="0.5"/>
+    <line x1="405" y1="18" x2="405" y2="40" stroke="#1e3a8a" stroke-width="2" opacity="0.5"/>
+    <line x1="420" y1="18" x2="420" y2="40" stroke="#1e3a8a" stroke-width="2" opacity="0.5"/>
+    <!-- Pen cap end -->
+    <rect x="0" y="18" width="18" height="22" rx="11 0 0 11" fill="#162d6e"/>
+    <!-- Clip -->
+    <rect x="2" y="11" width="5" height="85" rx="2.5" fill="#d4a020" opacity="0.85"/>
+    <circle cx="4.5" cy="11" r="5" fill="#d4a020"/>
+    <!-- Nib cone -->
+    <path d="M490,18 L530,29 L490,40 Z" fill="#3b5bdb"/>
+    <path d="M510,24 L530,29 L510,34 Z" fill="#c8980a"/>
+    <!-- Tip dot -->
+    <circle cx="530" cy="29" r="3" fill="#1a1a3a"/>
+  </g>
+
+  <!-- ── Fingers ── -->
+  <!-- THUMB (comes from below-left, wraps under) -->
+  <g filter="url(#softDrop)">
+    <path d="M390,310 C375,285 368,255 372,228 C376,210 390,205 402,212 C414,220 416,245 412,268 C408,290 400,310 398,320 Z"
+          fill="url(#skin)" stroke="#e0a060" stroke-width="1"/>
+    <!-- Thumb nail -->
+    <ellipse cx="388" cy="218" rx="9" ry="14" fill="#fce8c8" stroke="#d49060" stroke-width="0.8" transform="rotate(8,388,218)"/>
+  </g>
+
+  <!-- INDEX FINGER (comes from above, presses top) -->
+  <g filter="url(#softDrop)">
+    <path d="M430,100 C435,90 448,88 458,96 C468,104 468,120 462,150 C456,178 448,205 444,220 C440,235 438,248 440,262 C442,275 438,290 432,295 C426,298 418,292 416,278 C414,264 418,248 420,232 C422,218 424,195 426,168 C428,142 428,115 430,100 Z"
+          fill="url(#skin)" stroke="#e0a060" stroke-width="1"/>
+    <!-- Index nail -->
+    <ellipse cx="445" cy="102" rx="10" ry="16" fill="#fce8c8" stroke="#d49060" stroke-width="0.8" transform="rotate(-5,445,102)"/>
+  </g>
+
+  <!-- MIDDLE FINGER (slightly behind, visible below) -->
+  <g filter="url(#softDrop)">
+    <path d="M468,320 C468,308 472,292 474,275 C476,258 474,240 472,225 C470,210 465,200 462,210 C459,220 460,240 461,258 C462,276 462,295 462,312 C462,328 464,338 468,340 C472,342 475,335 475,325 Z"
+          fill="#f0b882" stroke="#e0a060" stroke-width="1"/>
+  </g>
+
+  <!-- ── Measurement bracket: 2-3cm from tip ── -->
+  <line x1="533" y1="180" x2="533" y2="225" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="609" y1="180" x2="609" y2="225" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="533" y1="202" x2="609" y2="202" stroke="#ef4444" stroke-width="2"/>
+  <line x1="533" y1="196" x2="533" y2="208" stroke="#ef4444" stroke-width="2"/>
+  <line x1="609" y1="196" x2="609" y2="208" stroke="#ef4444" stroke-width="2"/>
+  <rect x="545" y="188" width="52" height="22" rx="6" fill="#fee2e2"/>
+  <text x="571" y="204" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">2–3 cm</text>
+
+  <!-- ── Labels with arrows ── -->
+  <!-- Thumb label -->
+  <line x1="355" y1="258" x2="290" y2="295" stroke="#4f46e5" stroke-width="1.8"/>
+  <circle cx="290" cy="295" r="4" fill="#4f46e5"/>
+  <rect x="160" y="280" width="118" height="32" rx="8" fill="#4f46e5"/>
+  <text x="219" y="300" text-anchor="middle" font-size="14" font-weight="600" fill="white">Thumb</text>
+
+  <!-- Index finger label -->
+  <line x1="432" y1="175" x2="360" y2="150" stroke="#4f46e5" stroke-width="1.8"/>
+  <circle cx="360" cy="150" r="4" fill="#4f46e5"/>
+  <rect x="200" y="130" width="148" height="32" rx="8" fill="#4f46e5"/>
+  <text x="274" y="150" text-anchor="middle" font-size="14" font-weight="600" fill="white">Index Finger</text>
+
+  <!-- Middle finger label -->
+  <line x1="468" y1="295" x2="540" y2="330" stroke="#4f46e5" stroke-width="1.8"/>
+  <circle cx="540" cy="330" r="4" fill="#4f46e5"/>
+  <rect x="542" y="316" width="160" height="32" rx="8" fill="#4f46e5"/>
+  <text x="622" y="336" text-anchor="middle" font-size="14" font-weight="600" fill="white">Middle Finger</text>
+
+  <!-- Ring finger guide label -->
+  <rect x="200" y="370" width="400" height="36" rx="10" fill="#e0e7ff"/>
+  <text x="400" y="393" text-anchor="middle" font-size="14" fill="#3730a3">
+    <tspan font-weight="700">Ring finger</tspan>
+    <tspan> glides along paper as a guide rail</tspan>
+  </text>
+
+  <!-- Arm movement reminder -->
+  <rect x="570" y="68" width="198" height="56" rx="12" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="669" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Movement from</text>
+  <text x="669" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">elbow — not fingers</text>
+</svg>

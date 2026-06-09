@@ -12,8 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        caveat: ["var(--font-caveat)", "cursive"],
+        "homemade-apple": ["var(--font-homemade-apple)", "cursive"],
+        "patrick-hand": ["var(--font-patrick-hand)", "cursive"],
+        "dancing-script": ["var(--font-dancing-script)", "cursive"],
+        "architects-daughter": ["var(--font-architects-daughter)", "cursive"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

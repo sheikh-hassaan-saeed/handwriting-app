@@ -3,21 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #f9fafb;
+  --foreground: #111827;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* Handwriting font CSS variables exposed for canvas */
+.font-caveat { font-family: var(--font-caveat), cursive; }
+.font-homemade-apple { font-family: var(--font-homemade-apple), cursive; }
+.font-patrick-hand { font-family: var(--font-patrick-hand), cursive; }
+.font-dancing-script { font-family: var(--font-dancing-script), cursive; }
+.font-architects-daughter { font-family: var(--font-architects-daughter), cursive; }
+
+/* details/summary open indicator */
+details[open] summary span {
+  transform: rotate(180deg);
 }
 
 @layer utilities {

@@ -1,0 +1,113 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="desk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a464"/>
+      <stop offset="60%" stop-color="#c08848"/>
+      <stop offset="100%" stop-color="#a06830"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f0e8"/>
+    </linearGradient>
+    <linearGradient id="pen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d50"/>
+      <stop offset="100%" stop-color="#1a1a38"/>
+    </linearGradient>
+    <filter id="nbShadow" x="-8%" y="-8%" width="120%" height="125%">
+      <feDropShadow dx="5" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.40)"/>
+    </filter>
+    <filter id="penShadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.35)"/>
+    </filter>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="rgba(80,40,0,0.28)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Desk surface -->
+  <rect width="800" height="450" fill="url(#desk)"/>
+  <!-- Wood grain -->
+  <path d="M0,70 C200,62 450,78 800,68" stroke="#b87030" stroke-width="1.4" fill="none" opacity="0.4"/>
+  <path d="M0,160 C180,155 380,165 800,158" stroke="#b87030" stroke-width="0.9" fill="none" opacity="0.3"/>
+  <path d="M0,270 C280,265 520,274 800,268" stroke="#c88038" stroke-width="1.1" fill="none" opacity="0.38"/>
+  <path d="M0,370 C220,365 500,375 800,369" stroke="#b87030" stroke-width="0.8" fill="none" opacity="0.28"/>
+
+  <!-- Small items: circular coffee mug ring stain -->
+  <circle cx="680" cy="100" r="38" fill="none" stroke="rgba(160,100,50,0.35)" stroke-width="3"/>
+  <circle cx="680" cy="100" r="32" fill="none" stroke="rgba(160,100,50,0.18)" stroke-width="2"/>
+
+  <!-- Notebook group -->
+  <g transform="rotate(-1.5,375,225)" filter="url(#nbShadow)">
+    <!-- Page stack depth -->
+    <rect x="148" y="58" width="454" height="330" rx="3" fill="#e0dbd0"/>
+    <rect x="151" y="58" width="451" height="330" rx="3" fill="#e8e3d8"/>
+    <rect x="154" y="58" width="448" height="330" rx="3" fill="#eeead8"/>
+
+    <!-- Binding -->
+    <rect x="148" y="58" width="22" height="330" rx="3 0 0 3" fill="#252535"/>
+    <!-- Spiral holes -->
+    <circle cx="159" cy="92"  r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="122" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="152" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="182" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="212" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="242" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="272" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="302" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="332" r="5" fill="#3a3a4a"/>
+    <circle cx="159" cy="362" r="5" fill="#3a3a4a"/>
+
+    <!-- Main page -->
+    <rect x="170" y="58" width="432" height="330" fill="url(#page)"/>
+
+    <!-- Red margin line -->
+    <line x1="220" y1="58" x2="220" y2="388" stroke="#f87171" stroke-width="1.6" opacity="0.75"/>
+
+    <!-- Ruled lines -->
+    <line x1="170" y1="96"  x2="602" y2="96"  stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="126" x2="602" y2="126" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="156" x2="602" y2="156" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="186" x2="602" y2="186" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="216" x2="602" y2="216" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="246" x2="602" y2="246" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="276" x2="602" y2="276" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="306" x2="602" y2="306" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="336" x2="602" y2="336" stroke="#bfdbfe" stroke-width="0.85"/>
+    <line x1="170" y1="366" x2="602" y2="366" stroke="#bfdbfe" stroke-width="0.85"/>
+
+    <!-- Date header -->
+    <text x="228" y="82" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="13" fill="#9ca3af" letter-spacing="0.5">Monday, June 9th</text>
+
+    <!-- Handwriting text -->
+    <text x="228" y="120" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="20" fill="#1e3a8a" transform="rotate(-0.4,228,120)">The quick brown fox jumps over</text>
+    <text x="228" y="150" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="20" fill="#1e3a8a" transform="rotate(0.3,228,150)">the lazy dog. Practice daily —</text>
+    <text x="228" y="180" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="20" fill="#1e3a8a" transform="rotate(-0.5,228,180)">small steps build great habits.</text>
+    <text x="228" y="240" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="19" fill="#1e3a8a" opacity="0.8" transform="rotate(0.2,228,240)">Consistency beats perfection.</text>
+    <text x="228" y="268" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="19" fill="#1e3a8a" opacity="0.7" transform="rotate(-0.3,228,268)">Fifteen minutes every morning</text>
+    <text x="228" y="295" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="19" fill="#1e3a8a" opacity="0.6" transform="rotate(0.4,228,295)">transforms your handwriting.</text>
+  </g>
+
+  <!-- Pen (resting diagonally across page) -->
+  <g transform="rotate(-28,590,310)" filter="url(#penShadow)">
+    <!-- Pen body -->
+    <rect x="578" y="178" width="17" height="190" rx="8.5" fill="url(#pen)"/>
+    <!-- Gold band -->
+    <rect x="578" y="248" width="17" height="7" fill="#d4a020"/>
+    <rect x="578" y="256" width="17" height="2" fill="#e8b830"/>
+    <!-- Grip section -->
+    <rect x="579" y="345" width="15" height="30" rx="3" fill="#1a1a30"/>
+    <!-- Nib -->
+    <path d="M579,375 L586.5,400 L594,375 Z" fill="#c8980a"/>
+    <path d="M582,385 L586.5,402 L591,385 Z" fill="#a07808"/>
+    <!-- Cap -->
+    <rect x="578" y="170" width="17" height="14" rx="8.5 8.5 0 0" fill="#1a1a30"/>
+    <ellipse cx="586.5" cy="172" rx="6" ry="5" fill="#2a2a40"/>
+    <!-- Clip -->
+    <rect x="592" y="171" width="3.5" height="110" rx="1.5" fill="#c8980a" opacity="0.9"/>
+    <ellipse cx="593.5" cy="170" rx="4.5" ry="5" fill="#c8980a"/>
+  </g>
+
+  <!-- Warm vignette -->
+  <rect width="800" height="450" fill="url(#vignette)"/>
+</svg>
