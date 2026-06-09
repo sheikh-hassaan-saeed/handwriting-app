@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description:
     "Convert any text to realistic handwriting instantly. Free online text to handwriting converter with 5 font styles, notebook paper backgrounds, and PNG/PDF download. No signup required.",
   metadataBase: new URL("https://handwritingmaker.com"),
+  icons: {
+    icon: "/favicon.webp",
+  },
+  verification: {
+    google: "F7psUfwczyymfXOo2br90P0zEy--c59xe8Z6lW6wHBM",
+  },
   openGraph: {
     title: "Text to Handwriting Converter — Free Online Tool | HandwritingMaker",
     description:
