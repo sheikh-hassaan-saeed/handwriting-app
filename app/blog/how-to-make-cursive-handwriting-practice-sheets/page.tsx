@@ -206,7 +206,11 @@ export default function BlogPost() {
           </div>
 
           <p className="mt-8 text-gray-600">
-            For more on adapting practice sheets specifically for adult learners, see{" "}
+            If you would rather skip making your own and just print something now, browse our{" "}
+            <Link href="/blog/cursive-handwriting-practice-sheets" className="text-indigo-600 font-semibold hover:underline">
+              ready-made printable cursive practice sheets
+            </Link>
+            . For more on adapting practice sheets specifically for adult learners, see{" "}
             <Link href="/blog/best-handwriting-practice-sheets-for-adults" className="text-indigo-600 font-semibold hover:underline">
               best handwriting practice sheets for adults
             </Link>

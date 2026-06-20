@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   metadataBase: new URL("https://handwritingmaker.com"),
+  // Noindexed to avoid cannibalizing the established post at
+  // /blog/how-to-improve-handwriting-as-an-adult, which targets the same
+  // primary keyword. "follow" so internal links still pass equity.
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

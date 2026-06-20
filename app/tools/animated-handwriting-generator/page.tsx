@@ -3,7 +3,7 @@ import Link from "next/link";
 import AnimatedHandwritingGenerator from "@/components/AnimatedHandwritingGenerator";
 import FaqAccordion from "@/components/FaqAccordion";
 
-const TITLE = "Animated Handwriting Generator - Free Text Animation | HandwritingMaker";
+const TITLE = "Animated Handwriting Generator - Free Tool";
 const DESCRIPTION =
   "Generate free animated handwriting videos and GIFs from any text, right in your browser. No software install needed. Export as GIF or looping video.";
 const PAGE_URL = "https://handwritingmaker.com/tools/animated-handwriting-generator";

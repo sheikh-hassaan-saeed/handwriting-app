@@ -780,7 +780,7 @@ export default function BlogPost() {
             <p className="mt-4">
               Start today. Even 15 minutes. And if you want a reference sheet to
               practice from, generate your own{" "}
-              <Link href="/" className="text-indigo-600 font-semibold hover:underline">
+              <Link href="/tools/handwriting-practice-sheets" className="text-indigo-600 font-semibold hover:underline">
                 free handwriting practice sheet
               </Link>{" "}
               at HandwritingMaker.com.

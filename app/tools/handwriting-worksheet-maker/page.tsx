@@ -3,7 +3,7 @@ import Link from "next/link";
 import WorksheetMaker from "@/components/WorksheetMaker";
 import FaqAccordion from "@/components/FaqAccordion";
 
-const TITLE = "Handwriting Worksheet Maker - Free Custom Worksheets | HandwritingMaker";
+const TITLE = "Handwriting Worksheet Maker - Free Custom";
 const DESCRIPTION =
   "Create free custom handwriting worksheets in seconds. Enter any name, word list, or full sentence and get a print-ready PDF download, no account needed.";
 const PAGE_URL = "https://handwritingmaker.com/tools/handwriting-worksheet-maker";

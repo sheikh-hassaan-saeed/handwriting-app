@@ -30,14 +30,6 @@ const posts = [
     category: "Handwriting Improvement",
   },
   {
-    slug: "how-to-improve-your-handwriting-as-an-adult",
-    title: "How to Improve Your Handwriting as an Adult (7 Proven Methods)",
-    description:
-      "Learn how to improve handwriting as an adult with 7 proven methods, free practice sheets, and simple daily habits that work in just 10 minutes a day.",
-    readTime: "9 min read",
-    category: "Handwriting Improvement",
-  },
-  {
     slug: "how-to-convert-handwriting-to-a-font",
     title: "How to Convert Your Handwriting into a Font (Free and Paid Methods)",
     description:

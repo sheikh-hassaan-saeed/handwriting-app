@@ -3,7 +3,7 @@ import Link from "next/link";
 import PracticeSheetGenerator from "@/components/PracticeSheetGenerator";
 import FaqAccordion from "@/components/FaqAccordion";
 
-const TITLE = "Handwriting Practice Sheet Generator - Free Printable | HandwritingMaker";
+const TITLE = "Handwriting Practice Sheet Generator - Free";
 const DESCRIPTION =
   "Generate free printable handwriting practice sheets instantly. Choose cursive, print, dotted trace, or custom text. Download as PDF, no signup required.";
 const PAGE_URL = "https://handwritingmaker.com/tools/handwriting-practice-sheets";

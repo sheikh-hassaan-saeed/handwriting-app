@@ -586,9 +586,9 @@ export default function CursivePracticeSheetsPost() {
           </p>
           <p>
             HandwritingMaker&apos;s{" "}
-            <Link href="/">free cursive practice sheet generator</Link> lets you type any
-            word, sentence, or paragraph and instantly renders it in cursive handwriting
-            style. Download as PNG or PDF and use it as your personal reference sheet.
+            <Link href="/tools/handwriting-practice-sheets">free cursive practice sheet generator</Link>{" "}
+            lets you type any word, sentence, or paragraph and instantly renders it in cursive
+            handwriting style. Download as PNG or PDF and use it as your personal reference sheet.
           </p>
           <p>This is especially useful for:</p>
           <ul>
@@ -601,7 +601,12 @@ export default function CursivePracticeSheetsPost() {
             Visit the{" "}
             <Link href="/">text to handwriting converter</Link> and type your target text.
             It renders instantly with no signup, no download, no cost. Generate as many
-            custom practice references as you need.
+            custom practice references as you need. For a step-by-step walkthrough of building
+            your own sheets from scratch, see our guide on{" "}
+            <Link href="/blog/how-to-make-cursive-handwriting-practice-sheets">
+              how to make cursive handwriting practice sheets
+            </Link>
+            .
           </p>
 
           <ArticleImage
