@@ -29,6 +29,46 @@ const posts = [
     readTime: "12 min read",
     category: "Handwriting Improvement",
   },
+  {
+    slug: "how-to-improve-your-handwriting-as-an-adult",
+    title: "How to Improve Your Handwriting as an Adult (7 Proven Methods)",
+    description:
+      "Learn how to improve handwriting as an adult with 7 proven methods, free practice sheets, and simple daily habits that work in just 10 minutes a day.",
+    readTime: "9 min read",
+    category: "Handwriting Improvement",
+  },
+  {
+    slug: "how-to-convert-handwriting-to-a-font",
+    title: "How to Convert Your Handwriting into a Font (Free and Paid Methods)",
+    description:
+      "Learn how to convert handwriting to a font for free using Calligraphr, FontForge, or MyScriptFont, plus tips for clean scans and installing your font.",
+    readTime: "9 min read",
+    category: "Handwriting Fonts",
+  },
+  {
+    slug: "best-handwriting-practice-sheets-for-adults",
+    title: "Best Handwriting Practice Sheets for Adults (Free Printables)",
+    description:
+      "Discover the best free handwriting practice sheets for adults, including cursive and print printables, plus how to use them and track your progress.",
+    readTime: "10 min read",
+    category: "Handwriting Practice",
+  },
+  {
+    slug: "how-to-make-cursive-handwriting-practice-sheets",
+    title: "How to Make Cursive Handwriting Practice Sheets (Free Generator)",
+    description:
+      "Learn how to make cursive handwriting practice sheets by hand or generate them free online, plus a full cursive letter formation guide for beginners.",
+    readTime: "8 min read",
+    category: "Cursive Writing",
+  },
+  {
+    slug: "handwriting-without-tears-alternatives-free",
+    title: "Free Handwriting Without Tears Alternatives (Online Tools & Printables)",
+    description:
+      "Explore free Handwriting Without Tears alternatives, including online worksheet makers and printables that supplement at-home handwriting practice.",
+    readTime: "8 min read",
+    category: "Handwriting for Kids",
+  },
 ];
 
 export default function BlogIndex() {

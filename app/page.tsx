@@ -159,6 +159,40 @@ export default function Home() {
           </div>
         </section>
 
+        {/* More tools */}
+        <section className="max-w-7xl mx-auto px-4 py-12" aria-label="More handwriting tools">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">More Handwriting Tools</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link
+              href="/tools/handwriting-practice-sheets"
+              className="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all p-5"
+            >
+              <span className="font-semibold text-gray-900">Handwriting Practice Sheet Generator</span>
+              <p className="text-sm text-gray-500 mt-1">
+                Printable practice sheets with cursive, print, and dotted trace modes.
+              </p>
+            </Link>
+            <Link
+              href="/tools/handwriting-worksheet-maker"
+              className="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all p-5"
+            >
+              <span className="font-semibold text-gray-900">Handwriting Worksheet Maker</span>
+              <p className="text-sm text-gray-500 mt-1">
+                Build custom worksheets from any name, word list, or sentence.
+              </p>
+            </Link>
+            <Link
+              href="/tools/animated-handwriting-generator"
+              className="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all p-5"
+            >
+              <span className="font-semibold text-gray-900">Animated Handwriting Generator</span>
+              <p className="text-sm text-gray-500 mt-1">
+                Turn any text into a handwriting animation you can download as a GIF.
+              </p>
+            </Link>
+          </div>
+        </section>
+
         {/* SEO content section */}
         <section
           id="how-to"

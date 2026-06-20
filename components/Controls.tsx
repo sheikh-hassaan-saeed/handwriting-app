@@ -1,16 +1,10 @@
 "use client";
 
 import React from "react";
+import { FONTS, PAPERS, INKS } from "@/lib/handwritingStyles";
+import type { FontStyle, PaperStyle, InkColor } from "@/lib/handwritingStyles";
 
-export type FontStyle =
-  | "Caveat"
-  | "Homemade Apple"
-  | "Patrick Hand"
-  | "Dancing Script"
-  | "Architects Daughter";
-
-export type PaperStyle = "lined" | "plain" | "grid" | "legal";
-export type InkColor = "black" | "blue" | "red" | "pencil";
+export type { FontStyle, PaperStyle, InkColor };
 
 export interface ControlsState {
   font: FontStyle;
@@ -28,28 +22,6 @@ interface ControlsProps {
   onDownloadPNG: () => void;
   onDownloadPDF: () => void;
 }
-
-const FONTS: { value: FontStyle; label: string }[] = [
-  { value: "Caveat", label: "Classic Cursive" },
-  { value: "Homemade Apple", label: "Doctor Scrawl" },
-  { value: "Patrick Hand", label: "Neat Print" },
-  { value: "Dancing Script", label: "Left-Handed Slant" },
-  { value: "Architects Daughter", label: "Messy Student" },
-];
-
-const PAPERS: { value: PaperStyle; label: string }[] = [
-  { value: "lined", label: "Lined Notebook" },
-  { value: "plain", label: "Plain White" },
-  { value: "grid", label: "Grid Paper" },
-  { value: "legal", label: "Yellow Legal Pad" },
-];
-
-const INKS: { value: InkColor; label: string; color: string }[] = [
-  { value: "black", label: "Black", color: "#1a1a1a" },
-  { value: "blue", label: "Blue", color: "#1a3a8f" },
-  { value: "red", label: "Red", color: "#b91c1c" },
-  { value: "pencil", label: "Pencil", color: "#6b7280" },
-];
 
 export default function Controls({
   state,
