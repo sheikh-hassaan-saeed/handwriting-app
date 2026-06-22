@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "Free Handwriting Without Tears Alternatives (Online Tools & Printables)";
 const DESCRIPTION =
   "Explore free Handwriting Without Tears alternatives, including online worksheet makers and printables that supplement at-home handwriting practice.";
-const PAGE_URL = "https://handwritingmaker.com/blog/handwriting-without-tears-alternatives-free";
+const PAGE_URL = `${SITE_URL}/blog/handwriting-without-tears-alternatives-free`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
@@ -34,7 +35,7 @@ const articleSchema = {
   headline: TITLE,
   description: DESCRIPTION,
   author: { "@type": "Organization", name: "HandwritingMaker" },
-  publisher: { "@type": "Organization", name: "HandwritingMaker", url: "https://handwritingmaker.com" },
+  publisher: { "@type": "Organization", name: "HandwritingMaker", url: SITE_URL },
   mainEntityOfPage: PAGE_URL,
 };
 

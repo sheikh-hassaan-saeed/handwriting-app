@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PracticeSheetGenerator from "@/components/PracticeSheetGenerator";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "Handwriting Practice Sheet Generator - Free";
 const DESCRIPTION =
   "Generate free printable handwriting practice sheets instantly. Choose cursive, print, dotted trace, or custom text. Download as PDF, no signup required.";
-const PAGE_URL = "https://handwritingmaker.com/tools/handwriting-practice-sheets";
+const PAGE_URL = `${SITE_URL}/tools/handwriting-practice-sheets`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

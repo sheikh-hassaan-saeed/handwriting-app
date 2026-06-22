@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
+
+const PAGE_URL = `${SITE_URL}/blog/cursive-handwriting-practice-sheets`;
 
 export const metadata: Metadata = {
   title: "Free Cursive Handwriting Practice Sheets (Printable PDF for All Levels)",
   description:
     "Download free printable cursive handwriting practice sheets for beginners to advanced. PDF format, all 26 letters, words and sentences included. Print and start today.",
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title:
       "Free Cursive Handwriting Practice Sheets (Printable PDF for All Levels)",
     description:
       "Download free printable cursive handwriting practice sheets for beginners to advanced. PDF format, all 26 letters, words and sentences included. Print and start today.",
-    url: "https://handwritingmaker.com/blog/cursive-handwriting-practice-sheets",
+    url: PAGE_URL,
     siteName: "HandwritingMaker",
     type: "article",
   },
@@ -24,8 +27,7 @@ export const metadata: Metadata = {
       "Download free printable cursive handwriting practice sheets for beginners to advanced. PDF format, all 26 letters, words and sentences included.",
   },
   alternates: {
-    canonical:
-      "https://handwritingmaker.com/blog/cursive-handwriting-practice-sheets",
+    canonical: PAGE_URL,
   },
 };
 
@@ -40,10 +42,9 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "HandwritingMaker",
-    url: "https://handwritingmaker.com",
+    url: SITE_URL,
   },
-  mainEntityOfPage:
-    "https://handwritingmaker.com/blog/cursive-handwriting-practice-sheets",
+  mainEntityOfPage: PAGE_URL,
 };
 
 const faqSchema = {

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "How to Improve Your Handwriting as an Adult (7 Proven Methods)";
 const DESCRIPTION =
   "Learn how to improve handwriting as an adult with 7 proven methods, free practice sheets, and simple daily habits that work in just 10 minutes a day.";
-const PAGE_URL = "https://handwritingmaker.com/blog/how-to-improve-your-handwriting-as-an-adult";
+const PAGE_URL = `${SITE_URL}/blog/how-to-improve-your-handwriting-as-an-adult`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   // Noindexed to avoid cannibalizing the established post at
   // /blog/how-to-improve-handwriting-as-an-adult, which targets the same
   // primary keyword. "follow" so internal links still pass equity.
@@ -41,7 +42,7 @@ const articleSchema = {
   headline: TITLE,
   description: DESCRIPTION,
   author: { "@type": "Organization", name: "HandwritingMaker" },
-  publisher: { "@type": "Organization", name: "HandwritingMaker", url: "https://handwritingmaker.com" },
+  publisher: { "@type": "Organization", name: "HandwritingMaker", url: SITE_URL },
   mainEntityOfPage: PAGE_URL,
 };
 

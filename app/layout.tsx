@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Text to Handwriting Converter — Free Online Tool | HandwritingMaker",
   description:
     "Convert any text to realistic handwriting instantly. Free online text to handwriting converter with 5 font styles, notebook paper backgrounds, and PNG/PDF download. No signup required.",
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: "/favicon.webp",
   },
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     title: "Text to Handwriting Converter — Free Online Tool | HandwritingMaker",
     description:
       "Convert any text to realistic handwriting instantly. Free online text to handwriting converter with 5 font styles, notebook paper backgrounds, and PNG/PDF download. No signup required.",
-    url: "https://handwritingmaker.com",
+    url: SITE_URL,
     siteName: "HandwritingMaker",
     images: [
       {
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://handwritingmaker.com",
+    canonical: SITE_URL,
   },
 };
 
@@ -49,7 +50,7 @@ const schemaMarkup = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "HandwritingMaker",
-  url: "https://handwritingmaker.com",
+  url: SITE_URL,
   description:
     "Free online text to handwriting converter. Convert any text into realistic handwriting with multiple font styles, paper backgrounds, and download as PNG or PDF.",
   applicationCategory: "UtilityApplication",

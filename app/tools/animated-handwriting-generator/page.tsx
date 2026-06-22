@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedHandwritingGenerator from "@/components/AnimatedHandwritingGenerator";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "Animated Handwriting Generator - Free Tool";
 const DESCRIPTION =
   "Generate free animated handwriting videos and GIFs from any text, right in your browser. No software install needed. Export as GIF or looping video.";
-const PAGE_URL = "https://handwritingmaker.com/tools/animated-handwriting-generator";
+const PAGE_URL = `${SITE_URL}/tools/animated-handwriting-generator`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

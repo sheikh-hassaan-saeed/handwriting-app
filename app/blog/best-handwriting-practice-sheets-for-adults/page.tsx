@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "Best Handwriting Practice Sheets for Adults (Free Printables)";
 const DESCRIPTION =
   "Discover the best free handwriting practice sheets for adults, including cursive and print printables, plus how to use them and track your progress.";
-const PAGE_URL = "https://handwritingmaker.com/blog/best-handwriting-practice-sheets-for-adults";
+const PAGE_URL = `${SITE_URL}/blog/best-handwriting-practice-sheets-for-adults`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
@@ -34,7 +35,7 @@ const articleSchema = {
   headline: TITLE,
   description: DESCRIPTION,
   author: { "@type": "Organization", name: "HandwritingMaker" },
-  publisher: { "@type": "Organization", name: "HandwritingMaker", url: "https://handwritingmaker.com" },
+  publisher: { "@type": "Organization", name: "HandwritingMaker", url: SITE_URL },
   mainEntityOfPage: PAGE_URL,
 };
 

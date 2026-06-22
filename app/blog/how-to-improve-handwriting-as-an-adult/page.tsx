@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
+
+const PAGE_URL = `${SITE_URL}/blog/how-to-improve-handwriting-as-an-adult`;
 
 export const metadata: Metadata = {
   title:
     "How to Improve Handwriting as an Adult (7 Proven Techniques That Actually Work)",
   description:
     "Struggling with messy handwriting as an adult? Discover 7 proven techniques to improve your handwriting fast, with free practice sheets and expert tips. No talent required.",
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title:
       "How to Improve Handwriting as an Adult (7 Proven Techniques That Actually Work)",
     description:
       "Struggling with messy handwriting as an adult? Discover 7 proven techniques to improve your handwriting fast, with free practice sheets and expert tips. No talent required.",
-    url: "https://handwritingmaker.com/blog/how-to-improve-handwriting-as-an-adult",
+    url: PAGE_URL,
     siteName: "HandwritingMaker",
     type: "article",
   },
@@ -25,8 +28,7 @@ export const metadata: Metadata = {
       "Struggling with messy handwriting as an adult? Discover 7 proven techniques to improve your handwriting fast, with free practice sheets and expert tips.",
   },
   alternates: {
-    canonical:
-      "https://handwritingmaker.com/blog/how-to-improve-handwriting-as-an-adult",
+    canonical: PAGE_URL,
   },
 };
 
@@ -41,10 +43,9 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "HandwritingMaker",
-    url: "https://handwritingmaker.com",
+    url: SITE_URL,
   },
-  mainEntityOfPage:
-    "https://handwritingmaker.com/blog/how-to-improve-handwriting-as-an-adult",
+  mainEntityOfPage: PAGE_URL,
 };
 
 const faqSchema = {

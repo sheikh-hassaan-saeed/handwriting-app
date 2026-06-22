@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Handwriting Blog — Tips, Guides & Resources | HandwritingMaker",
   description:
     "Free handwriting improvement guides, tips, and resources from HandwritingMaker. Learn how to improve your handwriting, practice techniques, and more.",
   alternates: {
-    canonical: "https://handwritingmaker.com/blog",
+    canonical: `${SITE_URL}/blog`,
   },
 };
 

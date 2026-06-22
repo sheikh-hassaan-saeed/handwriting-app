@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import WorksheetMaker from "@/components/WorksheetMaker";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "Handwriting Worksheet Maker - Free Custom";
 const DESCRIPTION =
   "Create free custom handwriting worksheets in seconds. Enter any name, word list, or full sentence and get a print-ready PDF download, no account needed.";
-const PAGE_URL = "https://handwritingmaker.com/tools/handwriting-worksheet-maker";
+const PAGE_URL = `${SITE_URL}/tools/handwriting-worksheet-maker`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "How to Convert Your Handwriting into a Font (Free and Paid Methods)";
 const DESCRIPTION =
   "Learn how to convert handwriting to a font for free using Calligraphr, FontForge, or MyScriptFont, plus tips for clean scans and installing your font.";
-const PAGE_URL = "https://handwritingmaker.com/blog/how-to-convert-handwriting-to-a-font";
+const PAGE_URL = `${SITE_URL}/blog/how-to-convert-handwriting-to-a-font`;
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  metadataBase: new URL("https://handwritingmaker.com"),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
@@ -34,7 +35,7 @@ const articleSchema = {
   headline: TITLE,
   description: DESCRIPTION,
   author: { "@type": "Organization", name: "HandwritingMaker" },
-  publisher: { "@type": "Organization", name: "HandwritingMaker", url: "https://handwritingmaker.com" },
+  publisher: { "@type": "Organization", name: "HandwritingMaker", url: SITE_URL },
   mainEntityOfPage: PAGE_URL,
 };
 
