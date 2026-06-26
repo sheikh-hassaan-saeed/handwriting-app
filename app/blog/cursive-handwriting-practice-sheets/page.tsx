@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import FaqAccordion from "@/components/FaqAccordion";
 import { SITE_URL } from "@/lib/constants";
 
@@ -56,7 +57,7 @@ const faqSchema = {
       name: "Are these cursive practice sheets really free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, completely free. Every sheet in this article costs nothing to print. There is no signup, no email required, and no paywall. The HandwritingMaker tool is also free — type any text, render it in cursive, and download as PNG or PDF at no cost. Free cursive handwriting practice sheets should be accessible to everyone, and that is exactly the intention here.",
+        text: "Yes, completely free. Every sheet in this article costs nothing to print. There is no signup, no email required, and no paywall. The HandwritingMaker tool is also free  -  type any text, render it in cursive, and download as PNG or PDF at no cost. Free cursive handwriting practice sheets should be accessible to everyone, and that is exactly the intention here.",
       },
     },
     {
@@ -72,7 +73,7 @@ const faqSchema = {
       name: "How do I print cursive practice sheets at home?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Open the PDF file and select Print. In your printer dialog, set scale to 100% or Actual Size — never Fit to Page, which shrinks the guidelines. Choose portrait orientation. Standard printer paper works fine for practice. For sheets you want to reuse, print on cardstock and laminate, then use dry-erase markers. For young children, laminated sheets eliminate paper waste and allow unlimited repetitions on a single sheet.",
+        text: "Open the PDF file and select Print. In your printer dialog, set scale to 100% or Actual Size  -  never Fit to Page, which shrinks the guidelines. Choose portrait orientation. Standard printer paper works fine for practice. For sheets you want to reuse, print on cardstock and laminate, then use dry-erase markers. For young children, laminated sheets eliminate paper waste and allow unlimited repetitions on a single sheet.",
       },
     },
     {
@@ -80,7 +81,7 @@ const faqSchema = {
       name: "What is the difference between D'Nealian and Zaner-Bloser cursive?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "D'Nealian cursive uses simpler, slanted letterforms with fewer loops — it is closer to print handwriting and considered easier for beginners. Zaner-Bloser cursive is the traditional American style with more elaborate loops and ovals. Most school cursive programs use one or the other. For adult learners starting from scratch, D'Nealian is generally faster to acquire. For a more elegant, traditional appearance, Zaner-Bloser produces finer results with longer practice.",
+        text: "D'Nealian cursive uses simpler, slanted letterforms with fewer loops  -  it is closer to print handwriting and considered easier for beginners. Zaner-Bloser cursive is the traditional American style with more elaborate loops and ovals. Most school cursive programs use one or the other. For adult learners starting from scratch, D'Nealian is generally faster to acquire. For a more elegant, traditional appearance, Zaner-Bloser produces finer results with longer practice.",
       },
     },
     {
@@ -88,7 +89,7 @@ const faqSchema = {
       name: "How many practice sheets should I complete per week?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For noticeable improvement, complete at least five practice sessions per week — one sheet per session. Daily practice of 15 minutes outperforms three long weekend sessions because motor memory forms through repeated daily exposure, not long infrequent bursts. Beginners should spend the first two weeks on one letter group before moving to the next. Intermediate learners should alternate between letter drills and word sheets to reinforce both isolation and connection skills.",
+        text: "For noticeable improvement, complete at least five practice sessions per week  -  one sheet per session. Daily practice of 15 minutes outperforms three long weekend sessions because motor memory forms through repeated daily exposure, not long infrequent bursts. Beginners should spend the first two weeks on one letter group before moving to the next. Intermediate learners should alternate between letter drills and word sheets to reinforce both isolation and connection skills.",
       },
     },
   ],
@@ -106,11 +107,12 @@ function ArticleImage({ src, prompt, alt, caption, index }: ArticleImageProps) {
   return (
     <figure className="my-8">
       {src ? (
-        <img
+        <Image
           src={src}
           alt={alt}
-          className="w-full rounded-xl shadow-sm border border-gray-100"
-          loading="lazy"
+          width={800}
+          height={450}
+          className="w-full h-auto rounded-xl shadow-sm border border-gray-100"
         />
       ) : (
         <div
@@ -139,7 +141,7 @@ const faqItems = [
       <p>
         Yes, completely free. Every sheet in this article costs nothing to print.
         There is no signup, no email required, and no paywall. The HandwritingMaker
-        tool is also free — type any text, render it in cursive, and download as PNG
+        tool is also free  -  type any text, render it in cursive, and download as PNG
         or PDF at no cost. Free cursive handwriting practice sheets should be
         accessible to everyone, and that is exactly the intention here.
       </p>
@@ -163,7 +165,7 @@ const faqItems = [
     a: (
       <p>
         Open the PDF file and select Print. In your printer dialog, set scale to 100%
-        or Actual Size — never Fit to Page, which shrinks the guidelines. Choose
+        or Actual Size  -  never Fit to Page, which shrinks the guidelines. Choose
         portrait orientation. Standard printer paper works fine for practice. For sheets
         you want to reuse, print on cardstock and laminate, then use dry-erase markers.
         For young children, laminated sheets eliminate paper waste and allow unlimited
@@ -175,7 +177,7 @@ const faqItems = [
     q: "What is the difference between D'Nealian and Zaner-Bloser cursive?",
     a: (
       <p>
-        D&apos;Nealian cursive uses simpler, slanted letterforms with fewer loops — it
+        D&apos;Nealian cursive uses simpler, slanted letterforms with fewer loops  -  it
         is closer to print handwriting and considered easier for beginners.
         Zaner-Bloser cursive is the traditional American style with more elaborate
         loops and ovals. Most school cursive programs use one or the other. For adult
@@ -189,7 +191,7 @@ const faqItems = [
     q: "How many practice sheets should I complete per week?",
     a: (
       <p>
-        For noticeable improvement, complete at least five practice sessions per week —
+        For noticeable improvement, complete at least five practice sessions per week  - 
         one sheet per session. Daily practice of 15 minutes outperforms three long
         weekend sessions because motor memory forms through repeated daily exposure, not
         long infrequent bursts. Beginners should spend the first two weeks on one letter
@@ -275,11 +277,11 @@ export default function CursivePracticeSheetsPost() {
           <p>
             And when generic sheets are not enough? There is a free tool at the end of this
             article that generates custom cursive practice sheets with exactly the words you
-            need to practice — your name, your vocabulary list, your chosen script. No signup,
+            need to practice  -  your name, your vocabulary list, your chosen script. No signup,
             no cost.
           </p>
           <p>
-            Let&apos;s get your cursive handwriting from messy to elegant — starting today.
+            Let&apos;s get your cursive handwriting from messy to elegant  -  starting today.
           </p>
 
           <ArticleImage
@@ -304,12 +306,12 @@ export default function CursivePracticeSheetsPost() {
           </p>
           <p>
             The second element is a letter model at the start of each row. Your hand needs
-            something to copy, not imagine. Third is repetition — a minimum of five practice
+            something to copy, not imagine. Third is repetition  -  a minimum of five practice
             lines per letter is the standard. Fewer and the motor pattern does not register.
           </p>
           <p>
             Most free cursive practice sheets online fail all three tests. They show a letter
-            once, give you two blank lines, and call it a worksheet. That is not training —
+            once, give you two blank lines, and call it a worksheet. That is not training  - 
             it is a suggestion. The actionable tip: if a sheet does not have four guide lines
             per row, skip it.
           </p>
@@ -329,15 +331,15 @@ export default function CursivePracticeSheetsPost() {
             Master the oval and half the alphabet becomes easier by default.
           </p>
           <p>
-            From there, move to loop letters — l, h, k, b — then hump letters, and finally
+            From there, move to loop letters  -  l, h, k, b  -  then hump letters, and finally
             the difficult group: f, r, s, z. This is not arbitrary sequencing. Each group
             builds on the muscle memory of the previous one.
           </p>
           <p>Here is the protocol that actually works:</p>
           <ul>
             <li>Practice each letter a minimum of 20 times per session before moving on</li>
-            <li>Keep lowercase and uppercase in separate sessions — mixing them confuses muscle memory</li>
-            <li>Write slowly — speed is the enemy at this stage</li>
+            <li>Keep lowercase and uppercase in separate sessions  -  mixing them confuses muscle memory</li>
+            <li>Write slowly  -  speed is the enemy at this stage</li>
             <li>After every 10 letters, close your eyes and write the letter from feel alone</li>
           </ul>
           <p>
@@ -355,51 +357,51 @@ export default function CursivePracticeSheetsPost() {
           />
 
           {/* H2: Lowercase A to Z */}
-          <h2>Free Cursive Practice Sheets — Lowercase Letters A to Z</h2>
+          <h2>Free Cursive Practice Sheets  -  Lowercase Letters A to Z</h2>
           <p>
             Every cursive letter belongs to one of four groups. Understanding the group tells
             you exactly how to approach it. <strong>Work through each group completely before
-            moving to the next</strong> — this is how skill stacks rather than scatters.
+            moving to the next</strong>  -  this is how skill stacks rather than scatters.
           </p>
 
-          <h3>Group 1 — Oval Letters (Start Here): a, c, d, e, g, o, q</h3>
-          <p>All begin with a counterclockwise oval or partial oval — the foundational cursive stroke.</p>
+          <h3>Group 1  -  Oval Letters (Start Here): a, c, d, e, g, o, q</h3>
+          <p>All begin with a counterclockwise oval or partial oval  -  the foundational cursive stroke.</p>
           <ul>
-            <li><strong>a</strong> — Start at the midline, loop counterclockwise to form an oval, pull down and curve right. Common mistake: the oval gaps at the top.</li>
-            <li><strong>c</strong> — A simple open oval. Common mistake: closing it into an &apos;o&apos;.</li>
-            <li><strong>d</strong> — Oval first, then the tall stem rises to the ascender line. Common mistake: forming the stem before the oval.</li>
-            <li><strong>e</strong> — Starts with a small loop at the midline. Common mistake: making it look like a printed &apos;e&apos;.</li>
-            <li><strong>g</strong> — Oval first, then the tail descends below the baseline. Common mistake: the tail curves left instead of looping right.</li>
-            <li><strong>o</strong> — Full counterclockwise oval with a small exit stroke right. Common mistake: no exit stroke, which breaks word flow.</li>
-            <li><strong>q</strong> — Oval plus a descending loop below the baseline. Common mistake: the loop goes right instead of left.</li>
+            <li><strong>a</strong>  -  Start at the midline, loop counterclockwise to form an oval, pull down and curve right. Common mistake: the oval gaps at the top.</li>
+            <li><strong>c</strong>  -  A simple open oval. Common mistake: closing it into an &apos;o&apos;.</li>
+            <li><strong>d</strong>  -  Oval first, then the tall stem rises to the ascender line. Common mistake: forming the stem before the oval.</li>
+            <li><strong>e</strong>  -  Starts with a small loop at the midline. Common mistake: making it look like a printed &apos;e&apos;.</li>
+            <li><strong>g</strong>  -  Oval first, then the tail descends below the baseline. Common mistake: the tail curves left instead of looping right.</li>
+            <li><strong>o</strong>  -  Full counterclockwise oval with a small exit stroke right. Common mistake: no exit stroke, which breaks word flow.</li>
+            <li><strong>q</strong>  -  Oval plus a descending loop below the baseline. Common mistake: the loop goes right instead of left.</li>
           </ul>
 
-          <h3>Group 2 — Loop Letters: b, f, h, k, l</h3>
+          <h3>Group 2  -  Loop Letters: b, f, h, k, l</h3>
           <p>These use upward strokes that form distinctive loops at the ascender line.</p>
           <ul>
-            <li><strong>b</strong> — Rise to ascender line, loop back down, then swing right. Common mistake: the loop is too tight to read clearly.</li>
-            <li><strong>f</strong> — The only two-story letter: descends below the baseline AND rises above the ascender. Common mistake: not dropping far enough below the baseline.</li>
-            <li><strong>h</strong> — Rise, loop, then two humps. Common mistake: the second hump is noticeably smaller than the first.</li>
-            <li><strong>k</strong> — Rise, loop, then a forward kick. Common mistake: the kick points downward instead of forward.</li>
-            <li><strong>l</strong> — A single tall loop. Common mistake: the loop closes too tightly and reads as an &apos;e&apos;.</li>
+            <li><strong>b</strong>  -  Rise to ascender line, loop back down, then swing right. Common mistake: the loop is too tight to read clearly.</li>
+            <li><strong>f</strong>  -  The only two-story letter: descends below the baseline AND rises above the ascender. Common mistake: not dropping far enough below the baseline.</li>
+            <li><strong>h</strong>  -  Rise, loop, then two humps. Common mistake: the second hump is noticeably smaller than the first.</li>
+            <li><strong>k</strong>  -  Rise, loop, then a forward kick. Common mistake: the kick points downward instead of forward.</li>
+            <li><strong>l</strong>  -  A single tall loop. Common mistake: the loop closes too tightly and reads as an &apos;e&apos;.</li>
           </ul>
 
-          <h3>Group 3 — Hump Letters: m, n, v, w, x, y</h3>
-          <p>Multiple humps or intersecting strokes — rhythm is everything here.</p>
+          <h3>Group 3  -  Hump Letters: m, n, v, w, x, y</h3>
+          <p>Multiple humps or intersecting strokes  -  rhythm is everything here.</p>
           <ul>
-            <li><strong>m</strong> — Three humps. Common mistake: humps are uneven in height, making the letter read as &apos;ni&apos;.</li>
-            <li><strong>n</strong> — Two humps. Common mistake: the last hump does not exit with a clean forward stroke.</li>
-            <li><strong>v, w</strong> — Angled downstrokes. Common mistake: strokes are too rounded, losing the sharp angle.</li>
-            <li><strong>x</strong> — Two crossing strokes. Common mistake: the crossing point is off-center.</li>
-            <li><strong>y</strong> — A hump followed by a descending loop. Common mistake: the loop is too short and does not reach the descender line.</li>
+            <li><strong>m</strong>  -  Three humps. Common mistake: humps are uneven in height, making the letter read as &apos;ni&apos;.</li>
+            <li><strong>n</strong>  -  Two humps. Common mistake: the last hump does not exit with a clean forward stroke.</li>
+            <li><strong>v, w</strong>  -  Angled downstrokes. Common mistake: strokes are too rounded, losing the sharp angle.</li>
+            <li><strong>x</strong>  -  Two crossing strokes. Common mistake: the crossing point is off-center.</li>
+            <li><strong>y</strong>  -  A hump followed by a descending loop. Common mistake: the loop is too short and does not reach the descender line.</li>
           </ul>
 
-          <h3>Group 4 — Difficult Letters: f, r, s, z</h3>
+          <h3>Group 4  -  Difficult Letters: f, r, s, z</h3>
           <p>These break the usual stroke patterns and require more isolated repetition.</p>
           <ul>
-            <li><strong>r</strong> — Short and awkward, sitting mostly below the midline. Tip: think of it as a tiny bump, not a tall letter. Many people write it too large.</li>
-            <li><strong>s</strong> — The only letter that reverses direction mid-stroke. Tip: practice it in slow motion with ten extra repetitions before full-speed work.</li>
-            <li><strong>z</strong> — Rarely used but easy to botch. Tip: picture a printed &apos;z&apos; with a looped descender hanging below the baseline.</li>
+            <li><strong>r</strong>  -  Short and awkward, sitting mostly below the midline. Tip: think of it as a tiny bump, not a tall letter. Many people write it too large.</li>
+            <li><strong>s</strong>  -  The only letter that reverses direction mid-stroke. Tip: practice it in slow motion with ten extra repetitions before full-speed work.</li>
+            <li><strong>z</strong>  -  Rarely used but easy to botch. Tip: picture a printed &apos;z&apos; with a looped descender hanging below the baseline.</li>
           </ul>
 
           <ArticleImage
@@ -411,7 +413,7 @@ export default function CursivePracticeSheetsPost() {
           />
 
           {/* H2: Uppercase */}
-          <h2>Cursive Uppercase Letters — Practice Sheets</h2>
+          <h2>Cursive Uppercase Letters  -  Practice Sheets</h2>
           <p>
             Uppercase cursive is genuinely harder than lowercase, and most beginners make
             the mistake of practicing both at the same time. Resist that temptation.
@@ -430,9 +432,9 @@ export default function CursivePracticeSheetsPost() {
           </p>
           <p>Three rules that make uppercase cursive dramatically easier:</p>
           <ol>
-            <li>Uppercase cursive letters do NOT always connect to the following lowercase letter. Break the flow after most capitals — this is not a mistake.</li>
+            <li>Uppercase cursive letters do NOT always connect to the following lowercase letter. Break the flow after most capitals  -  this is not a mistake.</li>
             <li>Uppercase letters are wider than you think. Give them room on the line.</li>
-            <li>Most uppercase letters begin with a small lead-in curve from the baseline. Never skip it — that lead-in is what gives the letter its cursive character.</li>
+            <li>Most uppercase letters begin with a small lead-in curve from the baseline. Never skip it  -  that lead-in is what gives the letter its cursive character.</li>
           </ol>
           <p>
             Actionable tip: print a single uppercase letter on a post-it note and keep it at
@@ -445,7 +447,7 @@ export default function CursivePracticeSheetsPost() {
             index={4}
             prompt="Cursive uppercase alphabet practice sheet showing capital letters A to Z in elegant cursive style, clean lined paper background, black ink, dotted guidelines visible, professional worksheet appearance."
             alt="cursive uppercase alphabet practice sheet A to Z printable"
-            caption="Uppercase cursive letters follow different rules — practice them separately from lowercase."
+            caption="Uppercase cursive letters follow different rules  -  practice them separately from lowercase."
           />
 
           {/* H2: Words */}
@@ -453,7 +455,7 @@ export default function CursivePracticeSheetsPost() {
           <p>
             This is where most learners stall. Individual letters look fine in isolation.
             Put them into a word and suddenly the whole thing falls apart. This is not a
-            failure — it is the next skill to acquire.
+            failure  -  it is the next skill to acquire.
           </p>
           <p>
             <strong>
@@ -461,7 +463,7 @@ export default function CursivePracticeSheetsPost() {
             </strong>{" "}
             and it is also where letter shapes shift slightly. The &apos;a&apos; in isolation
             looks different from the &apos;a&apos; in &quot;cat&quot; because the entry and exit
-            strokes are part of the connected letter — not separate decorations.
+            strokes are part of the connected letter  -  not separate decorations.
           </p>
           <p>
             Start with these 20 beginner cursive practice words, chosen for simple letter
@@ -480,7 +482,7 @@ export default function CursivePracticeSheetsPost() {
           <p>
             Focus on letter connections. The exit stroke of one letter must flow directly into
             the entry stroke of the next without lifting the pen. If you consistently lift
-            between two letters, that specific pair needs isolated practice — write just those
+            between two letters, that specific pair needs isolated practice  -  write just those
             two letters together, 20 times.
           </p>
           <p>
@@ -502,7 +504,7 @@ export default function CursivePracticeSheetsPost() {
           <p>
             Once words are solid, sentences are where everything consolidates.{" "}
             <strong>
-              The most efficient sentence practice tool available is the pangram — a sentence
+              The most efficient sentence practice tool available is the pangram  -  a sentence
               that uses every letter of the alphabet at least once.
             </strong>
           </p>
@@ -518,7 +520,7 @@ export default function CursivePracticeSheetsPost() {
           </ol>
           <p>
             Each session, write one pangram five times. You cover every letter, every
-            connection, every entry and exit stroke — in under 10 minutes.
+            connection, every entry and exit stroke  -  in under 10 minutes.
           </p>
           <p>
             The advantage over random sentence practice is measurability. You can directly
@@ -536,7 +538,7 @@ export default function CursivePracticeSheetsPost() {
           </p>
           <p>
             <strong>
-              Print at 100% scale on standard A4 or letter paper — always.
+              Print at 100% scale on standard A4 or letter paper  -  always.
             </strong>{" "}
             Fit-to-page scaling compresses the guidelines and distorts letter proportions.
             This one mistake undermines the entire practice session.
@@ -550,16 +552,16 @@ export default function CursivePracticeSheetsPost() {
           <p>
             Sit properly. Your forearm should rest on the desk, not hover. The paper should
             be angled 30 to 45 degrees from horizontal. Posture affects handwriting more
-            than most people expect — slumped posture produces cramped letters regardless
+            than most people expect  -  slumped posture produces cramped letters regardless
             of skill level.
           </p>
           <p>Exact protocol for each session:</p>
           <ul>
-            <li>Practice in focused 15-minute blocks — never when tired</li>
+            <li>Practice in focused 15-minute blocks  -  never when tired</li>
             <li>Motor memory encodes incorrectly under fatigue, and bad patterns are harder to fix than no patterns</li>
             <li>After each session: circle your 3 weakest letters on the completed sheet</li>
             <li>Begin your next session with those 3 letters specifically</li>
-            <li>Photograph your completed sheets weekly — side-by-side comparisons reveal progress your daily eye misses</li>
+            <li>Photograph your completed sheets weekly  -  side-by-side comparisons reveal progress your daily eye misses</li>
           </ul>
 
           <ArticleImage
@@ -619,13 +621,13 @@ export default function CursivePracticeSheetsPost() {
           />
 
           {/* H2: How to Print */}
-          <h2>Cursive Practice Sheet PDF — How to Print Correctly</h2>
+          <h2>Cursive Practice Sheet PDF  -  How to Print Correctly</h2>
           <p>
             One technical mistake ruins more practice sheets than any other:{" "}
             <strong>printing at &quot;fit to page&quot; instead of 100% scale.</strong>
           </p>
           <p>
-            Always set your printer to &quot;actual size&quot; or exactly 100% — find this
+            Always set your printer to &quot;actual size&quot; or exactly 100%  -  find this
             in your printer&apos;s Page Scaling or Paper Size settings. Fitting to page
             shrinks the guide lines and makes letters too small for effective practice.
           </p>
@@ -634,7 +636,7 @@ export default function CursivePracticeSheetsPost() {
             <li>Standard printer paper works for daily practice</li>
             <li>For reusable sheets: print on cardstock and laminate with dry-erase markers</li>
             <li>For children: laminated sheets plus washable markers eliminate paper waste entirely</li>
-            <li>Always export as PDF before printing — PDF preserves scale; a screenshot does not</li>
+            <li>Always export as PDF before printing  -  PDF preserves scale; a screenshot does not</li>
           </ul>
 
           {/* H2: How Long Until Results */}
@@ -644,7 +646,7 @@ export default function CursivePracticeSheetsPost() {
             handwriting practice sheets:
           </p>
           <ul>
-            <li><strong>Week 1–2:</strong> Letters look shaky but more intentional. You are building awareness, not skill yet. This phase feels slow — push through it.</li>
+            <li><strong>Week 1–2:</strong> Letters look shaky but more intentional. You are building awareness, not skill yet. This phase feels slow  -  push through it.</li>
             <li><strong>Week 3–4:</strong> Consistency starts forming. Some letters are becoming automatic and you will notice a few that look genuinely better.</li>
             <li><strong>Month 2:</strong> Recognizable improvement visible to others. The difference is no longer only in your head.</li>
             <li><strong>Month 3:</strong> Muscle memory solidifying. New letterforms begin to feel natural rather than effortful.</li>
@@ -656,7 +658,7 @@ export default function CursivePracticeSheetsPost() {
             <strong>
               The single variable that determines outcome is consistent daily practice.
             </strong>{" "}
-            Fifteen minutes every day beats two hours on Sunday, every time — because motor
+            Fifteen minutes every day beats two hours on Sunday, every time  -  because motor
             memory is built through repetition over time, not volume in a single session.
           </p>
 
@@ -673,18 +675,18 @@ export default function CursivePracticeSheetsPost() {
           <p>
             The path from shaky cursive to confident, elegant script follows the same
             progression every time: individual letters first, then words, then sentences.
-            The sheets in this article cover every stage — beginner oval letters, full
+            The sheets in this article cover every stage  -  beginner oval letters, full
             lowercase and uppercase alphabets, word connection practice, and sentence
             pangrams that drill every letter in a single pass.
           </p>
           <p>
-            Generic practice sheets get you most of the way there. For the gaps — the
-            specific letters you keep getting wrong, your name, your vocabulary list —
+            Generic practice sheets get you most of the way there. For the gaps  -  the
+            specific letters you keep getting wrong, your name, your vocabulary list  - 
             you need something custom.
           </p>
           <p>
             Ready to take it further? Generate a completely custom cursive practice sheet
-            using your own text at HandwritingMaker —{" "}
+            using your own text at HandwritingMaker  - {" "}
             <Link href="/" className="font-semibold">
               free cursive handwriting practice sheet generator
             </Link>

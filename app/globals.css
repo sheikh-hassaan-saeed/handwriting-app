@@ -10,7 +10,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 /* Handwriting font CSS variables exposed for canvas */
