@@ -6,7 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Legacy tools still active on the website
   const legacyTools = [
     "/tools/handwriting-practice-sheets",
-    "/tools/handwriting-worksheet-maker",
     "/tools/animated-handwriting-generator",
   ];
 

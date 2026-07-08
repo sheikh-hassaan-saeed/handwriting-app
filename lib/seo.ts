@@ -35,25 +35,27 @@ export const AUTHOR_INFO = {
 export const SEO_DATA: Record<string, SEOPageConfig> = {
   // HOMEPAGE
   "/": {
-    title: "Free Handwriting & Educational Generators | HandwritingMaker",
-    description: "Convert text to realistic handwriting. Generate printable templates, school letter tracing, calligraphy slants, and e-signatures. Free PDF export.",
-    h1: "Free Handwriting & Educational Generators Directory",
-    intro: "Welcome to the ultimate digital workbook creator. HandwritingMaker is a modular suite of free online generator tools built for teachers, students, parents, and creatives. Whether you need to convert typed scripts to realistic handwriting, print standard guidelines, create child letter-tracing worksheets, design custom calligraphy grids, or generate business signatures, our browser tools produce print-ready PDFs instantly.",
-    conclusion: "Explore our categories, load preset tools, customize grids, and print worksheets. Everything runs client-side in your browser for absolute privacy.",
-    lastUpdated: "2026-06-26",
+    title: "Free Handwriting Worksheet Generator | HandwritingMaker",
+    description: "Create custom printable handwriting worksheets instantly. Adjust line spacing, guidelines, print or cursive tracing styles, and download as A4 or Letter PDF for free.",
+    h1: "Free Handwriting Worksheet Generator",
+    intro: "Create custom handwriting practice sheets and tracing worksheets for kids, toddlers, or adults. Type a child's name, list of spelling words, or sentences. Customize guidelines, choose print or cursive font styles, set repetitions, and generate a printable PDF instantly.",
+    conclusion: "Generate, preview, and print letter-perfect handwriting worksheets. The tool operates 100% in your browser for absolute privacy and classroom utility.",
+    lastUpdated: "2026-07-05",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "Are these generator tools completely free?", a: "Yes. Every single tool, generator, planner, and graph paper template on HandwritingMaker.com is 100% free to design, download, and print. No account signup, no subscription, and no branding watermarks on downloaded PDFs." },
-      { q: "Do you support both A4 and Letter paper formats?", a: "Yes. All our generators allow toggling between standard International A4 dimensions and North American Letter (or Legal) paper sizes. The resulting PDF files compile directly to matching pixel bounds so they print cleanly." },
+      { q: "How do I create a custom handwriting tracing worksheet?", a: "Enter a child's name or word list in the input box, select the 'Trace Letters' mode to render letters in dotted tracing guides, customize your page parameters (such as repetitions and lines), and click 'Download PDF' to save and print your custom tracing sheet." },
+      { q: "Is this handwriting practice creator completely free to use?", a: "Yes. HandwritingMaker is 100% free for teachers, parents, and students. There are no subscriptions, no accounts, and no watermark stamps on downloaded PDFs." },
+      { q: "What paper formats and sizes are supported?", a: "The generator supports standard International A4 and North American Letter sizes. It compiles vector PDF output at 300 DPI so guidelines and letter traces print sharply on standard printers." },
+      { q: "Can I generate cursive handwriting worksheets?", a: "Yes. The creator has an option to switch font styles between primary print block lettering and standard connected cursive script, covering all penmanship learning levels." },
     ],
     relatedTools: [
-      { name: "Notebook Paper Generator", href: "/notebook-paper" },
+      { name: "Notebook Paper Creator", href: "/notebook-paper" },
       { name: "Cornell Notes Maker", href: "/cornell-notes" },
-      { name: "Signature Generator", href: "/signature-generator" },
+      { name: "Letter Tracing Practice", href: "/letter-tracing" },
     ],
     relatedArticles: [
-      { name: "Wide Ruled vs College Ruled Paper", href: "/blog/wide-ruled-vs-college-ruled" },
-      { name: "How to Improve Handwriting", href: "/blog/how-to-improve-handwriting" },
+      { name: "Wide Ruled vs College Ruled Spacing", href: "/blog/wide-ruled-vs-college-ruled" },
+      { name: "How to Improve Handwriting as an Adult", href: "/blog/how-to-improve-handwriting" },
     ],
     breadcrumbs: [],
   },
@@ -750,6 +752,319 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     relatedTools: [],
     relatedArticles: [],
     breadcrumbs: [{ name: "Blog", href: "/blog" }],
+  },
+  "/tools/handwriting-worksheet-creator": {
+    title: "Free Custom Handwriting Worksheet Creator | HandwritingMaker",
+    description: "Create personalized handwriting worksheets in seconds. Enter any spelling list or vocabulary words, select block print or cursive styles, and print for free.",
+    h1: "Free Custom Handwriting Worksheet Creator",
+    intro: "Use our free online worksheet creator to build personalized writing practice sheets. Type spelling lists, sight words, or vocabulary terms, adjust guideline styles, and download clean vector PDFs instantly. Perfect for primary school teachers and homeschooling parents.",
+    conclusion: "Generate your custom worksheets now and save time preparing classroom materials.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Can I enter multiple spelling words?", a: "Yes. Simply type your word list separated by spaces or lines, choose the layout (Single Word or Two Words per line), and download a full sheet of tracing practice." },
+      { q: "Is this creator free to print?", a: "Yes, it is 100% free with no signups, fees, or watermarks." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" },
+      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Handwriting Worksheet Creator", href: "/tools/handwriting-worksheet-creator" }]
+  },
+  "/tools/handwriting-practice-generator": {
+    title: "Online Handwriting Practice Generator | HandwritingMaker",
+    description: "Generate printable handwriting practice worksheets for students, toddlers, or adults. Select print block or cursive scripts and download for free.",
+    h1: "Online Handwriting Practice Generator",
+    intro: "Improve penmanship with our online practice sheets generator. Enter sentences, quotes, or vocabulary words, toggle guideline rules, customize heights, and export standard print PDFs instantly.",
+    conclusion: "Practice daily using custom sentences and words tailored to your writing goals.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "How do I practice cursive writing?", a: "Switch the font setting to 'Cursive Loop' to instantly convert your sentences into elegant connected script guidelines." },
+      { q: "Are these worksheets print-ready?", a: "Yes. They compile to vector PDF documents in A4 or Letter sizes, ready to print on any standard home printer." }
+    ],
+    relatedTools: [
+      { name: "Cursive Worksheet Generator", href: "/tools/cursive-worksheet-generator" },
+      { name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }]
+  },
+  "/tools/custom-handwriting-worksheets": {
+    title: "Make Custom Handwriting Worksheets Online | HandwritingMaker",
+    description: "Design custom handwriting practice worksheets for children or adults. Enter names, full sentences, or letters, choose formats, and print.",
+    h1: "Custom Handwriting Worksheets Maker",
+    intro: "Create bespoke handwriting training materials online. Customize guideline widths, repetitions, print or cursive styles, and letter rendering (solid or dotted trace) before downloading.",
+    conclusion: "Get your custom printouts in seconds and keep handwriting practice fun and tailored.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Can I customize the line height?", a: "Yes. Use the Line Spacing slider in the style tab to adjust guidelines heights from 40px to 140px." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Worksheet Creator", href: "/tools/handwriting-worksheet-creator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Custom Handwriting Worksheets", href: "/tools/custom-handwriting-worksheets" }]
+  },
+  "/tools/printable-handwriting-worksheets": {
+    title: "Free Printable Handwriting Worksheets | HandwritingMaker",
+    description: "Download free printable handwriting sheets for kids and adults. Print customized name writing guides, cursive templates, and line paper.",
+    h1: "Printable Handwriting Worksheets Directory",
+    intro: "Access printable penmanship guidelines directly from your web browser. Skip the subscription binders: customize text lists, select line formats, and compile paper templates for free.",
+    conclusion: "Generate standard worksheets on demand to support early child fine motor skills or adult script exercises.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Do these worksheets have watermarks?", a: "No. All downloaded PDF sheets are 100% clean and free of logos or watermarks for neat classroom printouts." }
+    ],
+    relatedTools: [
+      { name: "Alphabet Tracing Generator", href: "/tools/alphabet-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Printable Handwriting Worksheets", href: "/tools/printable-handwriting-worksheets" }]
+  },
+  "/tools/tracing-worksheet-generator": {
+    title: "Dotted Line Tracing Worksheet Generator | HandwritingMaker",
+    description: "Convert any text into a dotted line tracing worksheet for early writing practice. Perfect for preschool children and toddlers.",
+    h1: "Dotted Line Tracing Worksheet Generator",
+    intro: "Help toddlers and young learners write using our interactive tracing worksheet creator. Switch the letter style to 'Trace Dots' to convert solid letters to hollow tracing nodes instantly.",
+    conclusion: "Support motor coordination and letter recognition with targeted tracing sheets.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Does this work for numbers too?", a: "Yes. You can enter letters, numbers, and common punctuation marks in the text input box." }
+    ],
+    relatedTools: [
+      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" },
+      { name: "Alphabet Tracing Generator", href: "/tools/alphabet-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" }]
+  },
+  "/tools/name-tracing-generator": {
+    title: "Free Custom Name Tracing Generator | HandwritingMaker",
+    description: "Generate personalized name tracing worksheets for preschool and kindergarten. Enter any name and print instant tracing sheets for free.",
+    h1: "Free Custom Name Tracing Generator",
+    intro: "Help children learn their names using our online name tracing creator. Enter any first or last name, set repetitions to repeat down the lines, select dotted guides, and download for free.",
+    conclusion: "Build child confidence and name familiarity with daily name-tracing practice sheets.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "How do I make a name tracing worksheet?", a: "Type the child's name in the text box, select 'Single Word' layout, choose 'Trace Dots' style, set repetitions, and export as PDF." }
+    ],
+    relatedTools: [
+      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }]
+  },
+  "/tools/sentence-tracing-generator": {
+    title: "Printable Sentence Tracing Generator | HandwritingMaker",
+    description: "Create sentence tracing worksheets for kids. Type full sentences, quotes, or paragraphs, customize guidelines, and export as PDF.",
+    h1: "Printable Sentence Tracing Generator",
+    intro: "Train older students and children to write full lines of text. Enter vocabulary sentences, grammar quotes, or paragraph copies, convert to dotted tracing fonts, and print.",
+    conclusion: "Improve handwriting spacing and word connection coordinates with sentence tracing drills.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Can I print a multi-page sentence workbook?", a: "Yes. Enter multiple sentences or paragraphs; the generator will paginate the lines across sheets automatically." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }]
+  },
+  "/tools/cursive-worksheet-generator": {
+    title: "Free Cursive Handwriting Worksheet Generator | HandwritingMaker",
+    description: "Generate cursive writing practice worksheets. Customize slant guidelines, connected script styles, and download A4 or Letter PDFs.",
+    h1: "Free Cursive Handwriting Worksheet Generator",
+    intro: "Learn cursive penmanship with our interactive generator. Convert standard text into elegant connecting cursive lines. Toggle dotted trace lines for tracing or solid script for copying.",
+    conclusion: "Practice standard cursive letter loops, slants, and connections using custom sentences.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "What cursive font is used?", a: "The generator utilizes the 'Dancing Script' cursive model to render realistic connected loops and slants." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Cursive Worksheet Generator", href: "/tools/cursive-worksheet-generator" }]
+  },
+  "/tools/alphabet-tracing-generator": {
+    title: "Alphabet Tracing Worksheet Generator | HandwritingMaker",
+    description: "Create printable A-Z alphabet tracing worksheets. Customize upper and lowercase letters, guideline styles, and download PDFs.",
+    h1: "Alphabet Tracing Worksheet Generator",
+    intro: "Design alphabet tracing workbooks for preschool classrooms. Enter letters A to Z, select print block or cursive styles, select trace dashes, and print in seconds.",
+    conclusion: "Help children master stroke coordinates for all 26 letters of the alphabet.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Does the alphabet template include both uppercase and lowercase?", a: "Yes. You can customize the input text to show 'Aa Bb Cc' or only uppercase letters depending on lesson goals." }
+    ],
+    relatedTools: [
+      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Alphabet Tracing Generator", href: "/tools/alphabet-tracing-generator" }]
+  },
+  "/tools/blank-handwriting-paper": {
+    title: "Free Lined Blank Handwriting Paper | HandwritingMaker",
+    description: "Download printable blank handwriting paper with dotted guidelines. Choose Letter or A4 sizes, adjust line spacing, and print.",
+    h1: "Free Lined Blank Handwriting Paper",
+    intro: "Print clean blank handwriting paper sheets for spelling tests, journal practice, or freehand drawing. Set the layout spacing, toggle dotted or solid lines, and export blank grids instantly.",
+    conclusion: "Stop purchasing expensive pre-printed writing tablets: customize and print sheets for free.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "How do I generate a completely blank handwriting paper sheet?", a: "Clear all text from the input settings, select the 'Free Writing' layout, choose your guideline style, and click download." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Paper Generator", href: "/tools/handwriting-paper-generator" },
+      { name: "Notebook Paper Creator", href: "/notebook-paper" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Blank Handwriting Paper", href: "/tools/blank-handwriting-paper" }]
+  },
+  "/tools/handwriting-paper-generator": {
+    title: "Printable Lined Handwriting Paper Generator | HandwritingMaker",
+    description: "Generate customized lined handwriting paper templates. Adjust line spacing heights, grid colors, and export Letter or A4 PDFs.",
+    h1: "Printable Lined Handwriting Paper Generator",
+    intro: "Create bespoke writing paper layouts for classrooms or study guides. Choose solid or dotted guidelines, customize line height spacing (from 40px to 140px), and print vector PDFs.",
+    conclusion: "Produce precise primary or college-ruled writing grids matching student penmanship levels.",
+    lastUpdated: "2026-07-05",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "What paper formats are supported?", a: "The paper generator supports standard International A4 and North American Letter sheets in both portrait and landscape." }
+    ],
+    relatedTools: [
+      { name: "Blank Handwriting Paper", href: "/tools/blank-handwriting-paper" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Handwriting Paper Generator", href: "/tools/handwriting-paper-generator" }]
+  },
+  "/tools/handwriting-worksheets-grade-1": {
+    title: "Printable 1st Grade Handwriting Worksheets | HandwritingMaker",
+    description: "Download free printable 1st grade handwriting worksheets. Customize spacings, dotted trace letters, and write paragraphs with high-resolution PDFs.",
+    h1: "Printable 1st Grade Handwriting Worksheets",
+    intro: "Support 1st grade writing skills with our customizable practice worksheets. First-grade students transition to smaller, 7mm college ruled guideline lines. Easily adjust layout spacing, toggle dotted tracing lines, and print vector PDFs.",
+    conclusion: "Practice writing full sentences and paragraphs to build 1st grade penmanship confidence.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "What is the standard line spacing for 1st grade worksheets?", a: "The standard spacing is approximately 5/8 inch (16mm), which corresponds to a 70px line height slider setting on this tool." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" },
+      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Grade 1 Worksheets", href: "/tools/handwriting-worksheets-grade-1" }]
+  },
+  "/tools/handwriting-worksheets-grade-2": {
+    title: "Printable 2nd Grade Handwriting Worksheets | HandwritingMaker",
+    description: "Download free printable 2nd grade handwriting worksheets. Custom guidelines spacing, dotted letters, and spelling practice lists.",
+    h1: "Printable 2nd Grade Handwriting Worksheets",
+    intro: "Support 2nd grade handwriting development. Students transition to smaller 6mm spacing. Customize word lists, toggle tracing helper marks, and print.",
+    conclusion: "Foster neat, consistent writing habits with structured daily worksheets.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "What layout is recommended for 2nd graders?", a: "The 'Sentence Repeat' or 'Free Writing' layout with a line spacing of 60px is optimal for 2nd grade penmanship practice." }
+    ],
+    relatedTools: [
+      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Grade 2 Worksheets", href: "/tools/handwriting-worksheets-grade-2" }]
+  },
+  "/tools/handwriting-worksheets-kindergarten": {
+    title: "Printable Kindergarten Handwriting Worksheets | HandwritingMaker",
+    description: "Download free printable kindergarten handwriting worksheets. Large guidelines spacing, starting dots, and shape tracing guides.",
+    h1: "Printable Kindergarten Handwriting Worksheets",
+    intro: "Improve early muscle control with large-format kindergarten worksheets. Type individual names or letter ranges, select 80px wide guidelines, and download print-ready PDFs.",
+    conclusion: "Make handwriting instruction fun and interactive for kindergarten students.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Do these worksheets support starting dots?", a: "Yes. Dotted tracing modes display helpful start coordinates to guide child pencil movements." }
+    ],
+    relatedTools: [
+      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Kindergarten Worksheets", href: "/tools/handwriting-worksheets-kindergarten" }]
+  },
+  "/tools/cursive-practice-sheets": {
+    title: "Printable Cursive Practice Sheets | HandwritingMaker",
+    description: "Generate cursive practice worksheets. Customize loop scripts, connecting letters, and export A4 or Letter PDFs.",
+    h1: "Printable Cursive Practice Sheets",
+    intro: "Master connecting script loops with customizable cursive practice sheets. Convert typed sentences into elegant script. Toggle dotted tracing lines or solid copy guides.",
+    conclusion: "Develop fluid cursive lettering habits through daily copy and tracing exercises.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Does the tool connect cursive letters dynamically?", a: "Yes, the cursive preset links letter joints to model correct cursive loop styles." }
+    ],
+    relatedTools: [
+      { name: "Cursive Worksheet Generator", href: "/tools/cursive-worksheet-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Cursive Practice Sheets", href: "/tools/cursive-practice-sheets" }]
+  },
+  "/tools/alphabet-tracing-worksheets": {
+    title: "Alphabet Tracing Worksheets Generator | HandwritingMaker",
+    description: "Create custom alphabet tracing worksheets. Dotted lines for letters A to Z, print block or cursive scripts.",
+    h1: "Alphabet Tracing Worksheets Generator",
+    intro: "Design bespoke alphabet tracing sheets. Enter specific letter grids, choose guideline colors, adjust print scale ratios, and print for free.",
+    conclusion: "Build foundational writing skills with daily letter-tracing drills.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Can I generate uppercase and lowercase worksheets separately?", a: "Yes. Customize the input text to show only uppercase (A, B, C) or lowercase (a, b, c) guides." }
+    ],
+    relatedTools: [
+      { name: "Alphabet Tracing Generator", href: "/tools/alphabet-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Alphabet Worksheets", href: "/tools/alphabet-tracing-worksheets" }]
+  },
+  "/tools/sentence-tracing-worksheets": {
+    title: "Sentence Tracing Worksheets Generator | HandwritingMaker",
+    description: "Create custom sentence tracing worksheets. Enter quotes, grammar exercises, or spelling lists, and print.",
+    h1: "Sentence Tracing Worksheets Generator",
+    intro: "Generate custom sentence copy sheets. Enter full sentences or paragraphs, customize line heights, toggle dotted guides, and download.",
+    conclusion: "Help children practice word spacing, height metrics, and vocabulary through sentence tracing.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Can I enter multiple paragraphs?", a: "Yes, text is paginated across sheets automatically." }
+    ],
+    relatedTools: [
+      { name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Sentence Worksheets", href: "/tools/sentence-tracing-worksheets" }]
+  },
+  "/tools/name-tracing-worksheets": {
+    title: "Printable Name Tracing Worksheets | HandwritingMaker",
+    description: "Download custom name tracing worksheets. Enter child first and last names and generate print-ready sheets.",
+    h1: "Printable Name Tracing Worksheets",
+    intro: "Create personalized name tracing worksheets. Type student names, select dotted letter coordinates, set repetitions, and print for free.",
+    conclusion: "Foster name writing skills with tailored name practice sheets.",
+    lastUpdated: "2026-07-08",
+    author: AUTHOR_INFO,
+    faqs: [
+      { q: "Can I trace multiple names?", a: "Yes, enter multiple names to generate separate practice rows." }
+    ],
+    relatedTools: [
+      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }
+    ],
+    relatedArticles: [],
+    breadcrumbs: [{ name: "Name Worksheets", href: "/tools/name-tracing-worksheets" }]
   },
 };
 
