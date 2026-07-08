@@ -1007,46 +1007,46 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
         </div>
       </section>
 
-      {/* Internal Links Placeholders */}
+      {/* Internal Links Directory Grid */}
       <section className="bg-white border-t border-slate-200 py-14 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Worksheet Collections & Resources</h2>
             <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
-              Future structured clusters covering tracing and handwriting practice worksheets.
+              Explore our structured worksheets databases and customizable practice tools.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="border border-slate-150 rounded-2xl p-5 hover:border-slate-300 transition-all bg-slate-50/50">
-              <h4 className="text-sm font-bold text-slate-800 mb-1">Handwriting Practice</h4>
+            <Link href="/handwriting-practice" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
+              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Handwriting Practice</h4>
               <p className="text-xs text-slate-400 mb-3">Copy drills and penmanship practice sheets for everyday letters.</p>
-              <span className="text-xxs font-semibold text-slate-400 uppercase tracking-wider block">Coming Soon (Supporting Presets)</span>
-            </div>
-            <div className="border border-slate-150 rounded-2xl p-5 hover:border-slate-300 transition-all bg-slate-50/50">
-              <h4 className="text-sm font-bold text-slate-800 mb-1">Tracing Worksheets</h4>
+              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Go to Practice Tools →</span>
+            </Link>
+            <Link href="/tools/tracing-worksheet-generator" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
+              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Tracing Worksheets</h4>
               <p className="text-xs text-slate-400 mb-3">Dashed line tracing templates for toddler preschool classes.</p>
-              <span className="text-xxs font-semibold text-slate-400 uppercase tracking-wider block">Coming Soon (Supporting Presets)</span>
-            </div>
-            <div className="border border-slate-150 rounded-2xl p-5 hover:border-slate-300 transition-all bg-slate-50/50">
-              <h4 className="text-sm font-bold text-slate-800 mb-1">Cursive Worksheets</h4>
+              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Tracing Tool →</span>
+            </Link>
+            <Link href="/tools/cursive-worksheet-generator" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
+              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Cursive Worksheets</h4>
               <p className="text-xs text-slate-400 mb-3">Slanted guidelines and connected script loops learning binders.</p>
-              <span className="text-xxs font-semibold text-slate-400 uppercase tracking-wider block">Coming Soon (Supporting Presets)</span>
-            </div>
-            <div className="border border-slate-150 rounded-2xl p-5 hover:border-slate-300 transition-all bg-slate-50/50">
-              <h4 className="text-sm font-bold text-slate-800 mb-1">Name Tracing</h4>
+              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Cursive Tool →</span>
+            </Link>
+            <Link href="/tools/name-tracing-generator" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
+              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Name Tracing</h4>
               <p className="text-xs text-slate-400 mb-3">Custom names tracing layouts for kindergarten name recognition.</p>
-              <span className="text-xxs font-semibold text-slate-400 uppercase tracking-wider block">Coming Soon (Supporting Presets)</span>
-            </div>
-            <div className="border border-slate-150 rounded-2xl p-5 hover:border-slate-300 transition-all bg-slate-50/50">
-              <h4 className="text-sm font-bold text-slate-800 mb-1">Adult Penmanship</h4>
+              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Name Tool →</span>
+            </Link>
+            <Link href="/blog/best-handwriting-practice-sheets-for-adults" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
+              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Adult Penmanship</h4>
               <p className="text-xs text-slate-400 mb-3">Refined cursive drills, quotes, and layouts optimized for adult users.</p>
-              <span className="text-xxs font-semibold text-slate-400 uppercase tracking-wider block">Coming Soon (Supporting Presets)</span>
-            </div>
-            <div className="border border-slate-150 rounded-2xl p-5 hover:border-slate-300 transition-all bg-slate-50/50">
-              <h4 className="text-sm font-bold text-slate-800 mb-1">Kids Fine Motor Skills</h4>
+              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Read Adult Guide →</span>
+            </Link>
+            <Link href="/letter-tracing" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
+              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Kids Fine Motor Skills</h4>
               <p className="text-xs text-slate-400 mb-3">Vertical lines, curved loops, and tracing patterns for preschool motor development.</p>
-              <span className="text-xxs font-semibold text-slate-400 uppercase tracking-wider block">Coming Soon (Supporting Presets)</span>
-            </div>
+              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Motor Tracing →</span>
+            </Link>
           </div>
         </div>
       </section>
