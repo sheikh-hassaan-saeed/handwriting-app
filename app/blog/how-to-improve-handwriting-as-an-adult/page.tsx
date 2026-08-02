@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteFooter from "@/components/SiteFooter";
 import FaqAccordion from "@/components/FaqAccordion";
 import { SITE_URL } from "@/lib/constants";
 
@@ -806,21 +807,7 @@ export default function BlogPost() {
         </article>
       </main>
 
-      <footer className="border-t border-gray-200 bg-white mt-8">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
-          <span>
-            © {new Date().getFullYear()} HandwritingMaker. Free to use, forever.
-          </span>
-          <nav className="flex gap-4" aria-label="Footer navigation">
-            <Link href="/" className="hover:text-indigo-600 hover:underline">
-              Free Handwriting Tool
-            </Link>
-            <Link href="/blog" className="hover:text-indigo-600 hover:underline">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

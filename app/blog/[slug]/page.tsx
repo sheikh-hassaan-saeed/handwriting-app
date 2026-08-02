@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteFooter from "@/components/SiteFooter";
 import { notFound } from "next/navigation";
 import { BLOG_ARTICLES, AUTHOR_INFO } from "@/lib/seo";
 import { SITE_URL } from "@/lib/constants";
@@ -315,16 +316,7 @@ export default function dynamicBlogPage({ params }: Props) {
         </div>
       </main>
 
-      <footer className="border-t border-gray-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <span>© {new Date().getFullYear()} HandwritingMaker. Free worksheets, printables, and generators.</span>
-          <nav className="flex gap-4">
-            <Link href="/" className="hover:text-indigo-600 hover:underline">Free Tool</Link>
-            <Link href="/blog" className="hover:text-indigo-600 hover:underline">Blog</Link>
-            <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
-          </nav>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

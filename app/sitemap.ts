@@ -58,10 +58,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // Use Map to deduplicate entries by URL
-  const uniqueEntriesMap = new Map<string, { url: string; lastModified: string; changeFrequency: "weekly" | "monthly"; priority: number }>();
+  // 5. Legal / policy pages
+  const legalPages = ["/privacy-policy", "/terms", "/about", "/contact"].map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: "2026-08-02",
+    changeFrequency: "yearly" as const,
+    priority: 0.3,
+  }));
 
-  [...configPages, ...toolsPages, ...staticBlogPages, ...dynamicBlogPages].forEach((entry) => {
+  // Use Map to deduplicate entries by URL
+  const uniqueEntriesMap = new Map<string, { url: string; lastModified: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }>();
+
+  [...configPages, ...toolsPages, ...staticBlogPages, ...dynamicBlogPages, ...legalPages].forEach((entry) => {
     uniqueEntriesMap.set(entry.url, entry);
   });
 

@@ -201,6 +201,8 @@ export default function PlatformLayout({
             <Link href="/blog" className="hover:text-indigo-600">Blog</Link>
             <Link href="/about" className="hover:text-indigo-600">About</Link>
             <Link href="/contact" className="hover:text-indigo-600">Contact</Link>
+            <Link href="/privacy-policy" className="hover:text-indigo-600">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-indigo-600">Terms</Link>
           </nav>
         </div>
       </footer>
