@@ -182,10 +182,10 @@ export default function AnimatedHandwritingGeneratorPage() {
             <h3 className="text-lg font-bold text-gray-800 mb-4">More Handwriting Tools</h3>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link
-                href="/tools/handwriting-worksheet-maker"
+                href="/tools/handwriting-worksheet-creator"
                 className="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all p-5"
               >
-                <span className="font-semibold text-gray-900">Handwriting Worksheet Maker</span>
+                <span className="font-semibold text-gray-900">Handwriting Worksheet Creator</span>
                 <p className="text-sm text-gray-500 mt-1">
                   Build custom worksheets from any name, word list, or sentence.
                 </p>

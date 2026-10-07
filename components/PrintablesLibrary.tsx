@@ -21,7 +21,7 @@ const PRINTABLES: PrintableItem[] = [
     desc: "Hourly schedule (6 AM - 9 PM), top priorities, checklist, water tracker, and notes. Perfect for daily organization.",
     category: "planners",
     type: "daily",
-    customizeUrl: "/printables/?preview=daily",
+    customizeUrl: "/printables/daily-planner",
   },
   {
     id: "weekly-planner",
@@ -29,7 +29,7 @@ const PRINTABLES: PrintableItem[] = [
     desc: "7-day column view blocks with ruled lines and checkbox goals section to map out your full week.",
     category: "planners",
     type: "weekly",
-    customizeUrl: "/printables/?preview=weekly",
+    customizeUrl: "/printables/weekly-planner",
   },
   {
     id: "monthly-planner",
@@ -37,7 +37,7 @@ const PRINTABLES: PrintableItem[] = [
     desc: "Clean 5x7 grid calendar with blank date cells, monthly focus areas, and extra note taking space.",
     category: "planners",
     type: "monthly",
-    customizeUrl: "/printables/?preview=monthly",
+    customizeUrl: "/printables/monthly-planner",
   },
   {
     id: "todo-list",
@@ -45,7 +45,7 @@ const PRINTABLES: PrintableItem[] = [
     desc: "Two-column checkboxes for completing tasks, tracking habits, and organizing daily errands.",
     category: "planners",
     type: "todo",
-    customizeUrl: "/printables/?preview=todo",
+    customizeUrl: "/printables/todo-list",
   },
   {
     id: "reading-log",
@@ -53,7 +53,7 @@ const PRINTABLES: PrintableItem[] = [
     desc: "Record book titles, authors, start/end dates, coloring rating stars, and completion checklists.",
     category: "students",
     type: "reading",
-    customizeUrl: "/printables/?preview=reading",
+    customizeUrl: "/printables/reading-log",
   },
   {
     id: "assignment-tracker",
@@ -61,7 +61,7 @@ const PRINTABLES: PrintableItem[] = [
     desc: "Keep track of classes, homework tasks, due dates, project priority levels, grades, and statuses.",
     category: "students",
     type: "assignment",
-    customizeUrl: "/printables/?preview=assignment",
+    customizeUrl: "/printables/assignment",
   },
   {
     id: "study-planner",
@@ -69,7 +69,23 @@ const PRINTABLES: PrintableItem[] = [
     desc: "Map concepts, track 25m Pomodoro study intervals, make revision checklists, and write summary formulas.",
     category: "students",
     type: "study",
-    customizeUrl: "/printables/?preview=study",
+    customizeUrl: "/printables/study-planner",
+  },
+  {
+    id: "habit-tracker",
+    title: "Daily Habit Tracker Page",
+    desc: "Track up to 12 daily habits or routines against a 31-day grid you color or check off as you complete them.",
+    category: "planners",
+    type: "habit",
+    customizeUrl: "/printables/habit-tracker",
+  },
+  {
+    id: "journal-page",
+    title: "Lined Journal Page Layout",
+    desc: "Clean ruled lines with spacious margins and a header date slot, ready for daily journaling or diary writing.",
+    category: "papers",
+    type: "journal",
+    customizeUrl: "/printables/journal-page",
   },
   {
     id: "cornell-notes-lined",
@@ -78,7 +94,7 @@ const PRINTABLES: PrintableItem[] = [
     category: "students",
     type: "notebook-preset",
     presetParam: "cornell",
-    customizeUrl: "/cornell-notes/",
+    customizeUrl: "/cornell-notes",
   },
   {
     id: "graph-paper-grid",
@@ -87,7 +103,7 @@ const PRINTABLES: PrintableItem[] = [
     category: "papers",
     type: "notebook-preset",
     presetParam: "graph",
-    customizeUrl: "/notebook-paper/college-ruled/",
+    customizeUrl: "/notebook-paper/graph-paper",
   },
   {
     id: "dot-grid-paper",
@@ -96,7 +112,7 @@ const PRINTABLES: PrintableItem[] = [
     category: "papers",
     type: "notebook-preset",
     presetParam: "dot-grid",
-    customizeUrl: "/notebook-paper/",
+    customizeUrl: "/notebook-paper/dot-grid",
   },
   {
     id: "kindergarten-writing",
@@ -105,7 +121,7 @@ const PRINTABLES: PrintableItem[] = [
     category: "teachers",
     type: "notebook-preset",
     presetParam: "kindergarten",
-    customizeUrl: "/notebook-paper/",
+    customizeUrl: "/notebook-paper/kindergarten",
   },
   {
     id: "primary-ruled",
@@ -114,7 +130,7 @@ const PRINTABLES: PrintableItem[] = [
     category: "teachers",
     type: "notebook-preset",
     presetParam: "primary",
-    customizeUrl: "/notebook-paper/",
+    customizeUrl: "/notebook-paper/primary-writing",
   },
 ];
 

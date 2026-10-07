@@ -16,8 +16,17 @@ export const metadata: Metadata = {
 
 export default function LetterTracingPage() {
   const article = `
-### Kindergarten spelling worksheets
-Trace lines to teach pencil control. Customize tracing text casing, guidelines, direction start points, and phonics illustrations.
+### What Letter Tracing Teaches
+Tracing dashed or dotted letterforms builds the fine motor control a child needs before they can write freehand. Following a fixed outline trains the small muscles in the hand and fingers to move in the correct stroke order, which is why tracing comes before copying and copying comes before independent writing in most early-literacy programs.
+<br/><br/>
+### Uppercase, Lowercase, and Full Alphabet Practice
+Some letters (like b, d, p, q) are frequently reversed by early writers because their shapes mirror each other, so it helps to practice uppercase and lowercase forms side by side rather than in isolation. Use the <a class='text-indigo-600 hover:underline font-semibold' href='/tools/alphabet-tracing-generator'>Alphabet Tracing Generator</a> to drill the full A-Z set, or the tool above to focus on a specific letter range a child is struggling with.
+<br/><br/>
+### From Letters to Names and Sentences
+Once individual letters are steady, tracing a child's own name is usually the most motivating next step, since it's the first word most children want to write. Try the <a class='text-indigo-600 hover:underline font-semibold' href='/letter-tracing/custom-name'>Custom Name Tracing tool</a> for any name, or browse the pre-built worksheets below for common names. For older students ready to trace full sentences instead of single words, the <a class='text-indigo-600 hover:underline font-semibold' href='/tools/sentence-tracing-generator'>Sentence Tracing Generator</a> extends the same dotted-guide approach to phrases and copywork.
+<br/><br/>
+### Pairing Tracing With Kindergarten Guidelines
+Tracing sheets work best on paper with generous line spacing, since young writers need more vertical room than older students. Our <a class='text-indigo-600 hover:underline font-semibold' href='/notebook-paper/kindergarten'>Kindergarten Writing Paper</a> preset matches that wider spacing, and once a child moves from tracing to independent handwriting, the <a class='text-indigo-600 hover:underline font-semibold' href='/handwriting-practice'>Handwriting Practice Generator</a> picks up where tracing leaves off.
   `;
 
   // Sort and group baby names alphabetically

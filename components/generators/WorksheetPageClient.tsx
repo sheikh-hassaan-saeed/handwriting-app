@@ -464,7 +464,7 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
             {config.h1}
           </h1>
           <p className="text-indigo-200/90 text-sm sm:text-base md:text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            Generate customized letter-tracing sheets, alphabet practice books, and handwriting guidelines in seconds. Customize font sizes, margins, orientations, print styles, and download clean PDFs.
+            {config.intro}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <button
@@ -997,6 +997,9 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
             </div>
           </div>
         </div>
+        <p className="max-w-3xl mx-auto text-center text-slate-500 text-sm leading-relaxed mt-12 px-4">
+          {config.conclusion}
+        </p>
       </section>
 
       {/* FAQs */}
@@ -1007,49 +1010,41 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
         </div>
       </section>
 
-      {/* Internal Links Directory Grid */}
-      <section className="bg-white border-t border-slate-200 py-14 sm:py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Worksheet Collections & Resources</h2>
-            <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
-              Explore our structured worksheets databases and customizable practice tools.
-            </p>
+      {/* Internal Links Directory Grid — driven by this page's own SEO_DATA related links */}
+      {(config.relatedTools.length > 0 || config.relatedArticles.length > 0) && (
+        <section className="bg-white border-t border-slate-200 py-14 sm:py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Related Tools & Guides</h2>
+              <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
+                Explore related worksheet generators and reading that pairs with this tool.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {config.relatedTools.map((tool) => (
+                <Link
+                  key={tool.href}
+                  href={tool.href}
+                  className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group"
+                >
+                  <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">{tool.name}</h4>
+                  <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block mt-3">Open Tool →</span>
+                </Link>
+              ))}
+              {config.relatedArticles.map((article) => (
+                <Link
+                  key={article.href}
+                  href={article.href}
+                  className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group"
+                >
+                  <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">{article.name}</h4>
+                  <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block mt-3">Read Guide →</span>
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <Link href="/handwriting-practice" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
-              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Handwriting Practice</h4>
-              <p className="text-xs text-slate-400 mb-3">Copy drills and penmanship practice sheets for everyday letters.</p>
-              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Go to Practice Tools →</span>
-            </Link>
-            <Link href="/tools/tracing-worksheet-generator" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
-              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Tracing Worksheets</h4>
-              <p className="text-xs text-slate-400 mb-3">Dashed line tracing templates for toddler preschool classes.</p>
-              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Tracing Tool →</span>
-            </Link>
-            <Link href="/tools/cursive-worksheet-generator" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
-              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Cursive Worksheets</h4>
-              <p className="text-xs text-slate-400 mb-3">Slanted guidelines and connected script loops learning binders.</p>
-              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Cursive Tool →</span>
-            </Link>
-            <Link href="/tools/name-tracing-generator" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
-              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Name Tracing</h4>
-              <p className="text-xs text-slate-400 mb-3">Custom names tracing layouts for kindergarten name recognition.</p>
-              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Name Tool →</span>
-            </Link>
-            <Link href="/blog/best-handwriting-practice-sheets-for-adults" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
-              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Adult Penmanship</h4>
-              <p className="text-xs text-slate-400 mb-3">Refined cursive drills, quotes, and layouts optimized for adult users.</p>
-              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Read Adult Guide →</span>
-            </Link>
-            <Link href="/letter-tracing" className="border border-slate-150 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-xs transition-all bg-slate-50/50 block group">
-              <h4 className="text-sm font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors">Kids Fine Motor Skills</h4>
-              <p className="text-xs text-slate-400 mb-3">Vertical lines, curved loops, and tracing patterns for preschool motor development.</p>
-              <span className="text-xxs font-bold text-indigo-600 uppercase tracking-wider block">Open Motor Tracing →</span>
-            </Link>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white">
@@ -1085,6 +1080,7 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
               <nav className="flex flex-col gap-2 text-xxs font-medium" aria-label="Calligraphy and creative footer navigation">
                 <Link href="/calligraphy" className="hover:text-indigo-600 transition-colors">Calligraphy practice Grids</Link>
                 <Link href="/signature-generator" className="hover:text-indigo-600 transition-colors">Typed Signature Maker</Link>
+                <Link href="/fonts" className="hover:text-indigo-600 transition-colors">Handwriting Fonts Guide</Link>
                 <Link href="/printables" className="hover:text-indigo-600 transition-colors">Printable templates</Link>
                 <Link href="/blog" className="hover:text-indigo-600 transition-colors">Guides Blog</Link>
               </nav>

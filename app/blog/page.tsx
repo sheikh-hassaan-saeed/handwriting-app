@@ -57,9 +57,9 @@ const staticPosts = [
   },
   {
     slug: "handwriting-without-tears-alternatives-free",
-    title: "Free Handwriting Without Tears Alternatives (Online Tools & Printables)",
+    title: "Free Handwriting Without Tears Worksheet Maker (Alternatives)",
     description:
-      "Explore free Handwriting Without Tears alternatives, including online worksheet makers and printables that supplement at-home handwriting practice.",
+      "Looking for a free Handwriting Without Tears worksheet maker? Generate custom practice sheets and printables for extra at-home practice in seconds.",
     readTime: "8 min read",
     category: "Handwriting for Kids",
   },

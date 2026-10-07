@@ -11,5 +11,5 @@ export const BABY_NAMES = [
   "Abigail", "Emily", "Ella", "Elizabeth", "Camila", "Luna", "Sofia", "Avery", "Mila", "Aria",
   "Scarlett", "Penelope", "Layla", "Chloe", "Victoria", "Madison", "Hazel", "Grace", "Zoey", "Riley",
   "Janis", "Nora", "Lily", "Eleanor", "Hannah", "Lillian", "Addison", "Aubrey", "Ellie", "Stella",
-  "Natalie", "Zoe", "Leah", "Hazel", "Violet", "Aurora", "Savannah", "Audrey", "Brooklyn", "Bella"
+  "Natalie", "Zoe", "Leah", "Ivy", "Violet", "Aurora", "Savannah", "Audrey", "Brooklyn", "Bella"
 ];

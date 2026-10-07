@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function HandwritingWorksheetMakerPage() {
-  redirect("/");
+  redirect("/tools/handwriting-worksheet-creator");
 }

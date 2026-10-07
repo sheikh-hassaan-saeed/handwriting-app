@@ -111,12 +111,15 @@ export default function PlatformLayout({
               <div
                 className="text-gray-600 leading-relaxed text-sm sm:text-base space-y-4"
                 dangerouslySetInnerHTML={{
+                  // Header/list patterns are matched line-by-line (^...$/gm) BEFORE newlines
+                  // are converted to <br/>, otherwise a greedy .* with no real linebreaks left
+                  // to stop at will swallow every subsequent header into a single match.
                   __html: contentMarkdown
+                    .replace(/^### (.*)$/gm, "<h3 class='text-lg font-bold text-gray-700 mt-4 mb-2'>$1</h3>")
+                    .replace(/^## (.*)$/gm, "<h2 class='text-xl font-bold text-gray-800 mt-6 mb-3'>$1</h2>")
+                    .replace(/^- \*\*(.*?)\*\*(.*)$/gm, "<li><strong>$1</strong>$2</li>")
+                    .replace(/^\|.*\|$/gm, "") // remove raw table markdown lines cleanly
                     .replace(/\n/g, "<br/>")
-                    .replace(/### (.*)/g, "<h3 class='text-lg font-bold text-gray-700 mt-4 mb-2'>$1</h3>")
-                    .replace(/## (.*)/g, "<h2 class='text-xl font-bold text-gray-800 mt-6 mb-3'>$1</h2>")
-                    .replace(/- \*\*(.*?)\*\*(.*)/g, "<li><strong>$1</strong>$2</li>")
-                    .replace(/(\|.*?\|)/g, "") // remove tables markdown parsing cleanly if raw
                 }}
               />
             ) : (
@@ -198,6 +201,8 @@ export default function PlatformLayout({
             <Link href="/notebook-paper" className="hover:text-indigo-600">Grids</Link>
             <Link href="/teacher-resources" className="hover:text-indigo-600">Teachers</Link>
             <Link href="/student-resources" className="hover:text-indigo-600">Students</Link>
+            <Link href="/study-resources" className="hover:text-indigo-600">Study Resources</Link>
+            <Link href="/fonts" className="hover:text-indigo-600">Fonts</Link>
             <Link href="/blog" className="hover:text-indigo-600">Blog</Link>
             <Link href="/about" className="hover:text-indigo-600">About</Link>
             <Link href="/contact" className="hover:text-indigo-600">Contact</Link>

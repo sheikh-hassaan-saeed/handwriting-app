@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { BLOG_ARTICLES, AUTHOR_INFO } from "@/lib/seo";
 import { SITE_URL } from "@/lib/constants";
 import Breadcrumbs from "@/components/platform/Breadcrumbs";
+import FaqAccordion from "@/components/FaqAccordion";
 
 interface Props {
   params: {
@@ -185,6 +186,20 @@ export default function dynamicBlogPage({ params }: Props) {
     mainEntityOfPage: pageUrl,
   };
 
+  // 4. JSON-LD FAQ Schema (only when the article defines FAQs)
+  const faqSchema = article.faqs && article.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: article.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  } : null;
+
   // Render article markdown
   const bodyHtml = parseMarkdownToHtml(article.contentMarkdown);
 
@@ -211,6 +226,12 @@ export default function dynamicBlogPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Nav Header */}
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
@@ -298,6 +319,30 @@ export default function dynamicBlogPage({ params }: Props) {
               className="text-gray-800 text-[17px] leading-relaxed space-y-4"
               dangerouslySetInnerHTML={{ __html: bodyHtml }}
             />
+
+            {/* FAQ Section */}
+            {article.faqs && article.faqs.length > 0 && (
+              <div className="mt-10 not-prose">
+                <h2 className="text-xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <FaqAccordion items={article.faqs.map((f) => ({ q: f.q, a: f.a }))} />
+              </div>
+            )}
+
+            {/* Related Articles */}
+            {article.relatedArticles && article.relatedArticles.length > 0 && (
+              <div className="mt-10 not-prose border-t border-gray-150 pt-6">
+                <h2 className="text-lg font-bold text-gray-800 mb-4">Related Reading</h2>
+                <ul className="space-y-2">
+                  {article.relatedArticles.map((related, idx) => (
+                    <li key={idx}>
+                      <Link href={related.href} className="text-indigo-600 font-semibold hover:underline text-sm">
+                        {related.name} →
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Author Section */}
             <div className="border-t border-gray-150 mt-12 pt-6">

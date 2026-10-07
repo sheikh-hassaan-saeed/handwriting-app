@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     siteName: "HandwritingMaker",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "HandwritingMaker  -  Free Text to Handwriting Converter",
+        url: "/favicon.webp",
+        width: 512,
+        height: 512,
+        alt: "HandwritingMaker",
       },
     ],
     locale: "en_US",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Text to Handwriting Converter  -  Free Online Tool | HandwritingMaker",
     description:
       "Convert any text to realistic handwriting instantly. 5 font styles, multiple paper backgrounds. Free & no signup.",
-    images: ["/og-image.png"],
+    images: ["/favicon.webp"],
   },
   robots: {
     index: true,
@@ -44,23 +44,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
-};
-
-const schemaMarkup = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  name: "HandwritingMaker",
-  url: SITE_URL,
-  description:
-    "Free online text to handwriting converter. Convert any text into realistic handwriting with multiple font styles, paper backgrounds, and download as PNG or PDF.",
-  applicationCategory: "UtilityApplication",
-  operatingSystem: "Any",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
-  browserRequirements: "Requires JavaScript",
 };
 
 export default function RootLayout({
@@ -79,10 +62,6 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="google-adsense-account" content="ca-pub-2722346158425205" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-        />
       </head>
       <body className="antialiased bg-gray-50 text-gray-900">
         {children}

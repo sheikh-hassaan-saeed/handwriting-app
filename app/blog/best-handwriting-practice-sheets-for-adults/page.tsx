@@ -76,6 +76,22 @@ const faqSchema = {
         text: "Yes. Cursive practice sheets that show connected letterforms help adults relearn the joins between letters, which is usually the hardest part of returning to cursive after years of print or typing.",
       },
     },
+    {
+      "@type": "Question",
+      name: "How long does it take to see results from adult handwriting practice?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most adults notice their letter consistency and spacing improve within 2 to 3 weeks of practicing 10 to 15 minutes a day. More natural, faster handwriting typically takes 6 to 8 weeks of consistent daily practice to feel permanent.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What's the best worksheet to improve penmanship as an adult?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A worksheet that lets you practice your own words rather than generic letter drills, with plain ruled guidelines and no childish decoration. Starting with a dotted trace version for a week before switching to a plain lined sheet improves penmanship fastest, since it rebuilds correct letter shapes before asking you to write from memory.",
+      },
+    },
   ],
 };
 
@@ -95,6 +111,14 @@ const faqItems = [
   {
     q: "Can practice sheets help with cursive handwriting specifically?",
     a: "Yes. Cursive practice sheets that show connected letterforms help adults relearn the joins between letters, which is usually the hardest part of returning to cursive after years of print or typing.",
+  },
+  {
+    q: "How long does it take to see results from adult handwriting practice?",
+    a: "Most adults notice their letter consistency and spacing improve within 2 to 3 weeks of practicing 10 to 15 minutes a day. More natural, faster handwriting typically takes 6 to 8 weeks of consistent daily practice to feel permanent.",
+  },
+  {
+    q: "What's the best worksheet to improve penmanship as an adult?",
+    a: "A worksheet that lets you practice your own words rather than generic letter drills, with plain ruled guidelines and no childish decoration. Starting with a dotted trace version for a week before switching to a plain lined sheet improves penmanship fastest, since it rebuilds correct letter shapes before asking you to write from memory.",
   },
 ];
 
@@ -129,7 +153,7 @@ export default function BlogPost() {
             Most printable worksheets online are built for six-year-olds, complete with cartoon animals and oversized letter boxes that feel awkward for an adult to use. If you are looking for handwriting practice sheets for adults, what actually helps is something simpler: clean ruled guidelines, no childish decoration, and the flexibility to practice your own words instead of someone else&apos;s generic letter list.
           </p>
           <p className="mt-4">
-            This guide covers what makes a practice sheet genuinely useful for an adult learner, the difference between cursive and print sheets, and how to use them in a way that actually produces visible change rather than just filling pages. None of the suggestions below require buying a workbook or finding a class. A printer, a pen, and a few minutes a day are enough to get started today.
+            This guide covers everything you need for effective adult handwriting practice: what makes a practice sheet genuinely useful, the difference between cursive and print sheets, and how to use them in a way that actually produces visible change rather than just filling pages. None of the suggestions below require buying a workbook or finding a class. A printer, a pen, and a few minutes a day are enough to get started today.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Why Adults Need Different Practice Sheets Than Kids</h2>
@@ -223,7 +247,7 @@ export default function BlogPost() {
 
           <p className="mt-8 text-gray-600">
             For more structured guidance, see our full guide on{" "}
-            <Link href="/blog/how-to-improve-your-handwriting-as-an-adult" className="text-indigo-600 font-semibold hover:underline">
+            <Link href="/blog/how-to-improve-handwriting-as-an-adult" className="text-indigo-600 font-semibold hover:underline">
               how to improve your handwriting as an adult
             </Link>
             , or preview different handwriting styles instantly with the{" "}

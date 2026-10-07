@@ -38,7 +38,7 @@ export default function Home() {
     "@type": "Organization",
     "name": "HandwritingMaker",
     "url": "https://www.handwritingmaker.com",
-    "logo": "https://www.handwritingmaker.com/logo.png",
+    "logo": "https://www.handwritingmaker.com/favicon.webp",
   };
 
   const appSchema = {

@@ -12,22 +12,18 @@ interface PageProps {
 const VALID_SLUGS = [
   "handwriting-worksheet-creator",
   "handwriting-practice-generator",
-  "custom-handwriting-worksheets",
   "printable-handwriting-worksheets",
   "tracing-worksheet-generator",
   "name-tracing-generator",
   "sentence-tracing-generator",
-  "cursive-worksheet-generator",
   "alphabet-tracing-generator",
+  "cursive-alphabet-practice-sheets",
   "blank-handwriting-paper",
   "handwriting-paper-generator",
   "handwriting-worksheets-grade-1",
   "handwriting-worksheets-grade-2",
   "handwriting-worksheets-kindergarten",
   "cursive-practice-sheets",
-  "alphabet-tracing-worksheets",
-  "sentence-tracing-worksheets",
-  "name-tracing-worksheets",
 ];
 
 export function generateStaticParams() {
@@ -88,17 +84,6 @@ function getPresetForSlug(slug: string) {
         lineSpacing: 80,
         fontSizeRatio: 45,
       };
-    case "custom-handwriting-worksheets":
-      return {
-        input: "Custom worksheets are fun.",
-        layout: "sentence" as const,
-        letterStyle: "solid" as const,
-        fontStyle: "print" as const,
-        guideline: "dotted" as const,
-        repetitions: 2 as const,
-        lineSpacing: 75,
-        fontSizeRatio: 45,
-      };
     case "printable-handwriting-worksheets":
       return {
         input: "Free printable writing sheet.",
@@ -143,15 +128,15 @@ function getPresetForSlug(slug: string) {
         lineSpacing: 80,
         fontSizeRatio: 45,
       };
-    case "cursive-worksheet-generator":
+    case "cursive-alphabet-practice-sheets":
       return {
-        input: "Dancing script cursive joins.",
-        layout: "sentence" as const,
+        input: "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz",
+        layout: "single" as const,
         letterStyle: "dottedTrace" as const,
         fontStyle: "cursive" as const,
         guideline: "dotted" as const,
         repetitions: 2 as const,
-        lineSpacing: 80,
+        lineSpacing: 75,
         fontSizeRatio: 45,
       };
     case "alphabet-tracing-generator":
@@ -229,39 +214,6 @@ function getPresetForSlug(slug: string) {
         guideline: "dotted" as const,
         repetitions: 2 as const,
         lineSpacing: 80,
-        fontSizeRatio: 45,
-      };
-    case "alphabet-tracing-worksheets":
-      return {
-        input: "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz",
-        layout: "single" as const,
-        letterStyle: "dottedTrace" as const,
-        fontStyle: "print" as const,
-        guideline: "dotted" as const,
-        repetitions: 1 as const,
-        lineSpacing: 70,
-        fontSizeRatio: 45,
-      };
-    case "sentence-tracing-worksheets":
-      return {
-        input: "Trace these sample sentences carefully.",
-        layout: "sentence" as const,
-        letterStyle: "dottedTrace" as const,
-        fontStyle: "print" as const,
-        guideline: "dotted" as const,
-        repetitions: 2 as const,
-        lineSpacing: 75,
-        fontSizeRatio: 45,
-      };
-    case "name-tracing-worksheets":
-      return {
-        input: "Alexander",
-        layout: "single" as const,
-        letterStyle: "dottedTrace" as const,
-        fontStyle: "print" as const,
-        guideline: "dotted" as const,
-        repetitions: 3 as const,
-        lineSpacing: 75,
         fontSizeRatio: 45,
       };
     default:

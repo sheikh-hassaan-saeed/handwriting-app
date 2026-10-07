@@ -29,11 +29,17 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
               ▼
             </span>
           </button>
-          {open === i && (
-            <div className="px-6 pb-5 text-gray-600 text-base leading-relaxed">
-              {item.a}
+          <div
+            className={`grid transition-all duration-200 ease-in-out ${
+              open === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+            }`}
+          >
+            <div className="overflow-hidden">
+              <div className="px-6 pb-5 text-gray-600 text-base leading-relaxed">
+                {item.a}
+              </div>
             </div>
-          )}
+          </div>
         </div>
       ))}
     </div>

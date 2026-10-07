@@ -36,9 +36,9 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
   // HOMEPAGE
   "/": {
     title: "Free Handwriting Worksheet Generator | HandwritingMaker",
-    description: "Create custom printable handwriting worksheets instantly. Adjust line spacing, guidelines, print or cursive tracing styles, and download as A4 or Letter PDF for free.",
+    description: "Create free printable handwriting worksheets instantly. Adjust spacing, choose print or cursive styles, and download a ready-to-print A4/Letter PDF.",
     h1: "Free Handwriting Worksheet Generator",
-    intro: "Create custom handwriting practice sheets and tracing worksheets for kids, toddlers, or adults. Type a child's name, list of spelling words, or sentences. Customize guidelines, choose print or cursive font styles, set repetitions, and generate a printable PDF instantly.",
+    intro: "Create handwriting worksheets, practice sheets, and tracing templates for kids, toddlers, or adults in seconds. Type a child's name, list of spelling words, or sentences. Customize guidelines, choose print or cursive font styles, set repetitions, and generate a printable PDF instantly.",
     conclusion: "Generate, preview, and print letter-perfect handwriting worksheets. The tool operates 100% in your browser for absolute privacy and classroom utility.",
     lastUpdated: "2026-07-05",
     author: AUTHOR_INFO,
@@ -47,6 +47,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "Is this handwriting practice creator completely free to use?", a: "Yes. HandwritingMaker is 100% free for teachers, parents, and students. There are no subscriptions, no accounts, and no watermark stamps on downloaded PDFs." },
       { q: "What paper formats and sizes are supported?", a: "The generator supports standard International A4 and North American Letter sizes. It compiles vector PDF output at 300 DPI so guidelines and letter traces print sharply on standard printers." },
       { q: "Can I generate cursive handwriting worksheets?", a: "Yes. The creator has an option to switch font styles between primary print block lettering and standard connected cursive script, covering all penmanship learning levels." },
+      { q: "How do I create handwriting worksheets online?", a: "Type the names, words, or sentences you want to practice into the text box, choose a layout (single word, two words, sentence repeat, or free writing), pick print or cursive style and guideline type, then click 'Download PDF'. The finished worksheet is ready to print immediately, with no account or software install needed." },
     ],
     relatedTools: [
       { name: "Notebook Paper Creator", href: "/notebook-paper" },
@@ -55,7 +56,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedArticles: [
       { name: "Wide Ruled vs College Ruled Spacing", href: "/blog/wide-ruled-vs-college-ruled" },
-      { name: "How to Improve Handwriting as an Adult", href: "/blog/how-to-improve-handwriting" },
+      { name: "How to Improve Handwriting as an Adult", href: "/blog/how-to-improve-handwriting-as-an-adult" },
     ],
     breadcrumbs: [],
   },
@@ -148,11 +149,9 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedTools: [
       { name: "Dot Grid Paper", href: "/notebook-paper/dot-grid" },
-      { name: "Engineering Paper Grid", href: "/notebook-paper/engineering" },
+      { name: "Cornell Notes Generator", href: "/cornell-notes" },
     ],
-    relatedArticles: [
-      { name: "A4 vs Letter Paper Dimensions", href: "/blog/a4-vs-letter-paper" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Notebook Paper", href: "/notebook-paper" },
       { name: "Graph Paper", href: "/notebook-paper/graph-paper" },
@@ -173,9 +172,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Graph Grid Paper", href: "/notebook-paper/graph-paper" },
       { name: "To-Do List Planner", href: "/printables/todo-list" },
     ],
-    relatedArticles: [
-      { name: "Best Paper for Handwriting Practice", href: "/blog/best-handwriting-paper" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Notebook Paper", href: "/notebook-paper" },
       { name: "Dot Grid", href: "/notebook-paper/dot-grid" },
@@ -196,9 +193,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Kindergarten Writing Paper", href: "/notebook-paper/kindergarten" },
       { name: "Letter Tracing Worksheets", href: "/letter-tracing" },
     ],
-    relatedArticles: [
-      { name: "How Teachers Use Printable Notebook Paper", href: "/blog/teachers-notebook-paper" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Notebook Paper", href: "/notebook-paper" },
       { name: "Primary Paper", href: "/notebook-paper/primary-writing" },
@@ -220,7 +215,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Custom Name Letter Tracing", href: "/letter-tracing/custom-name" },
     ],
     relatedArticles: [
-      { name: "Letter Tracing for Preschool Guide", href: "/blog/letter-tracing-preschool" },
+      { name: "How Letter Tracing Helps Children", href: "/blog/how-letter-tracing-helps" },
     ],
     breadcrumbs: [
       { name: "Notebook Paper", href: "/notebook-paper" },
@@ -248,7 +243,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedArticles: [
       { name: "What Are Cornell Notes?", href: "/blog/what-are-cornell-notes" },
-      { name: "Cornell Notes Method Explained", href: "/blog/cornell-notes-method" },
     ],
     breadcrumbs: [{ name: "Cornell Notes", href: "/cornell-notes" }],
     softwareSchema: {
@@ -273,7 +267,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Weekly Planner", href: "/printables/weekly-planner" },
     ],
     relatedArticles: [
-      { name: "Cornell Notes vs Outline Method", href: "/blog/cornell-notes-vs-outline" },
+      { name: "What Are Cornell Notes?", href: "/blog/what-are-cornell-notes" },
     ],
     breadcrumbs: [
       { name: "Cornell Notes", href: "/cornell-notes" },
@@ -295,13 +289,13 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "Can I generate a tracing sheet with my child's custom name?", a: "Yes, you can enter any name or word list in the input box. The tool repeats the text across guidelines, allowing custom name handwriting practice." },
     ],
     relatedTools: [
+      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" },
       { name: "Custom Name Tracing", href: "/letter-tracing/custom-name" },
       { name: "Handwriting Practice Generator", href: "/handwriting-practice" },
       { name: "Kindergarten Ruled Paper", href: "/notebook-paper/kindergarten" },
     ],
     relatedArticles: [
       { name: "How Letter Tracing Helps Children", href: "/blog/how-letter-tracing-helps" },
-      { name: "Alphabet Tracing Guide for Parents", href: "/blog/alphabet-tracing-guide" },
     ],
     breadcrumbs: [{ name: "Letter Tracing", href: "/letter-tracing" }],
     softwareSchema: {
@@ -326,7 +320,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Primary Guidelines Paper", href: "/notebook-paper/primary-writing" },
     ],
     relatedArticles: [
-      { name: "Name Tracing Worksheets Guide", href: "/blog/name-tracing-worksheets" },
+      { name: "How Letter Tracing Helps Children", href: "/blog/how-letter-tracing-helps" },
     ],
     breadcrumbs: [
       { name: "Letter Tracing", href: "/letter-tracing" },
@@ -352,8 +346,8 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Lined Notebook Paper", href: "/notebook-paper" },
     ],
     relatedArticles: [
-      { name: "How to Improve Handwriting Guide", href: "/blog/how-to-improve-handwriting" },
-      { name: "Cursive vs Print: Which is Better?", href: "/blog/cursive-vs-print" },
+      { name: "How to Improve Handwriting Guide", href: "/blog/how-to-improve-handwriting-as-an-adult" },
+      { name: "Cursive Handwriting Practice Sheets", href: "/blog/cursive-handwriting-practice-sheets" },
     ],
     breadcrumbs: [{ name: "Handwriting Practice", href: "/handwriting-practice" }],
     softwareSchema: {
@@ -382,7 +376,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedArticles: [
       { name: "Modern Calligraphy for Beginners", href: "/blog/modern-calligraphy" },
-      { name: "Spencerian Script Style Guide", href: "/blog/spencerian-script" },
     ],
     breadcrumbs: [{ name: "Calligraphy", href: "/calligraphy" }],
     softwareSchema: {
@@ -411,7 +404,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedArticles: [
       { name: "Professional Signature Ideas & Examples", href: "/blog/professional-signature-ideas" },
-      { name: "How to Create an Elegant Signature", href: "/blog/how-to-create-signature" },
     ],
     breadcrumbs: [{ name: "Signature Generator", href: "/signature-generator" }],
     softwareSchema: {
@@ -440,9 +432,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Study Planner & Pomodoro", href: "/printables/study-planner" },
       { name: "To-Do Checklist", href: "/printables/todo-list" },
     ],
-    relatedArticles: [
-      { name: "Study Skills: Active Recall Guide", href: "/blog/active-recall-guide" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [{ name: "Printables", href: "/printables" }],
   },
 
@@ -462,9 +452,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Weekly Planner", href: "/printables/weekly-planner" },
       { name: "Monthly Calendar", href: "/printables/monthly-planner" },
     ],
-    relatedArticles: [
-      { name: "Best Study Planners for Students", href: "/blog/best-study-planners" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Printables", href: "/printables" },
       { name: "Daily Planner", href: "/printables/daily-planner" },
@@ -485,9 +473,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Daily Planner", href: "/printables/daily-planner" },
       { name: "Assignment Tracker", href: "/printables/assignment" },
     ],
-    relatedArticles: [
-      { name: "How to Build a Revision Checklist", href: "/blog/revision-checklist" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Printables", href: "/printables" },
       { name: "Weekly Planner", href: "/printables/weekly-planner" },
@@ -550,9 +536,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Letter Tracing Generator", href: "/letter-tracing" },
       { name: "Primary Writing Paper", href: "/notebook-paper/primary-writing" },
     ],
-    relatedArticles: [
-      { name: "Alphabet Tracing Phonics sound guide", href: "/blog/alphabet-tracing-phonics" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Printables", href: "/printables" },
       { name: "Reading Log", href: "/printables/reading-log" },
@@ -594,9 +578,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Cornell Notes Generator", href: "/cornell-notes" },
       { name: "Assignment Tracker", href: "/printables/assignment" },
     ],
-    relatedArticles: [
-      { name: "Pomodoro Study Method Guide", href: "/blog/pomodoro-study-method" },
-    ],
+    relatedArticles: [],
     breadcrumbs: [
       { name: "Printables", href: "/printables" },
       { name: "Study Planner", href: "/printables/study-planner" },
@@ -785,29 +767,17 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "Are these worksheets print-ready?", a: "Yes. They compile to vector PDF documents in A4 or Letter sizes, ready to print on any standard home printer." }
     ],
     relatedTools: [
-      { name: "Cursive Worksheet Generator", href: "/tools/cursive-worksheet-generator" },
+      { name: "Cursive Practice Sheets", href: "/tools/cursive-practice-sheets" },
       { name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }
     ],
-    relatedArticles: [],
+    relatedArticles: [
+      { name: "Best Handwriting Practice Sheets for Adults", href: "/blog/best-handwriting-practice-sheets-for-adults" }
+    ],
     breadcrumbs: [{ name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }]
   },
-  "/tools/custom-handwriting-worksheets": {
-    title: "Make Custom Handwriting Worksheets Online | HandwritingMaker",
-    description: "Design custom handwriting practice worksheets for children or adults. Enter names, full sentences, or letters, choose formats, and print.",
-    h1: "Custom Handwriting Worksheets Maker",
-    intro: "Create bespoke handwriting training materials online. Customize guideline widths, repetitions, print or cursive styles, and letter rendering (solid or dotted trace) before downloading.",
-    conclusion: "Get your custom printouts in seconds and keep handwriting practice fun and tailored.",
-    lastUpdated: "2026-07-05",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "Can I customize the line height?", a: "Yes. Use the Line Spacing slider in the style tab to adjust guidelines heights from 40px to 140px." }
-    ],
-    relatedTools: [
-      { name: "Handwriting Worksheet Creator", href: "/tools/handwriting-worksheet-creator" }
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Custom Handwriting Worksheets", href: "/tools/custom-handwriting-worksheets" }]
-  },
+  // NOTE: "/tools/custom-handwriting-worksheets" was merged into "/tools/printable-handwriting-worksheets"
+  // on 2026-10-07 (301 redirect in next.config.mjs) — identical generator preset, was a true orphan
+  // page (zero inbound internal links), and had no distinguishing search data over its sibling.
   "/tools/printable-handwriting-worksheets": {
     title: "Free Printable Handwriting Worksheets | HandwritingMaker",
     description: "Download free printable handwriting sheets for kids and adults. Print customized name writing guides, cursive templates, and line paper.",
@@ -852,12 +822,16 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     lastUpdated: "2026-07-05",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "How do I make a name tracing worksheet?", a: "Type the child's name in the text box, select 'Single Word' layout, choose 'Trace Dots' style, set repetitions, and export as PDF." }
+      { q: "How do I make a name tracing worksheet?", a: "Type the child's name in the text box, select 'Single Word' layout, choose 'Trace Dots' style, set repetitions, and export as PDF." },
+      { q: "Can I build custom tracing worksheets beyond just names?", a: "Yes. This generator isn't limited to names, type any word, short phrase, or spelling list and it builds the same dotted-guide tracing layout around your custom text, then exports it as a print-ready PDF." }
     ],
     relatedTools: [
-      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" }
+      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" },
+      { name: "Letter Tracing Hub", href: "/letter-tracing" }
     ],
-    relatedArticles: [],
+    relatedArticles: [
+      { name: "How Letter Tracing Worksheets Support Development", href: "/blog/how-letter-tracing-helps" }
+    ],
     breadcrumbs: [{ name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }]
   },
   "/tools/sentence-tracing-generator": {
@@ -877,23 +851,11 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     relatedArticles: [],
     breadcrumbs: [{ name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }]
   },
-  "/tools/cursive-worksheet-generator": {
-    title: "Free Cursive Handwriting Worksheet Generator | HandwritingMaker",
-    description: "Generate cursive writing practice worksheets. Customize slant guidelines, connected script styles, and download A4 or Letter PDFs.",
-    h1: "Free Cursive Handwriting Worksheet Generator",
-    intro: "Learn cursive penmanship with our interactive generator. Convert standard text into elegant connecting cursive lines. Toggle dotted trace lines for tracing or solid script for copying.",
-    conclusion: "Practice standard cursive letter loops, slants, and connections using custom sentences.",
-    lastUpdated: "2026-07-05",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "What cursive font is used?", a: "The generator utilizes the 'Dancing Script' cursive model to render realistic connected loops and slants." }
-    ],
-    relatedTools: [
-      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Cursive Worksheet Generator", href: "/tools/cursive-worksheet-generator" }]
-  },
+  // NOTE: "/tools/cursive-worksheet-generator" was merged into "/tools/cursive-practice-sheets"
+  // on 2026-10-07 (301 redirect in next.config.mjs) — the two pages used an identical generator
+  // preset and were splitting ranking signal for the same "cursive worksheets" search intent.
+  // "/tools/cursive-practice-sheets" was kept as canonical since its slug exact-matches the
+  // single highest-volume gap keyword ("cursive practice sheets", ~12,100/mo per SEMrush).
   "/tools/alphabet-tracing-generator": {
     title: "Alphabet Tracing Worksheet Generator | HandwritingMaker",
     description: "Create printable A-Z alphabet tracing worksheets. Customize upper and lowercase letters, guideline styles, and download PDFs.",
@@ -958,7 +920,8 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "What is the standard line spacing for 1st grade worksheets?", a: "The standard spacing is approximately 5/8 inch (16mm), which corresponds to a 70px line height slider setting on this tool." }
     ],
     relatedTools: [
-      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" },
+      { name: "Kindergarten Worksheets", href: "/tools/handwriting-worksheets-kindergarten" },
+      { name: "Grade 2 Worksheets", href: "/tools/handwriting-worksheets-grade-2" },
       { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }
     ],
     relatedArticles: [],
@@ -976,6 +939,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "What layout is recommended for 2nd graders?", a: "The 'Sentence Repeat' or 'Free Writing' layout with a line spacing of 60px is optimal for 2nd grade penmanship practice." }
     ],
     relatedTools: [
+      { name: "Grade 1 Worksheets", href: "/tools/handwriting-worksheets-grade-1" },
       { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }
     ],
     relatedArticles: [],
@@ -993,79 +957,64 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "Do these worksheets support starting dots?", a: "Yes. Dotted tracing modes display helpful start coordinates to guide child pencil movements." }
     ],
     relatedTools: [
-      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" }
+      { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" },
+      { name: "Grade 1 Worksheets", href: "/tools/handwriting-worksheets-grade-1" }
     ],
     relatedArticles: [],
     breadcrumbs: [{ name: "Kindergarten Worksheets", href: "/tools/handwriting-worksheets-kindergarten" }]
   },
   "/tools/cursive-practice-sheets": {
-    title: "Printable Cursive Practice Sheets | HandwritingMaker",
-    description: "Generate cursive practice worksheets. Customize loop scripts, connecting letters, and export A4 or Letter PDFs.",
-    h1: "Printable Cursive Practice Sheets",
-    intro: "Master connecting script loops with customizable cursive practice sheets. Convert typed sentences into elegant script. Toggle dotted tracing lines or solid copy guides.",
-    conclusion: "Develop fluid cursive lettering habits through daily copy and tracing exercises.",
-    lastUpdated: "2026-07-08",
+    title: "Free Cursive Practice Sheets Generator | HandwritingMaker",
+    description: "Generate free printable cursive practice sheets and worksheets instantly. Customize slant guidelines, connected script styles, and download a print-ready PDF.",
+    h1: "Free Cursive Practice Sheets Generator",
+    intro: "Create custom cursive practice sheets and cursive worksheets in seconds. Type any word, sentence, or the full alphabet, and the generator renders it in connected cursive script with adjustable slant guidelines. Toggle dotted tracing lines to build a beginner cursive handwriting worksheet, or switch to solid script for confident copy practice, then download your finished template as a print-ready PDF.",
+    conclusion: "Build a complete set of cursive writing practice sheets, from single-letter drills to full sentences, and print them instantly at home or in the classroom.",
+    lastUpdated: "2026-10-07",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "Does the tool connect cursive letters dynamically?", a: "Yes, the cursive preset links letter joints to model correct cursive loop styles." }
+      { q: "Can I download my cursive practice sheets as a PDF?", a: "Yes. Every cursive worksheet you generate exports as a print-ready PDF template in A4 or Letter size, ready to download and print immediately." },
+      { q: "What's the difference between this and a printable cursive template?", a: "A static cursive template uses one fixed set of words. This generator lets you type your own text, names, spelling lists, or sentences, and builds a custom cursive worksheet around it, so you get a personalized template instead of generic practice text." },
+      { q: "Does the tool connect cursive letters dynamically?", a: "Yes, the cursive preset links letter joints to model correct cursive loop styles." },
+      { q: "Is this cursive generator suitable for adults relearning cursive?", a: "Yes. Adjust the line spacing and font size to a comfortable scale, switch to solid script once you're ready to move past tracing, and use longer sentences or quotes to practice cursive handwriting as an adult." }
     ],
     relatedTools: [
-      { name: "Cursive Worksheet Generator", href: "/tools/cursive-worksheet-generator" }
+      { name: "Cursive Alphabet Practice Sheets", href: "/tools/cursive-alphabet-practice-sheets" },
+      { name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }
     ],
-    relatedArticles: [],
+    relatedArticles: [
+      { name: "Free Cursive Handwriting Practice Sheets", href: "/blog/cursive-handwriting-practice-sheets" },
+      { name: "How to Make Cursive Handwriting Practice Sheets", href: "/blog/how-to-make-cursive-handwriting-practice-sheets" }
+    ],
     breadcrumbs: [{ name: "Cursive Practice Sheets", href: "/tools/cursive-practice-sheets" }]
   },
-  "/tools/alphabet-tracing-worksheets": {
-    title: "Alphabet Tracing Worksheets Generator | HandwritingMaker",
-    description: "Create custom alphabet tracing worksheets. Dotted lines for letters A to Z, print block or cursive scripts.",
-    h1: "Alphabet Tracing Worksheets Generator",
-    intro: "Design bespoke alphabet tracing sheets. Enter specific letter grids, choose guideline colors, adjust print scale ratios, and print for free.",
-    conclusion: "Build foundational writing skills with daily letter-tracing drills.",
-    lastUpdated: "2026-07-08",
+  "/tools/cursive-alphabet-practice-sheets": {
+    title: "Free Cursive Alphabet Practice Sheets | HandwritingMaker",
+    description: "Generate free printable cursive alphabet practice sheets. Trace or copy all 26 uppercase and lowercase cursive letters, then download a print-ready PDF.",
+    h1: "Free Cursive Alphabet Practice Sheets",
+    intro: "Learn every letter of the cursive alphabet with a dedicated practice sheet for A to Z. This generator renders the full uppercase and lowercase cursive alphabet with dotted tracing guides, so you can build each letterform correctly before moving on to words and sentences. Adjust line spacing, slant, and letter size to match any skill level.",
+    conclusion: "Master cursive letter formation one letter at a time, then move on to full cursive practice sheets once the alphabet feels natural.",
+    lastUpdated: "2026-10-07",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "Can I generate uppercase and lowercase worksheets separately?", a: "Yes. Customize the input text to show only uppercase (A, B, C) or lowercase (a, b, c) guides." }
+      { q: "Does this cover both uppercase and lowercase cursive letters?", a: "Yes. The default preset includes all 26 letters in both uppercase and lowercase cursive form (Aa through Zz), so you can practice capital and lowercase letterforms side by side." },
+      { q: "Can I practice just a few specific letters instead of the full alphabet?", a: "Yes. Edit the text box to include only the letters you want to drill, for example letters that are commonly reversed or hard to connect, and the generator rebuilds the sheet instantly." },
+      { q: "What comes after the cursive alphabet?", a: "Once individual letters are consistent, move to the Cursive Practice Sheets generator to practice full words and sentences using the same connected script style." },
+      { q: "What are the basic cursive strokes beginners should practice first?", a: "Before full letters, practice the underlying strokes: a consistent upward entry stroke, a downward exit stroke, and the small connecting loop used between most lowercase letters. Most cursive letters are built from combinations of these three strokes, so a few minutes of isolated stroke drills before starting the alphabet makes individual letters noticeably more consistent." }
     ],
     relatedTools: [
+      { name: "Cursive Practice Sheets", href: "/tools/cursive-practice-sheets" },
       { name: "Alphabet Tracing Generator", href: "/tools/alphabet-tracing-generator" }
     ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Alphabet Worksheets", href: "/tools/alphabet-tracing-worksheets" }]
+    relatedArticles: [
+      { name: "Free Cursive Handwriting Practice Sheets", href: "/blog/cursive-handwriting-practice-sheets" }
+    ],
+    breadcrumbs: [{ name: "Cursive Alphabet Practice Sheets", href: "/tools/cursive-alphabet-practice-sheets" }]
   },
-  "/tools/sentence-tracing-worksheets": {
-    title: "Sentence Tracing Worksheets Generator | HandwritingMaker",
-    description: "Create custom sentence tracing worksheets. Enter quotes, grammar exercises, or spelling lists, and print.",
-    h1: "Sentence Tracing Worksheets Generator",
-    intro: "Generate custom sentence copy sheets. Enter full sentences or paragraphs, customize line heights, toggle dotted guides, and download.",
-    conclusion: "Help children practice word spacing, height metrics, and vocabulary through sentence tracing.",
-    lastUpdated: "2026-07-08",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "Can I enter multiple paragraphs?", a: "Yes, text is paginated across sheets automatically." }
-    ],
-    relatedTools: [
-      { name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Sentence Worksheets", href: "/tools/sentence-tracing-worksheets" }]
-  },
-  "/tools/name-tracing-worksheets": {
-    title: "Printable Name Tracing Worksheets | HandwritingMaker",
-    description: "Download custom name tracing worksheets. Enter child first and last names and generate print-ready sheets.",
-    h1: "Printable Name Tracing Worksheets",
-    intro: "Create personalized name tracing worksheets. Type student names, select dotted letter coordinates, set repetitions, and print for free.",
-    conclusion: "Foster name writing skills with tailored name practice sheets.",
-    lastUpdated: "2026-07-08",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "Can I trace multiple names?", a: "Yes, enter multiple names to generate separate practice rows." }
-    ],
-    relatedTools: [
-      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" }
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Name Worksheets", href: "/tools/name-tracing-worksheets" }]
-  },
+  // NOTE: "/tools/alphabet-tracing-worksheets", "/tools/sentence-tracing-worksheets", and
+  // "/tools/name-tracing-worksheets" were merged into their respective "-generator" siblings
+  // on 2026-10-07 (301 redirects in next.config.mjs). Each was an identical-preset duplicate
+  // and a true orphan page (zero inbound internal links, SEMrush showed the sibling pages
+  // competing against each other for the same queries like "tracer generator").
 };
 
 // BLOG CLUSTERS DATABASE
@@ -1078,6 +1027,8 @@ export interface BlogArticle {
   contentMarkdown: string;
   lastUpdated: string;
   relatedTool: { name: string; href: string };
+  faqs?: { q: string; a: string }[];
+  relatedArticles?: { name: string; href: string }[];
 }
 
 export const BLOG_ARTICLES: Record<string, BlogArticle> = {
@@ -1104,8 +1055,27 @@ Understanding lined paper standards helps you choose the right notebook. Wide ru
 | Primary User | Grade school kids (Ages 5-10) | Older students & adults |
 | Lines per A4 | ~28 lines | ~34 lines |
 
-You can customize line spacings or margins directly on our [Notebook Paper Generator](/notebook-paper) and print free sheets.
+### Which Should You Choose?
+Pick based on handwriting size, not grade level alone. If letters still sit unevenly on the baseline, or a student is still learning stroke height, wide ruled gives enough vertical room to keep individual letters legible. Once handwriting settles into a consistent, compact size, typically around ages 10-12, college ruled lets a page hold more notes without cramming, which matters most for lecture notes, dense study guides, or long-form journaling.
+
+For adults relearning or refining penmanship, wide ruled is usually the better starting point even though it isn't marketed for adults. The extra spacing makes it easier to spot inconsistent letter height and slant while rebuilding muscle memory, and you can move to college ruled later once the habit is stable.
+
+### How to Tell Them Apart at a Glance
+Both use the same 1.25 inch left margin line, so spacing is the only reliable way to identify a sheet. Hold a ruler against five lines: wide ruled measures roughly 1.75 in (11/32 in x 5), college ruled measures roughly 1.4 in (9/32 in x 5). If you're buying pre-printed notebooks, wide ruled is also commonly labeled "legal ruled" or "8.5mm ruled" on packaging outside the US.
+
+### Building Your Own Custom Spacing
+Standard wide and college ruling are just two fixed presets. If a student needs something in between (for example, a 9-10mm spacing that isn't sold in stores), you don't need to special-order paper. Set an exact line height on our [Notebook Paper Generator](/notebook-paper) and print it directly, or start from the ready-made [wide ruled](/notebook-paper/wide-ruled) and [college ruled](/notebook-paper/college-ruled) presets and adjust margins, colors, or headers from there.
     `,
+    faqs: [
+      { q: "Is wide ruled or college ruled better for adults?", a: "College ruled is standard for most adult note-taking since it fits more lines per page. However, if you're working on improving your handwriting, wide ruled gives more room to catch and correct inconsistent letter height while you rebuild muscle memory." },
+      { q: "What is the actual spacing difference in millimeters?", a: "Wide ruled lines are spaced 8.7mm apart. College ruled lines are spaced 7.1mm apart, about 1.6mm narrower per line." },
+      { q: "Does wide ruled or college ruled fit more text on a page?", a: "College ruled fits more lines per page (around 34 on an A4 sheet versus around 28 for wide ruled), because its lines sit closer together." },
+      { q: "Can I print custom line spacing that isn't wide or college ruled?", a: "Yes. Our Notebook Paper Generator lets you set an exact custom line height in addition to the standard wide and college ruled presets, so you can match any spacing you need." },
+    ],
+    relatedArticles: [
+      { name: "How to Print Notebook Paper at Home (Actual Size)", href: "/blog/how-to-print-notebook-paper" },
+      { name: "How to Improve Handwriting as an Adult", href: "/blog/how-to-improve-handwriting-as-an-adult" },
+    ],
   },
   "how-to-print-notebook-paper": {
     slug: "how-to-print-notebook-paper",
@@ -1164,26 +1134,9 @@ Tracing dashed letters does more than teach spelling - it establishes the gross 
 Customize name worksheets for your class or toddler using our [Letter Tracing Generator](/letter-tracing).
     `,
   },
-  "how-to-improve-handwriting": {
-    slug: "how-to-improve-handwriting",
-    title: "How to Improve Your Handwriting as an Adult (Simple Drills)",
-    description: "Learn simple handwriting improvement exercises for adults. Fix pencil grip, control spacing, and write neatly.",
-    h1: "How to Improve Your Handwriting as an Adult",
-    category: "handwriting",
-    lastUpdated: "2026-06-26",
-    relatedTool: { name: "Handwriting Practice Generator", href: "/handwriting-practice" },
-    contentMarkdown: `
-### Rebuilding Penmanship Coordination
-Many adults find their penmanship has degraded after years of typing. Rebuilding neat handwriting requires targeted exercises:
-
-1. **Analyze letters:** Write a paragraph and see which letter endings look messy.
-2. **Loosen grip:** Avoid clutching the pen tightly; hold it loosely 1.5 inches from the tip.
-3. **Practice basic drills:** Print warm-up sheets with circles, slants, loops, and ovals.
-4. **Control letter proportions:** Keep lowercase letters sitting exactly at waistlines.
-
-Download custom penmanship pages from our [Handwriting Practice Generator](/handwriting-practice).
-    `,
-  },
+  // NOTE: "how-to-improve-handwriting" was removed (2026-08-17) — it was a ~120-word
+  // duplicate of the much stronger /blog/how-to-improve-handwriting-as-an-adult article
+  // and was diluting that page's ranking signal. Now 301-redirected in next.config.mjs.
   "modern-calligraphy": {
     slug: "modern-calligraphy",
     title: "Modern Calligraphy for Beginners: Getting Started Guide",

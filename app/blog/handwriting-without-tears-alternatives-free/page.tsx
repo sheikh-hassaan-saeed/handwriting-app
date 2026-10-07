@@ -4,9 +4,9 @@ import SiteFooter from "@/components/SiteFooter";
 import FaqAccordion from "@/components/FaqAccordion";
 import { SITE_URL } from "@/lib/constants";
 
-const TITLE = "Free Handwriting Without Tears Alternatives (Online Tools & Printables)";
+const TITLE = "Free Handwriting Without Tears Worksheet Maker (Alternatives)";
 const DESCRIPTION =
-  "Explore free Handwriting Without Tears alternatives, including online worksheet makers and printables that supplement at-home handwriting practice.";
+  "Looking for a free Handwriting Without Tears worksheet maker? Generate custom practice sheets and printables for extra at-home practice in seconds.";
 const PAGE_URL = `${SITE_URL}/blog/handwriting-without-tears-alternatives-free`;
 
 export const metadata: Metadata = {
@@ -76,6 +76,22 @@ const faqSchema = {
         text: "Free tools and printables can be very effective for repetition and reinforcement between lessons. Research suggests that consistent, short, frequent practice sessions matter more for skill-building than which specific brand of worksheet is used.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Is there a free Handwriting Without Tears worksheet maker?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There's no official free worksheet maker from Handwriting Without Tears itself, but independent tools like HandwritingMaker let you generate similarly clean, uncluttered practice sheets at no cost, which works well as a supplement for extra repetition between official lessons.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I make my own handwriting worksheet?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Type the name, word list, or sentence you want to practice into a free online worksheet maker, choose a layout and guideline style, then download the result as a print-ready PDF. No design software or account is required.",
+      },
+    },
   ],
 };
 
@@ -95,6 +111,14 @@ const faqItems = [
   {
     q: "Are free handwriting alternatives effective?",
     a: "Free tools and printables can be very effective for repetition and reinforcement between lessons. Research suggests that consistent, short, frequent practice sessions matter more for skill-building than which specific brand of worksheet is used.",
+  },
+  {
+    q: "Is there a free Handwriting Without Tears worksheet maker?",
+    a: "There's no official free worksheet maker from Handwriting Without Tears itself, but independent tools like HandwritingMaker let you generate similarly clean, uncluttered practice sheets at no cost, which works well as a supplement for extra repetition between official lessons.",
+  },
+  {
+    q: "How do I make my own handwriting worksheet?",
+    a: "Type the name, word list, or sentence you want to practice into a free online worksheet maker, choose a layout and guideline style, then download the result as a print-ready PDF. No design software or account is required.",
   },
 ];
 
@@ -118,7 +142,7 @@ export default function BlogPost() {
               Handwriting for Kids
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-              Free Handwriting Without Tears Alternatives (Online Tools &amp; Printables)
+              Free Handwriting Without Tears Worksheet Maker (Alternatives)
             </h1>
             <p className="text-gray-500 text-sm">By HandwritingMaker · 8 min read</p>
           </div>
@@ -157,7 +181,7 @@ export default function BlogPost() {
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Free Online Worksheet Makers for Kids</h2>
           <p>
             A number of free, browser-based tools let you type a word or sentence and generate a printable practice sheet instantly. Our own{" "}
-            <Link href="/tools/handwriting-worksheet-maker" className="text-indigo-600 font-semibold hover:underline">
+            <Link href="/tools/handwriting-worksheet-creator" className="text-indigo-600 font-semibold hover:underline">
               handwriting worksheet maker
             </Link>{" "}
             is one example: type a child&apos;s name, a spelling word list, or a sentence, choose a layout and how many times each word repeats, pick dotted or solid guidelines, and download a print-ready PDF, all for free and with no account required.
@@ -202,7 +226,7 @@ export default function BlogPost() {
               Type a name, word list, or sentence and download a print-ready handwriting worksheet, free and with no account needed.
             </p>
             <Link
-              href="/tools/handwriting-worksheet-maker"
+              href="/tools/handwriting-worksheet-creator"
               className="inline-block bg-indigo-600 text-white font-semibold px-7 py-3 rounded-xl hover:bg-indigo-700 transition-colors text-sm"
             >
               Try the Worksheet Maker Free

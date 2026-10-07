@@ -590,7 +590,7 @@ export default function CursivePracticeSheetsPost() {
           </p>
           <p>
             HandwritingMaker&apos;s{" "}
-            <Link href="/tools/handwriting-practice-sheets">free cursive practice sheet generator</Link>{" "}
+            <Link href="/tools/cursive-practice-sheets">free cursive practice sheet generator</Link>{" "}
             lets you type any word, sentence, or paragraph and instantly renders it in cursive
             handwriting style. Download as PNG or PDF and use it as your personal reference sheet.
           </p>
