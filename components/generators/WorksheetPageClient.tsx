@@ -20,6 +20,12 @@ interface WorksheetPageClientProps {
     faqs: { q: string; a: string }[];
     relatedTools: { name: string; href: string }[];
     relatedArticles: { name: string; href: string }[];
+    howItWorksSteps?: { title: string; desc: string }[];
+    customizeFeatures?: { title: string; desc: string }[];
+    extraSection?: { heading: string; body: string };
+    whoItsFor?: { bold: string; desc: string }[];
+    whoItsForHeading?: string;
+    relatedClosingLineHtml?: string;
   };
   initialPreset?: {
     input: string;
@@ -860,39 +866,22 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
       <section className="bg-white border-t border-slate-200 py-14 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">How to Create Handwriting Worksheets</h2>
-            <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
-              Follow these simple steps to build custom penmanship outlines for preschool classes or private drills.
-            </p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">How It Works</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-slate-50 rounded-2xl border border-slate-100 p-8 text-center space-y-3 shadow-xxs">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 font-extrabold rounded-xl flex items-center justify-center text-lg mx-auto">
-                1
+            {(config.howItWorksSteps ?? [
+              { title: "Enter Practice Text", desc: "Type names, sight word lists, or copy practice sentences in our editor tab." },
+              { title: "Customize Layout", desc: "Toggle print or cursive styles, guideline structures, and adjust height sliders to fit." },
+              { title: "Print or Download", desc: "Export high-resolution PDFs or PNG page drafts with no signup, watermarks, or fees." },
+            ]).map((step, i) => (
+              <div key={i} className="bg-slate-50 rounded-2xl border border-slate-100 p-8 text-center space-y-3 shadow-xxs">
+                <div className="w-12 h-12 bg-indigo-100 text-indigo-600 font-extrabold rounded-xl flex items-center justify-center text-lg mx-auto">
+                  {i + 1}
+                </div>
+                <h3 className="text-base font-bold text-slate-800">{step.title}</h3>
+                <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
               </div>
-              <h3 className="text-base font-bold text-slate-800">Enter Practice Text</h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                Type names, sight word lists, or copy practice sentences in our editor tab.
-              </p>
-            </div>
-            <div className="bg-slate-50 rounded-2xl border border-slate-100 p-8 text-center space-y-3 shadow-xxs">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 font-extrabold rounded-xl flex items-center justify-center text-lg mx-auto">
-                2
-              </div>
-              <h3 className="text-base font-bold text-slate-800">Customize Layout</h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                Toggle print or cursive styles, guideline structures, and adjust height sliders to fit.
-              </p>
-            </div>
-            <div className="bg-slate-50 rounded-2xl border border-slate-100 p-8 text-center space-y-3 shadow-xxs">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 font-extrabold rounded-xl flex items-center justify-center text-lg mx-auto">
-                3
-              </div>
-              <h3 className="text-base font-bold text-slate-800">Print or Download</h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                Export high-resolution PDFs or PNG page drafts with no signup, watermarks, or fees.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -901,100 +890,60 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
       <section className="bg-slate-50 border-t border-slate-200 py-14 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Worksheet Creator Features</h2>
-            <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
-              Our software tool delivers standard parameters matching primary educational worksheets.
-            </p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">What You Can Customize</h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <h4 className="text-sm font-bold text-slate-800">Custom Text Input</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">Enter child names, word lists, sight words, or paragraphs without character limits.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <h4 className="text-sm font-bold text-slate-800">Adjustable Guidelines</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">Toggle standard three-line dotted lines, solid lines, or no guidelines layout.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <h4 className="text-sm font-bold text-slate-800">Cursive Script & Print Font</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">Support primary school print fonts (Patrick Hand) and slanted cursives (Dancing Script).</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <h4 className="text-sm font-bold text-slate-800">Dotted Tracing Letters</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">Convert solid letters to hollow tracing paths to let toddlers draw guidelines correctly.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <h4 className="text-sm font-bold text-slate-800">Hollow Outline Fonts</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">Select outline styling to print hollow letter coordinates children can color inside.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <h4 className="text-sm font-bold text-slate-800">Line spacing & ratio sliders</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">Adjust layout heights and font-scale ratios dynamically to get the perfect fit.</p>
-            </div>
+            {(config.customizeFeatures ?? [
+              { title: "Custom Text Input", desc: "Enter child names, word lists, sight words, or paragraphs without character limits." },
+              { title: "Adjustable Guidelines", desc: "Toggle standard three-line dotted lines, solid lines, or no guidelines layout." },
+              { title: "Cursive Script & Print Font", desc: "Support primary school print fonts (Patrick Hand) and slanted cursives (Dancing Script)." },
+              { title: "Dotted Tracing Letters", desc: "Convert solid letters to hollow tracing paths to let toddlers draw guidelines correctly." },
+              { title: "Hollow Outline Fonts", desc: "Select outline styling to print hollow letter coordinates children can color inside." },
+              { title: "Line spacing & ratio sliders", desc: "Adjust layout heights and font-scale ratios dynamically to get the perfect fit." },
+            ]).map((feature, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-2">
+                <span className="text-indigo-600 font-bold">✓</span>
+                <h4 className="text-sm font-bold text-slate-800">{feature.title}</h4>
+                <p className="text-xs text-slate-500 leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Optional Extra Section */}
+      {config.extraSection && (
+        <section className="bg-white border-t border-slate-200 py-12 px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4">{config.extraSection.heading}</h2>
+            <p className="text-sm text-slate-600 leading-relaxed">{config.extraSection.body}</p>
+          </div>
+        </section>
+      )}
 
       {/* Benefits Section */}
       <section className="bg-white border-t border-slate-200 py-14 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Why Teachers and Families Love HandwritingMaker</h2>
-            <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
-              Our interactive practice sheet creator supports diverse handwriting development tracks.
-            </p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">{config.whoItsForHeading ?? "Who It’s For"}</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-base flex-shrink-0">
-                🏫
+            {(config.whoItsFor ?? [
+              { bold: "For School Teachers", desc: "Design specialized alphabet trace lists or homework sheets for elementary classes. Instantly print a unique name tracing guideline sheet for every child in your classroom." },
+              { bold: "For Preschool Parents", desc: "Prepare toddlers for kindergarten by teaching letter stroke orders, pen controls, and name recognition drills at home." },
+              { bold: "For Adult Calligraphers", desc: "Practice complex loop shapes, adjust slant offsets, or train script muscle coordinates using customized sentence templates." },
+              { bold: "For Students & Active Recall", desc: "Integrate custom handwriting sheets with active recall study systems to boost memory retention during exam revisions." },
+            ]).map((item, i) => (
+              <div key={i} className="flex gap-4">
+                <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-base flex-shrink-0">
+                  {["🏫", "🏡", "✍️", "🧠"][i % 4]}
+                </div>
+                <div className="space-y-1.5">
+                  <h4 className="font-bold text-slate-800 text-sm">{item.bold}</h4>
+                  <p className="text-xs text-slate-500 leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
+                </div>
               </div>
-              <div className="space-y-1.5">
-                <h4 className="font-bold text-slate-800 text-sm">For School Teachers</h4>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Design specialized alphabet trace lists or homework sheets for elementary classes. Instantly print a unique name tracing guideline sheet for every child in your classroom.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-base flex-shrink-0">
-                🏡
-              </div>
-              <div className="space-y-1.5">
-                <h4 className="font-bold text-slate-800 text-sm">For Preschool Parents</h4>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Prepare toddlers for kindergarten by teaching letter stroke orders, pen controls, and name recognition drills at home.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-base flex-shrink-0">
-                ✍️
-              </div>
-              <div className="space-y-1.5">
-                <h4 className="font-bold text-slate-800 text-sm">For Adult Calligraphers</h4>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Practice complex loop shapes, adjust slant offsets, or train script muscle coordinates using customized sentence templates.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-base flex-shrink-0">
-                🧠
-              </div>
-              <div className="space-y-1.5">
-                <h4 className="font-bold text-slate-800 text-sm">For Students & Active Recall</h4>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Integrate custom handwriting sheets with active recall study systems to boost memory retention during exam revisions.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <p className="max-w-3xl mx-auto text-center text-slate-500 text-sm leading-relaxed mt-12 px-4">
@@ -1009,6 +958,15 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
           <FaqAccordion items={config.faqs} />
         </div>
       </section>
+
+      {/* Related Closing Line */}
+      {config.relatedClosingLineHtml && (
+        <section className="bg-white border-t border-slate-200 py-8 px-4">
+          <p className="max-w-3xl mx-auto text-sm text-slate-600 leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: config.relatedClosingLineHtml }}
+          />
+        </section>
+      )}
 
       {/* Internal Links Directory Grid — driven by this page's own SEO_DATA related links */}
       {(config.relatedTools.length > 0 || config.relatedArticles.length > 0) && (

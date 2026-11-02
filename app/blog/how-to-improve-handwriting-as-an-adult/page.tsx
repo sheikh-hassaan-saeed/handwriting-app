@@ -785,7 +785,12 @@ export default function BlogPost() {
               <Link href="/tools/handwriting-practice-sheets" className="text-indigo-600 font-semibold hover:underline">
                 free handwriting practice sheet
               </Link>{" "}
-              at HandwritingMaker.com.
+              at HandwritingMaker.com. For fully custom sheets built from any word list
+              or sentence you choose, the{" "}
+              <Link href="/tools/handwriting-worksheet-creator" className="text-indigo-600 font-semibold hover:underline">
+                worksheet creator
+              </Link>{" "}
+              gives you complete control over layout, line height, and repetitions.
             </p>
           </div>
 

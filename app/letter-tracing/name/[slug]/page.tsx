@@ -34,6 +34,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title,
     description,
+    robots: { index: false, follow: true },
     alternates: {
       canonical: pageUrl,
     },

@@ -195,7 +195,11 @@ export default function BlogPost() {
             Many adults find that improving print handwriting first, then transitioning to cursive once print is consistent, produces better long-term results than trying to fix both at once. The baseline and sizing skills built in print transfer directly into cursive.
           </p>
           <p className="mt-4">
-            If your main complaint is that your print handwriting looks rushed and cramped rather than genuinely illegible, a wide-spaced print sheet is usually more useful than a narrow one. Extra space between lines gives ascenders and descenders, the parts of letters like &ldquo;l&rdquo; and &ldquo;p&rdquo; that extend above or below the main letter body, room to be written fully instead of getting compressed against the next line.
+            If your main complaint is that your print handwriting looks rushed and cramped rather than genuinely illegible, a wide-spaced print sheet is usually more useful than a narrow one. Extra space between lines gives ascenders and descenders, the parts of letters like &ldquo;l&rdquo; and &ldquo;p&rdquo; that extend above or below the main letter body, room to be written fully instead of getting compressed against the next line. For blank writing space without the distraction of practice prompts, the{" "}
+            <Link href="/tools/handwriting-paper-generator" className="text-indigo-600 font-semibold hover:underline">
+              lined handwriting paper
+            </Link>{" "}
+            generator lets you dial in any line height from 40 to 140px and download a clean, watermark-free PDF.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">How to Use Practice Sheets Effectively</h2>

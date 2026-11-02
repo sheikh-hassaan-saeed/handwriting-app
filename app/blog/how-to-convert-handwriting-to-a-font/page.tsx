@@ -203,7 +203,11 @@ export default function BlogPost() {
             <Link href="/" className="text-indigo-600 font-semibold hover:underline">
               text to handwriting converter
             </Link>{" "}
-            on this site lets you preview several handwriting styles instantly, which is a useful way to decide whether a custom font is worth the time investment for your use case.
+            on this site lets you preview several handwriting styles instantly, which is a useful way to decide whether a custom font is worth the time investment for your use case. For inspiration without the scanning work, the{" "}
+            <Link href="/fonts" className="text-indigo-600 font-semibold hover:underline">
+              handwriting-style fonts
+            </Link>{" "}
+            gallery shows a range of pre-made script and print styles you can use directly in designs without building a font from scratch.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-6">Frequently Asked Questions</h2>

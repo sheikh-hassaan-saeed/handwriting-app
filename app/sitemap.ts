@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { SEO_DATA, BLOG_ARTICLES } from "@/lib/seo";
-import { BABY_NAMES } from "@/lib/names";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Legacy tools still active on the website
@@ -18,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/best-handwriting-practice-sheets-for-adults",
     "/blog/how-to-make-cursive-handwriting-practice-sheets",
     "/blog/handwriting-without-tears-alternatives-free",
+    "/blog/cursive-strokes-for-beginners",
   ];
 
   // 1. Gather all configuration pages from SEO_DATA
@@ -59,15 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // 5. Programmatic name-tracing worksheet pages
-  const nameTracingPages = BABY_NAMES.map((name) => ({
-    url: `${SITE_URL}/letter-tracing/name/${name.toLowerCase()}-tracing-worksheet`,
-    lastModified: "2026-06-26",
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  // 6. Legal / policy pages
+  // 5. Legal / policy pages
   const legalPages = ["/privacy-policy", "/terms", "/about", "/contact"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: "2026-08-02",
@@ -78,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Use Map to deduplicate entries by URL
   const uniqueEntriesMap = new Map<string, { url: string; lastModified: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }>();
 
-  [...configPages, ...toolsPages, ...staticBlogPages, ...dynamicBlogPages, ...nameTracingPages, ...legalPages].forEach((entry) => {
+  [...configPages, ...toolsPages, ...staticBlogPages, ...dynamicBlogPages, ...legalPages].forEach((entry) => {
     uniqueEntriesMap.set(entry.url, entry);
   });
 

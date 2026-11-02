@@ -682,8 +682,15 @@ export default function CursivePracticeSheetsPost() {
           </p>
           <p>
             Generic practice sheets get you most of the way there. For the gaps  -  the
-            specific letters you keep getting wrong, your name, your vocabulary list  - 
-            you need something custom.
+            specific letters you keep getting wrong, your name, your vocabulary list  -
+            you need something custom. When you are ready to focus on individual letterforms
+            before connecting them into words, the{" "}
+            <Link href="/tools/cursive-alphabet-practice-sheets">cursive alphabet drills</Link>{" "}
+            tool generates single-letter practice sheets for every uppercase and lowercase
+            cursive letter. If you are just getting started and want to understand the
+            underlying stroke shapes before any letter practice, the guide on{" "}
+            <Link href="/blog/cursive-strokes-for-beginners">cursive strokes for beginners</Link>{" "}
+            covers the five core strokes everything else builds on.
           </p>
           <p>
             Ready to take it further? Generate a completely custom cursive practice sheet

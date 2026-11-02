@@ -212,7 +212,15 @@ export default function BlogPost() {
             <Link href="/blog/cursive-handwriting-practice-sheets" className="text-indigo-600 font-semibold hover:underline">
               ready-made printable cursive practice sheets
             </Link>
-            . For more on adapting practice sheets specifically for adult learners, see{" "}
+            . When you want to work on individual letterforms before combining them into words, the{" "}
+            <Link href="/tools/cursive-practice-sheets" className="text-indigo-600 font-semibold hover:underline">
+              cursive practice sheets
+            </Link>{" "}
+            generator lets you target any letter in isolation with adjustable slant and line spacing. If you are new to cursive and want to understand the underlying stroke shapes first, the guide on{" "}
+            <Link href="/blog/cursive-strokes-for-beginners" className="text-indigo-600 font-semibold hover:underline">
+              cursive strokes for beginners
+            </Link>{" "}
+            explains the five core strokes before any letter drills. For more on adapting practice sheets specifically for adult learners, see{" "}
             <Link href="/blog/best-handwriting-practice-sheets-for-adults" className="text-indigo-600 font-semibold hover:underline">
               best handwriting practice sheets for adults
             </Link>

@@ -204,6 +204,19 @@ export default function BlogPost() {
             A reasonable approach for many families is to use the official curriculum for the core teaching sequence, where the structured order of letters and the tactile materials genuinely matter, and use free printables for the extra repetition in between, where any clean, well-guided worksheet does the job just as well.
           </p>
 
+          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Grade-Specific Worksheets</h2>
+          <p>
+            If you are looking for worksheets calibrated to a specific school year rather than a single word or name, the{" "}
+            <Link href="/tools/handwriting-worksheets-kindergarten" className="text-indigo-600 font-semibold hover:underline">
+              kindergarten handwriting worksheets
+            </Link>{" "}
+            generator uses extra-wide 80px guidelines suited to age 4–6 fine motor development, while the{" "}
+            <Link href="/tools/handwriting-worksheets-grade-1" className="text-indigo-600 font-semibold hover:underline">
+              first grade handwriting worksheets
+            </Link>{" "}
+            generator uses a slightly narrower 70px line height to match first-grade classroom expectations. Both export print-ready PDFs at no cost.
+          </p>
+
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Tips for Teaching Handwriting at Home</h2>
           <p>
             Keep sessions short. Five to ten minutes is plenty for most young children, and pushing past the point of frustration tends to build a negative association with writing rather than a positive one. Consistency across several short sessions a week produces better results than one long session.
