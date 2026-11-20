@@ -19,9 +19,13 @@ export default function AboutPage() {
       <div className="bg-white rounded-2xl border border-gray-150 p-8 shadow-sm prose prose-gray max-w-3xl mx-auto">
         <h2 className="text-xl font-bold text-gray-800 mb-4">Who runs HandwritingMaker</h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-4">
-          [[OWNER INPUT: your name, where you are based, and in two or three sentences why you built this site — for
-          example a child learning to write, a classroom need, or your own handwriting practice. Only include details
-          that are true.]]
+          HandwritingMaker is built and run by{" "}
+          <a href="https://sheikhhassaan.com" className="text-indigo-600 hover:underline" rel="noopener">
+            Sheikh Hassaan Saeed
+          </a>
+          , a web developer and graphic designer from Pakistan. I made it so anyone can create clean, printable
+          handwriting practice sheets, lined paper and tracing worksheets for free, without signing up. I build and
+          maintain the generators myself and write the guides on the blog.
         </p>
 
         <h2 className="text-xl font-bold text-gray-800 mb-4">What the site does</h2>
@@ -50,8 +54,10 @@ export default function AboutPage() {
 
         <h2 className="text-xl font-bold text-gray-800 mb-4">How content is written and checked</h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-4">
-          [[OWNER INPUT: describe honestly how articles are researched, written and reviewed, including whether AI tools
-          are used for drafting and how you check facts before publishing.]]
+          I use AI tools to help with research and first drafts of some articles. Every page is edited by me before it
+          goes live, and measurements, paper sizes and print settings are checked against how the generators on this
+          site actually work. I don&apos;t publish product reviews or claims I can&apos;t back up. If you spot a mistake,
+          email me and I&apos;ll correct it.
         </p>
 
         <h2 className="text-xl font-bold text-gray-800 mb-4">Get in touch</h2>

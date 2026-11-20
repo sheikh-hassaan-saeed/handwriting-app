@@ -28,14 +28,11 @@ export interface SEOPageConfig {
   relatedClosingLineHtml?: string;
 }
 
-// AdSense audit (2026-11-20): the previous persona ("Hassaan Riaz", "Chief Educational Resource
-// Designer", "spent years researching... occupational motor skills", LinkedIn/GitHub "hassaanriaz")
-// could not be verified and may not match the site owner. Fill these with real details before deploying.
 export const AUTHOR_INFO = {
-  name: "[[OWNER INPUT: author name]]",
-  role: "[[OWNER INPUT: your real role, e.g. Founder & developer]]",
-  bio: "[[OWNER INPUT: 1-2 sentence bio based only on your real background and why you built the site]]",
-  sameAs: [] as string[],
+  name: "Sheikh Hassaan Saeed",
+  role: "Founder & Developer, HandwritingMaker",
+  bio: "Sheikh Hassaan Saeed is a web developer and graphic designer based in Pakistan, studying Software Engineering at Virtual University of Pakistan. He built HandwritingMaker's generators and writes and edits the site's guides.",
+  sameAs: ["https://sheikhhassaan.com"],
 };
 
 export const SEO_DATA: Record<string, SEOPageConfig> = {

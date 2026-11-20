@@ -131,8 +131,8 @@ export default function Terms() {
               Questions about these Terms may be directed to us via{" "}
               <Link href="/contact" className="text-indigo-600 hover:underline">our contact page</Link> or
               by email at{" "}
-              <a href="mailto:hello@handwritingmaker.com" className="text-indigo-600 hover:underline">
-                hello@handwritingmaker.com
+              <a href="mailto:sheikhhassaansaeed@gmail.com" className="text-indigo-600 hover:underline">
+                sheikhhassaansaeed@gmail.com
               </a>
               .
             </p>
