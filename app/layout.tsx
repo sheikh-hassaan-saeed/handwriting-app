@@ -61,7 +61,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&family=Homemade+Apple&family=Patrick+Hand&family=Dancing+Script:wght@400;700&family=Architects+Daughter&family=Great+Vibes&family=Playball&family=Sacramento&family=Pinyon+Script&family=Allura&family=Alex+Brush&family=Reenie+Beanie&family=Monsieur+La+Doulaise&display=swap"
           rel="stylesheet"
         />
-        <meta name="google-adsense-account" content="ca-pub-2722346158425205" />
+        <meta name="google-adsense-account" content="ca-pub-7494653277084620" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7494653277084620"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="antialiased bg-gray-50 text-gray-900">
         {children}

@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | HandwritingMaker",
-  description: "HandwritingMaker privacy policy — how we handle data, advertising, and cookies.",
+  description: "HandwritingMaker privacy policy: how we handle data, advertising, and cookies.",
   alternates: { canonical: `${SITE_URL}/privacy-policy` },
 };
 
@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
 
       <main className="max-w-3xl mx-auto px-4 py-12 text-gray-800">
         <h1 className="text-3xl font-extrabold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-sm text-gray-400 mb-10">Effective date: June 9, 2026 &mdash; Last updated: November 20, 2026</p>
+        <p className="text-sm text-gray-400 mb-10">Effective date: June 9, 2026. Last updated: November 20, 2026</p>
 
         <div className="space-y-10 text-[15px] leading-relaxed">
 

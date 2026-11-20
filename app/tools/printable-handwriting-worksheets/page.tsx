@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 
 const faqItems = [
   { q: "How do I choose the right worksheet tool?", a: "Match the tool to the writer's stage. Tracing tools suit beginners learning letter shapes; cursive tools suit writers learning joined-up script; grade-level worksheets match school expectations; paper tools provide blank lined sheets for open writing." },
-  { q: "Are all of these worksheets free to print?", a: "Yes. Every generator on this site is free — no accounts, no subscriptions, and no watermarks on the downloaded PDFs." },
+  { q: "Are all of these worksheets free to print?", a: "Yes. Every generator on this site is free, with no accounts, no subscriptions, and no watermarks on the downloaded PDFs." },
   { q: "What paper sizes do the worksheets print on?", a: "Most tools export PDFs sized for A4 or US Letter paper, and many offer portrait and landscape. Choose your size before downloading and the guidelines will print at the correct scale." },
-  { q: "Can I use these worksheets in my classroom?", a: "Yes. Teachers regularly print class sets — generate once, print thirty copies. The PDFs are clean and watermark-free, so they look professional handed out." },
+  { q: "Can I use these worksheets in my classroom?", a: "Yes. Teachers regularly print class sets: generate once, print thirty copies. The PDFs are clean and watermark-free, so they look professional handed out." },
 ];
 
 const breadcrumbSchema = {
@@ -59,7 +59,7 @@ export default function PrintableHandwritingWorksheetsHub() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">{config.h1}</h1>
             <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Every free printable handwriting worksheet on this site lives here. Instead of one generic template, you&apos;ll find a collection of specialized generators — tracing tools for young learners, cursive tools for older students and adults, grade-level worksheets, custom lined paper, and a few extras. Pick the tool that matches the writer and the task, type your text, and print.
+              Every free printable handwriting worksheet on this site lives here. Instead of one generic template, you&apos;ll find a collection of specialized generators: tracing tools for young learners, cursive tools for older students and adults, grade-level worksheets, custom lined paper, and a few extras. Pick the tool that matches the writer and the task, type your text, and print.
             </p>
           </div>
         </section>
@@ -196,7 +196,7 @@ export default function PrintableHandwritingWorksheetsHub() {
               <Link href="/tools/handwriting-worksheet-creator" className="text-indigo-600 font-semibold hover:underline">
                 Handwriting Worksheet Creator
               </Link>{" "}
-              is the most flexible starting point — type any words and print a custom sheet in seconds.
+              is the most flexible starting point: type any words and print a custom sheet in seconds.
             </p>
           </div>
         </section>

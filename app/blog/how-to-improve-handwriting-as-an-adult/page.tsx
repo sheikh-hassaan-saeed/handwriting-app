@@ -358,8 +358,8 @@ export default function BlogPost() {
           </p>
 
           <p className="mt-4">
-            Tilt your paper 45 degrees clockwise if you&apos;re right-handed, 45
-            degrees counterclockwise if you&apos;re left-handed. This angle aligns
+            Tilt your paper about 30 degrees counterclockwise if you&apos;re right-handed,
+            and about 30 degrees clockwise if you&apos;re left-handed. This angle aligns
             your forearm with your direction of writing and removes wrist strain
             that causes letters to lean inconsistently.
           </p>

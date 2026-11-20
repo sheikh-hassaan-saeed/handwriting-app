@@ -968,7 +968,7 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
         </section>
       )}
 
-      {/* Internal Links Directory Grid — driven by this page's own SEO_DATA related links */}
+      {/* Internal Links Directory Grid, driven by this page's own SEO_DATA related links */}
       {(config.relatedTools.length > 0 || config.relatedArticles.length > 0) && (
         <section className="bg-white border-t border-slate-200 py-14 sm:py-20 px-4">
           <div className="max-w-6xl mx-auto">

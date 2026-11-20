@@ -17,7 +17,7 @@ export default function ContactForm() {
     e.preventDefault();
     if (!name || !message) return;
     // No backend: the form composes an email in the visitor's own mail app.
-    const body = `${message}\n\n— ${name}`;
+    const body = `${message}\n\nFrom: ${name}`;
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
       `[HandwritingMaker] ${subject}`
     )}&body=${encodeURIComponent(body)}`;

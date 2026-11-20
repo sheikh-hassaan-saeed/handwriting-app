@@ -159,7 +159,7 @@ Action key: keep · expand · merge · noindex. Status: **fixed** (changed in th
   - Added GDPR/UK GDPR and CCPA/CPRA rights, the consent statement, and how emailed messages are used. Updated the date.
 - New `app/disclaimer/page.tsx`: educational-use and OT disclaimer, print-scale accuracy, typed-signature caveat, trademark non-affiliation (HWT, Zaner-Bloser, D'Nealian), ads, corrections.
 - New `app/not-found.tsx`: custom 404 with links to the most-used tools.
-- `public/ads.txt`: `google.com, pub-2722346158425205, DIRECT, f08c47fec0942fa0`. The publisher ID is the one already in your `google-adsense-account` meta tag.
+- `public/ads.txt`: `google.com, pub-7494653277084620, DIRECT, f08c47fec0942fa0`. The publisher ID is the one already in your `google-adsense-account` meta tag.
 - `app/sitemap.ts`: added `/disclaimer`.
 - `components/SiteFooter.tsx`: added a Disclaimer link.
 
@@ -193,7 +193,7 @@ Verified after the changes:
 - [ ] **`app/about/page.tsx`:** fill "Who runs HandwritingMaker" and "How content is written and checked". Be honest about AI use; Google doesn't penalise disclosure.
 - [ ] Optional but strong for E-E-A-T: a real photo of you on the About page.
 - [ ] Send a test email to `hello@handwritingmaker.com` and confirm it arrives. If that inbox doesn't exist, tell me the right address (one constant in `lib/constants.ts`).
-- [ ] Confirm `pub-2722346158425205` in `public/ads.txt` matches your AdSense account.
+- [ ] Confirm `pub-7494653277084620` in `public/ads.txt` matches your AdSense account.
 - [ ] `/blog/how-to-improve-handwriting-as-an-adult`: either link a source for the improvement timelines ("3–4 weeks", "60–90 days", "50% speed"), or reword them as your own experience: `[[OWNER INPUT: what happened when you practised]]`.
 - [ ] Add first-hand material where you have it: photos of real printed worksheets, a filled-in practice sheet, or a before/after of your own handwriting. This is the single biggest "information gain" lever for the tool pages.
 - [ ] Search Console:
