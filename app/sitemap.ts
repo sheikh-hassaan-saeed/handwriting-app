@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   // 5. Legal / policy pages
-  const legalPages = ["/privacy-policy", "/terms", "/about", "/contact"].map((path) => ({
+  const legalPages = ["/privacy-policy", "/terms", "/disclaimer", "/about", "/contact"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: "2026-08-02",
     changeFrequency: "yearly" as const,

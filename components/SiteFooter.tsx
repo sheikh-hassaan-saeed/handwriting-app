@@ -23,6 +23,7 @@ export default function SiteFooter() {
           <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
           <Link href="/privacy-policy" className="hover:text-indigo-600 hover:underline">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-indigo-600 hover:underline">Terms</Link>
+          <Link href="/disclaimer" className="hover:text-indigo-600 hover:underline">Disclaimer</Link>
         </nav>
       </div>
     </footer>

@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
 
       <main className="max-w-3xl mx-auto px-4 py-12 text-gray-800">
         <h1 className="text-3xl font-extrabold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-sm text-gray-400 mb-10">Effective date: June 9, 2026 &mdash; Last updated: August 2, 2026</p>
+        <p className="text-sm text-gray-400 mb-10">Effective date: June 9, 2026 &mdash; Last updated: November 20, 2026</p>
 
         <div className="space-y-10 text-[15px] leading-relaxed">
 
@@ -108,10 +108,10 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-gray-900 mb-3">4. Analytics</h2>
             <p>
-              We may use Google Analytics or similar services to understand how visitors use the Site in
-              aggregate — which pages are viewed most, how users navigate between sections, and which tools
-              are most used. This data is collected in anonymous, aggregated form and cannot identify individual
-              users. Google Analytics cookies can be opted out of using the{" "}
+              The Site does not currently run Google Analytics or any other analytics script. We review
+              aggregate search performance (queries, impressions and clicks) in Google Search Console, which
+              does not place cookies on your device. If we add an analytics tool in the future, this section will
+              be updated before it goes live. Google Analytics cookies, where used, can be opted out of with the{" "}
               <a
                 href="https://tools.google.com/dlpage/gaoptout"
                 target="_blank"
@@ -151,6 +151,29 @@ export default function PrivacyPolicy() {
               does not collect personal information through its tools, there is typically no personal data on
               file for tool users. For any data-related requests related to log data or ad tracking, please
               contact us using the details below.
+            </p>
+            <p className="mt-3">
+              <strong>EEA, UK and Switzerland (GDPR / UK GDPR):</strong> you have the right to access, rectify,
+              erase, restrict or object to the processing of your personal data, the right to data portability,
+              and the right to withdraw consent at any time. Where personalised advertising is shown to visitors
+              in these regions, it is only shown after consent is collected through a consent banner, and you can
+              change your choice at any time. You also have the right to lodge a complaint with your local data
+              protection authority.
+            </p>
+            <p className="mt-3">
+              <strong>California (CCPA / CPRA):</strong> you have the right to know what personal information is
+              collected about you, to request its deletion, and to opt out of the &ldquo;sale&rdquo; or
+              &ldquo;sharing&rdquo; of personal information for cross-context behavioural advertising. We do not sell
+              personal information for money. You can limit ad personalisation through Google&apos;s Ads Settings
+              linked above.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-gray-900 mb-3">Emails You Send Us</h2>
+            <p>
+              If you email us directly or through the contact page, we receive your email address and whatever you
+              write. We use it only to reply to you and do not add you to any mailing list.
             </p>
           </section>
 
