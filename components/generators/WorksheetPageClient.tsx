@@ -464,7 +464,7 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#f43f5e_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div className="max-w-5xl mx-auto text-center relative z-10 space-y-6">
           <span className="text-xs font-bold uppercase tracking-widest text-indigo-300 bg-indigo-900/60 border border-indigo-800/80 px-3.5 py-1.5 rounded-full inline-block shadow-sm">
-            🎯 SaaS-grade Worksheet Creator
+            Free worksheet creator
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none">
             {config.h1}
@@ -1010,9 +1010,16 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
           <div className="space-y-2 max-w-xs">
             <span className="font-extrabold text-indigo-600 text-lg block">✏️ HandwritingMaker</span>
             <p className="text-xxs text-slate-400 leading-normal">
-              The internet&apos;s leading free resource for printable handwriting worksheets, school lined papers, Cornell notes, calligraphy slants, and typed signatures.
+              Free browser-based generators for handwriting worksheets, tracing sheets, lined paper, Cornell notes, calligraphy guides, and typed signatures.
             </p>
             <span className="text-xxs text-slate-400 block pt-2">© {new Date().getFullYear()} HandwritingMaker. Free to use, forever.</span>
+            <nav className="flex flex-wrap gap-x-3 gap-y-1 pt-2 text-xxs font-medium" aria-label="Site information">
+              <Link href="/about" className="hover:text-indigo-600 transition-colors">About</Link>
+              <Link href="/contact" className="hover:text-indigo-600 transition-colors">Contact</Link>
+              <Link href="/privacy-policy" className="hover:text-indigo-600 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-indigo-600 transition-colors">Terms</Link>
+              <Link href="/disclaimer" className="hover:text-indigo-600 transition-colors">Disclaimer</Link>
+            </nav>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div className="space-y-3">

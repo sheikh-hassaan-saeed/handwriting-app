@@ -29,7 +29,7 @@ export function generateMetadata({ params }: Props): Metadata {
 
   const pageUrl = `${SITE_URL}/letter-tracing/name/${slug}`;
   const title = `Free Printable ${name} Tracing Worksheet | HandwritingMaker`;
-  const description = `Download a free printable name tracing worksheet for the name ${name}. Customize lines, repetitions, dotted letters, and export a vector PDF.`;
+  const description = `Download a free printable name tracing worksheet for the name ${name}. Customize lines, repetitions, dotted letters, and export a print-ready PDF.`;
 
   return {
     title,
@@ -199,11 +199,14 @@ export default function NameTracingPage({ params }: Props) {
       <footer className="border-t border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <span>© {new Date().getFullYear()} HandwritingMaker. Free to use, forever.</span>
-          <nav className="flex gap-4" aria-label="Footer navigation">
+          <nav className="flex flex-wrap gap-4" aria-label="Footer navigation">
             <Link href="/" className="hover:text-indigo-600 hover:underline">Worksheet Maker</Link>
             <Link href="/notebook-paper" className="hover:text-indigo-600 hover:underline">Notebook Paper</Link>
             <Link href="/letter-tracing" className="hover:text-indigo-600 hover:underline">Letter Tracing</Link>
+            <Link href="/about" className="hover:text-indigo-600 hover:underline">About</Link>
             <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+            <Link href="/privacy-policy" className="hover:text-indigo-600 hover:underline">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-indigo-600 hover:underline">Terms</Link>
           </nav>
         </div>
       </footer>

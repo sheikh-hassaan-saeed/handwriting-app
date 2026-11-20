@@ -81,33 +81,18 @@ export default function PlatformLayout({
           <div className="bg-white rounded-xl border border-gray-200 p-5 mb-8 shadow-sm max-w-sm">
             <h3 className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-3">Table of Contents</h3>
             <ol className="list-decimal pl-5 text-xs text-indigo-600 font-semibold space-y-1.5">
-              <li><a href="#quick-intro" className="hover:underline">Detailed Introduction</a></li>
-              {children && <li><a href="#interactive-tool" className="hover:underline">Interactive Workspace Generator</a></li>}
-              <li><a href="#features-guide" className="hover:underline">Resources & Features Guide</a></li>
+              {contentMarkdown && <li><a href="#features-guide" className="hover:underline">Guide</a></li>}
               {faqItems.length > 0 && <li><a href="#faq-section" className="hover:underline">Frequently Asked Questions</a></li>}
               <li><a href="#related-resources" className="hover:underline">Related Tools & Guides</a></li>
-              <li><a href="#author-bio" className="hover:underline">Author Profile & Verification</a></li>
+              <li><a href="#author-bio" className="hover:underline">About the Author</a></li>
             </ol>
           </div>
 
-          <div id="quick-intro" className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">Detailed Introduction</h2>
-            <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{config.intro}</p>
-          </div>
-
-          {children && (
-            <div id="interactive-tool" className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-3">Interactive Workspace Generator</h2>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Use the generator interface above to customize your template parameters in real-time. Adjust heights, grid spacing, line weights, paper sizes, and fonts using the sidebar. Once satisfied, click the download button to export high-resolution printouts directly from your client browser.
-              </p>
-            </div>
-          )}
-
           {/* Core educational body */}
-          <div id="features-guide" className="mb-8 border-t border-gray-150 pt-6">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">Resources & Features Guide</h2>
-            {contentMarkdown ? (
+          {contentMarkdown && (
+          <div id="features-guide" className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Guide</h2>
+            {(
               <div
                 className="text-gray-600 leading-relaxed text-sm sm:text-base space-y-4"
                 dangerouslySetInnerHTML={{
@@ -122,16 +107,11 @@ export default function PlatformLayout({
                     .replace(/\n/g, "<br/>")
                 }}
               />
-            ) : (
-              <p className="text-gray-600 leading-relaxed text-sm">
-                This workbook maker conforms to standard international grids. It allows users to download letter-perfect guidelines for writing, tracking daily targets, or practicing stroke curves. Everything is calculated in vector grids so printing is clean at 300 DPI.
-              </p>
             )}
           </div>
+          )}
 
-          {/* Conclusion */}
           <div className="mb-8 border-t border-gray-150 pt-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-2">Conclusion</h2>
             <p className="text-gray-600 leading-relaxed text-sm">{config.conclusion}</p>
           </div>
 
@@ -184,7 +164,7 @@ export default function PlatformLayout({
               </div>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">{config.author.bio}</p>
               <span className="text-xxs text-gray-400 font-semibold block">
-                Last Updated: {config.lastUpdated} | Verified High Authority Printables
+                Last updated: {config.lastUpdated}
               </span>
             </div>
           </div>
@@ -208,6 +188,7 @@ export default function PlatformLayout({
             <Link href="/contact" className="hover:text-indigo-600">Contact</Link>
             <Link href="/privacy-policy" className="hover:text-indigo-600">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-indigo-600">Terms</Link>
+            <Link href="/disclaimer" className="hover:text-indigo-600">Disclaimer</Link>
           </nav>
         </div>
       </footer>

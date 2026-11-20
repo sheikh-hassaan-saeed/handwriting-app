@@ -170,7 +170,7 @@ export default function AnimatedHandwritingGeneratorPage() {
             Animated Handwriting for Social Media
           </h2>
           <p className="text-gray-600 mb-8">
-            A short animated handwriting clip stands out in a feed full of static images and pre-made templates because it looks personal and unpolished in a good way. Research suggests that motion and novelty both increase the time viewers spend looking at a piece of content, which is exactly what a few seconds of handwriting animation provides. Keep the text short, choose a paper background that matches your platform&apos;s aesthetic, and loop the animation so it holds attention through a second pass.
+            A short animated handwriting clip stands out in a feed full of static images and pre-made templates because it looks personal and unpolished in a good way. A few seconds of handwriting being written out is more eye-catching in a feed than a static image. Keep the text short, choose a paper background that matches your platform&apos;s aesthetic, and loop the animation so it holds attention through a second pass.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-800 mb-6">

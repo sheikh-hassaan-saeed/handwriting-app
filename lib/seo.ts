@@ -28,14 +28,14 @@ export interface SEOPageConfig {
   relatedClosingLineHtml?: string;
 }
 
+// AdSense audit (2026-11-20): the previous persona ("Hassaan Riaz", "Chief Educational Resource
+// Designer", "spent years researching... occupational motor skills", LinkedIn/GitHub "hassaanriaz")
+// could not be verified and may not match the site owner. Fill these with real details before deploying.
 export const AUTHOR_INFO = {
-  name: "Hassaan Riaz",
-  role: "Chief Educational Resource Designer",
-  bio: "Hassaan designs educational aids and digital writing software. He has spent years researching penmanship, occupational motor skills, and layout grids to build learning resources.",
-  sameAs: [
-    "https://www.linkedin.com/in/hassaanriaz",
-    "https://github.com/hassaanriaz"
-  ],
+  name: "[[OWNER INPUT: author name]]",
+  role: "[[OWNER INPUT: your real role, e.g. Founder & developer]]",
+  bio: "[[OWNER INPUT: 1-2 sentence bio based only on your real background and why you built the site]]",
+  sameAs: [] as string[],
 };
 
 export const SEO_DATA: Record<string, SEOPageConfig> = {
@@ -45,13 +45,13 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     description: "Create free printable handwriting worksheets instantly. Adjust spacing, choose print or cursive styles, and download a ready-to-print A4/Letter PDF.",
     h1: "Free Handwriting Worksheet Generator",
     intro: "Create handwriting worksheets, practice sheets, and tracing templates for kids, toddlers, or adults in seconds. Type a child's name, list of spelling words, or sentences. Customize guidelines, choose print or cursive font styles, set repetitions, and generate a printable PDF instantly.",
-    conclusion: "Generate, preview, and print letter-perfect handwriting worksheets. The tool operates 100% in your browser for absolute privacy and classroom utility.",
+    conclusion: "Generate, preview, and print handwriting worksheets in a few clicks. Everything runs in your browser, so the names and words you type are never uploaded.",
     lastUpdated: "2026-07-05",
     author: AUTHOR_INFO,
     faqs: [
       { q: "How do I create a custom handwriting tracing worksheet?", a: "Enter a child's name or word list in the input box, select the 'Trace Letters' mode to render letters in dotted tracing guides, customize your page parameters (such as repetitions and lines), and click 'Download PDF' to save and print your custom tracing sheet." },
       { q: "Is this handwriting practice creator completely free to use?", a: "Yes. HandwritingMaker is 100% free for teachers, parents, and students. There are no subscriptions, no accounts, and no watermark stamps on downloaded PDFs." },
-      { q: "What paper formats and sizes are supported?", a: "The generator supports standard International A4 and North American Letter sizes. It compiles vector PDF output at 300 DPI so guidelines and letter traces print sharply on standard printers." },
+      { q: "What paper formats and sizes are supported?", a: "The generator supports standard International A4 and North American Letter sizes. It exports a print-ready PDF sized to the page, so guidelines line up correctly when printed at 100% scale." },
       { q: "Can I generate cursive handwriting worksheets?", a: "Yes. The creator has an option to switch font styles between primary print block lettering and standard connected cursive script, covering all penmanship learning levels." },
       { q: "How do I create handwriting worksheets online?", a: "Type the names, words, or sentences you want to practice into the text box, choose a layout (single word, two words, sentence repeat, or free writing), pick print or cursive style and guideline type, then click 'Download PDF'. The finished worksheet is ready to print immediately, with no account or software install needed." },
     ],
@@ -429,7 +429,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "Are these printable files in high resolution?", a: "Yes, all printable documents are generated in vector PDF format from high-resolution canvas layers, ensuring they remain crystal clear when printed on standard home or school office printers." },
+      { q: "Are these printable files in high resolution?", a: "Each printable is rendered at full page size and saved as a PDF, which prints cleanly on standard home and school printers. Set the print scale to 100% (Actual Size) for the best result." },
       { q: "Can I customize the printables before downloading?", a: "Yes! Every printable item card features a 'Customize Template' link that opens the layout directly inside our online workspace generators, where you can modify columns, labels, spacing, and numbers." },
     ],
     relatedTools: [
@@ -706,7 +706,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "About Us - HandwritingMaker Printable Platform",
     description: "Learn about HandwritingMaker, a free digital workbook platform to generate lined papers, tracing sheets, calligraphy slants, and signatures.",
     h1: "About HandwritingMaker",
-    intro: "HandwritingMaker was established to democratize access to high-quality educational printables. We believe that templates like graph paper, primary guidelines, and study planners should be free for all teachers, parents, and students. Every generator runs entirely inside your client browser, with zero server uploads.",
+    intro: "HandwritingMaker is a free set of tools for making printable handwriting worksheets, lined paper, planners and study templates. Everything runs in your browser, with no account and nothing you type uploaded.",
     conclusion: "Thank you for using HandwritingMaker. Print, customize, and study effectively.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
@@ -745,7 +745,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "Free Custom Handwriting Worksheet Creator | HandwritingMaker",
     description: "Create personalized handwriting worksheets in seconds. Enter any spelling list or vocabulary words, select block print or cursive styles, and print for free.",
     h1: "Free Custom Handwriting Worksheet Creator",
-    intro: "This is the most flexible tool on the site — the one to reach for when no specialized generator quite fits. Type spelling lists, sight words, or vocabulary terms, and the creator lays them out as clean practice worksheets with proper guidelines, ready to download as a sharp vector PDF. One tool, endless sheets.",
+    intro: "This is the most flexible tool on the site — the one to reach for when no specialized generator quite fits. Type spelling lists, sight words, or vocabulary terms, and the creator lays them out as clean practice worksheets with proper guidelines, ready to download as a print-ready PDF.",
     conclusion: "Generate your custom worksheets now and save time preparing classroom materials.",
     lastUpdated: "2026-11-02",
     author: AUTHOR_INFO,
@@ -764,7 +764,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     howItWorksSteps: [
       { title: "Type your words", desc: "Enter a spelling list, sight words, or vocabulary terms, separated by spaces or line breaks — as many as you need." },
       { title: "Pick a layout and style", desc: "Choose Single Word or Two Words per line, then block print lettering or connected cursive, with dotted tracing or solid model text." },
-      { title: "Download your worksheet", desc: "The creator assembles a clean vector PDF sized for A4 or US Letter. Print it for the whole class or just one student — free, no account required." },
+      { title: "Download your worksheet", desc: "The creator assembles a print-ready PDF sized for A4 or US Letter. Print it for the whole class or just one student — free, no account required." },
     ],
     customizeFeatures: [
       { title: "Any custom text", desc: "Spelling lists, sight words, vocabulary, names, sentences." },
@@ -772,7 +772,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { title: "Print and cursive styles", desc: "School-friendly block lettering or flowing connected script." },
       { title: "Dotted trace or solid text", desc: "Tracing guides for beginners, clean models for copying." },
       { title: "Adjustable guidelines and spacing", desc: "Tune line height and letter size to the writer." },
-      { title: "Vector PDF download", desc: "Crisp printing on A4 or Letter, no watermark, no signup." },
+      { title: "PDF download", desc: "Print-ready on A4 or Letter, no watermark, no signup." },
     ],
     extraSection: {
       heading: "When to use the creator",
@@ -796,7 +796,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     author: AUTHOR_INFO,
     faqs: [
       { q: "How do I practice cursive writing?", a: "Switch the font setting to 'Cursive Loop' to instantly convert your sentences into elegant connected script guidelines." },
-      { q: "Are these worksheets print-ready?", a: "Yes. They compile to vector PDF documents in A4 or Letter sizes, ready to print on any standard home printer." }
+      { q: "Are these worksheets print-ready?", a: "Yes. They export as PDF documents in A4 or Letter size, ready to print on a standard home printer." }
     ],
     relatedTools: [
       { name: "Cursive Practice Sheets", href: "/tools/cursive-practice-sheets" },
@@ -1016,14 +1016,14 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "Printable Lined Handwriting Paper Generator | HandwritingMaker",
     description: "Generate customized lined handwriting paper templates. Adjust line spacing heights, grid colors, and export Letter or A4 PDFs.",
     h1: "Printable Lined Handwriting Paper Generator",
-    intro: "Sometimes you don't need a worksheet — you just need good paper. This generator builds custom lined handwriting paper with line heights from 40px to 140px, so young writers get tall guides and older students get compact lines for real assignments. Choose solid or dotted guidelines, tune the colors, and download a crisp vector PDF.",
+    intro: "Sometimes you don't need a worksheet — you just need good paper. This generator builds custom lined handwriting paper with line heights from 40px to 140px, so young writers get tall guides and older students get compact lines for real assignments. Choose solid or dotted guidelines, tune the colors, and download a print-ready PDF.",
     conclusion: "Produce precise primary or college-ruled writing grids matching any penmanship level.",
     lastUpdated: "2026-11-02",
     author: AUTHOR_INFO,
     faqs: [
       { q: "What line heights can I choose?", a: "Anywhere from 40px to 140px. Small heights suit older students and compact writing; large heights suit young children who are still learning letter sizing." },
       { q: "Can I print in landscape orientation?", a: "Yes. Both A4 and US Letter paper are available in portrait and landscape, so you can make wide practice sheets or sideways journal pages." },
-      { q: "Will the printed lines look sharp?", a: "Yes. The download is a vector PDF, which means the lines are drawn as clean geometry rather than an image — they print crisp at any size with no blurriness." },
+      { q: "Will the printed lines look sharp?", a: "The page is rendered at full size before it is saved as a PDF, so lines print cleanly on a normal home printer. Print at 100% (Actual Size) so the line spacing stays exact." },
       { q: "How is this different from a worksheet generator?", a: "This tool makes blank lined paper with no text on it — the writer supplies the words. Worksheet generators like the Handwriting Worksheet Creator fill the lines with your spelling lists or sentences for structured practice." },
     ],
     relatedTools: [
@@ -1035,14 +1035,14 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     howItWorksSteps: [
       { title: "Choose a line style", desc: "Solid three-line guides for structured practice, or simple dotted lines for a lighter touch." },
       { title: "Set the line height", desc: "Slide from 40px for compact writing up to 140px for large early-writer lettering — match it to the writer's age and the task at hand." },
-      { title: "Download and print", desc: "Pick A4 or US Letter, portrait or landscape, and export a vector PDF that prints perfectly sharp at any size. No signup, no watermark." },
+      { title: "Download and print", desc: "Pick A4 or US Letter, portrait or landscape, and export a print-ready PDF. No signup, no watermark." },
     ],
     customizeFeatures: [
       { title: "Line heights from 40px to 140px", desc: "One slider covers early writers through adults." },
       { title: "Solid or dotted guidelines", desc: "Full three-line guides or light dotted lines." },
       { title: "Customizable grid colors", desc: "Soft gray for subtle guides, darker tones for high contrast." },
       { title: "A4 and US Letter sizes", desc: "Each available in portrait or landscape orientation." },
-      { title: "Vector PDF export", desc: "Lines print razor-sharp, never blurry or pixelated." },
+      { title: "PDF export", desc: "Sized for A4 or Letter so your line spacing prints true at 100% scale." },
       { title: "Free and unlimited", desc: "Print one page or a whole stack." },
     ],
     extraSection: {

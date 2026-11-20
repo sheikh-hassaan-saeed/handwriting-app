@@ -57,7 +57,7 @@ const faqSchema = {
       name: "How often should adults use practice sheets?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Daily use for 10 to 15 minutes produces the most consistent results. Research suggests frequent short sessions build motor memory faster than occasional long ones.",
+        text: "Daily use for 10 to 15 minutes produces the most consistent results. A short daily session is easier to keep up than an occasional long one, and your hand stays fresh enough to write carefully.",
       },
     },
     {
@@ -102,7 +102,7 @@ const faqItems = [
   },
   {
     q: "How often should adults use practice sheets?",
-    a: "Daily use for 10 to 15 minutes produces the most consistent results. Research suggests frequent short sessions build motor memory faster than occasional long ones.",
+    a: "Daily use for 10 to 15 minutes produces the most consistent results. A short daily session is easier to keep up than an occasional long one, and your hand stays fresh enough to write carefully.",
   },
   {
     q: "Should adults use lined paper or dotted trace sheets?",

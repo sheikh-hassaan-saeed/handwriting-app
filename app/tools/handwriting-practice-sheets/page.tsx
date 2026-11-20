@@ -183,7 +183,7 @@ export default function HandwritingPracticeSheetsPage() {
             Dotted trace sheets work best as a first step, not a final destination. Have the student trace over the dashed letters slowly with a pencil, paying attention to where each stroke starts and ends rather than just connecting the dots quickly. After two or three dotted sessions on the same word or letter group, switch to a blank line sheet using the same text and ask the writer to reproduce it from memory.
           </p>
           <p className="text-gray-600 mb-8">
-            Research suggests that tracing before freehand writing helps reinforce correct motor patterns, especially for young children and for adults relearning letter formation after years of typing. Keep each dotted trace session short, around ten to fifteen minutes, since accuracy drops once a hand gets tired.
+            Tracing before writing freehand lets you rehearse the correct letter shape and stroke order before you have to produce it from memory, which helps young children and adults relearning handwriting alike. Keep each dotted trace session short, around ten to fifteen minutes, since accuracy drops once a hand gets tired.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-800 mb-6">

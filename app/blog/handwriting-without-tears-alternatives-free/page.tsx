@@ -73,7 +73,7 @@ const faqSchema = {
       name: "Are free handwriting alternatives effective?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Free tools and printables can be very effective for repetition and reinforcement between lessons. Research suggests that consistent, short, frequent practice sessions matter more for skill-building than which specific brand of worksheet is used.",
+        text: "Free tools and printables can be very effective for repetition and reinforcement between lessons. How regularly a child practices matters far more than which brand of worksheet they practise on.",
       },
     },
     {
@@ -110,7 +110,7 @@ const faqItems = [
   },
   {
     q: "Are free handwriting alternatives effective?",
-    a: "Free tools and printables can be very effective for repetition and reinforcement between lessons. Research suggests that consistent, short, frequent practice sessions matter more for skill-building than which specific brand of worksheet is used.",
+    a: "Free tools and printables can be very effective for repetition and reinforcement between lessons. How regularly a child practices matters far more than which brand of worksheet they practise on.",
   },
   {
     q: "Is there a free Handwriting Without Tears worksheet maker?",
@@ -222,7 +222,7 @@ export default function BlogPost() {
             Keep sessions short. Five to ten minutes is plenty for most young children, and pushing past the point of frustration tends to build a negative association with writing rather than a positive one. Consistency across several short sessions a week produces better results than one long session.
           </p>
           <p className="mt-4">
-            Let a child trace before writing freehand, praise effort and consistency rather than perfection, and rotate between a few different formats, tracing, copying, and free writing, so practice does not become repetitive. Research suggests that varied, frequent, low-pressure practice supports skill development in young children better than long, infrequent sessions.
+            Let a child trace before writing freehand, praise effort and consistency rather than perfection, and rotate between a few different formats, tracing, copying, and free writing, so practice does not become repetitive. Short, varied, low-pressure sessions keep young children willing to come back to the page, which is what builds the skill over time.
           </p>
           <p className="mt-4">
             Pay attention to grip and posture as early as possible, since habits formed in the first year of writing tend to stick. A pencil grip that feels awkward to correct at age five becomes considerably harder to correct at age ten, so addressing it early is worth the extra patience it takes in the moment.
