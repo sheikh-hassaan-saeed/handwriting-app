@@ -395,7 +395,7 @@ export default function LetterTracingGenerator({ defaultName }: { defaultName?: 
     }
 
     const imgData = tempCanvas.toDataURL("image/png");
-    pdf.addImage(imgData, "PNG", 0, 0, baseSize.w, baseSize.h);
+    pdf.addImage(imgData, "PNG", 0, 0, pdf.internal.pageSize.getWidth(), pdf.internal.pageSize.getHeight());
     pdf.save(`letter-tracing-${inputText.toLowerCase() || "worksheet"}.pdf`);
   };
 
@@ -587,8 +587,8 @@ export default function LetterTracingGenerator({ defaultName }: { defaultName?: 
               value={paperSize}
               onChange={(e) => setPaperSize(e.target.value as PaperSize)}
             >
-              <option value="A4">A4 (800 x 1130 pt)</option>
-              <option value="Letter">Letter (816 x 1056 pt)</option>
+              <option value="A4">A4 (210 × 297 mm)</option>
+              <option value="Letter">US Letter (8.5 × 11 in)</option>
             </select>
           </div>
 

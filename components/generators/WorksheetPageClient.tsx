@@ -1027,7 +1027,6 @@ export default function WorksheetPageClient({ config, initialPreset }: Worksheet
               <nav className="flex flex-col gap-2 text-xxs font-medium" aria-label="Ruled papers footer navigation">
                 <Link href="/notebook-paper" className="hover:text-indigo-600 transition-colors">Lined Notebook PaperHub</Link>
                 <Link href="/cornell-notes" className="hover:text-indigo-600 transition-colors">Cornell Notes Maker</Link>
-                <Link href="/tools/blank-handwriting-paper" className="hover:text-indigo-600 transition-colors">Blank Handwriting Paper</Link>
                 <Link href="/tools/handwriting-paper-generator" className="hover:text-indigo-600 transition-colors">Handwriting Paper Creator</Link>
               </nav>
             </div>

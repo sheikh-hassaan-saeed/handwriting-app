@@ -215,7 +215,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedTools: [
       { name: "Primary Writing Paper", href: "/notebook-paper/primary-writing" },
-      { name: "Custom Name Letter Tracing", href: "/letter-tracing/custom-name" },
+      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" },
     ],
     relatedArticles: [
       { name: "How Letter Tracing Helps Children", href: "/blog/how-letter-tracing-helps" },
@@ -240,7 +240,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "How do I use a Cornell notes template effectively?", a: "Record lecture notes in the right-hand column during class. Right after class, review your notes and write down key concepts or questions in the left cue column. Finally, write a 3-4 sentence summary of the page at the bottom to consolidate memory." },
     ],
     relatedTools: [
-      { name: "Blank Cornell Template", href: "/cornell-notes/template" },
       { name: "Study Planner & Pomodoro", href: "/printables/study-planner" },
       { name: "College Ruled Notebook Paper", href: "/notebook-paper/college-ruled" },
     ],
@@ -253,29 +252,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       description: "Creates custom structured Cornell study sheets.",
       category: "DesignApplication",
     },
-  },
-  "/cornell-notes/template": {
-    title: "Printable Blank Cornell Notes Template - Free PDF",
-    description: "Download free blank Cornell notes templates. Print a structured PDF page for lectures, meetings, active recall studying, or study guides.",
-    h1: "Printable Blank Cornell Notes Template",
-    intro: "A blank Cornell notes sheet offers structural grids for active recall. Use it during high school, college, lectures, or business meetings. Download a clean PDF sheet, print it out, and organize your binders.",
-    conclusion: "Download a ready-to-print standard Cornell template instantly in A4 or Letter format.",
-    lastUpdated: "2026-06-26",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "Can I customize the Cornell template spacing?", a: "Yes, you can use our slider to adjust line spacing from 18px to 50px depending on how large your handwriting is." },
-    ],
-    relatedTools: [
-      { name: "Cornell Notes Generator", href: "/cornell-notes" },
-      { name: "Weekly Planner", href: "/printables/weekly-planner" },
-    ],
-    relatedArticles: [
-      { name: "What Are Cornell Notes?", href: "/blog/what-are-cornell-notes" },
-    ],
-    breadcrumbs: [
-      { name: "Cornell Notes", href: "/cornell-notes" },
-      { name: "Blank Template", href: "/cornell-notes/template" },
-    ],
   },
 
   // LETTER TRACING
@@ -293,7 +269,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedTools: [
       { name: "Tracing Worksheet Generator", href: "/tools/tracing-worksheet-generator" },
-      { name: "Custom Name Tracing", href: "/letter-tracing/custom-name" },
+      { name: "Name Tracing Generator", href: "/tools/name-tracing-generator" },
       { name: "Handwriting Practice Generator", href: "/handwriting-practice" },
       { name: "Kindergarten Ruled Paper", href: "/notebook-paper/kindergarten" },
     ],
@@ -306,29 +282,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       description: "Generates custom alphabetical and name tracing sheets.",
       category: "EducationApplication",
     },
-  },
-  "/letter-tracing/custom-name": {
-    title: "Printable Custom Name Tracing Worksheets - Free PDF",
-    description: "Download printable custom name tracing worksheets. Type your child's name, choose cursive or print, and print clean tracing sheets instantly.",
-    h1: "Printable Custom Name Tracing Worksheets",
-    intro: "Learning to write one's own name is a key developmental milestone for kids. Our custom name tracer allows parents and school teachers to print personalized name tracing sheets in seconds. Enter a child's name, choose standard or cursive scripts, adjust guidelines, and print as A4 or Letter PDFs.",
-    conclusion: "Generate a custom name worksheet for your child to help them learn spelling and letter alignment.",
-    lastUpdated: "2026-06-26",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "How does name tracing build motor skills?", a: "Repeatedly tracing the letter bounds of a name establishes pencil grip, spatial coordination, and letter-to-sound recognition." },
-    ],
-    relatedTools: [
-      { name: "Letter Tracing Worksheets", href: "/letter-tracing" },
-      { name: "Primary Guidelines Paper", href: "/notebook-paper/primary-writing" },
-    ],
-    relatedArticles: [
-      { name: "How Letter Tracing Helps Children", href: "/blog/how-letter-tracing-helps" },
-    ],
-    breadcrumbs: [
-      { name: "Letter Tracing", href: "/letter-tracing" },
-      { name: "Custom Name", href: "/letter-tracing/custom-name" },
-    ],
   },
 
   // HANDWRITING PRACTICE
@@ -378,7 +331,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Signature Generator", href: "/signature-generator" },
     ],
     relatedArticles: [
-      { name: "Modern Calligraphy for Beginners", href: "/blog/modern-calligraphy" },
+      { name: "Cursive Strokes for Beginners", href: "/blog/cursive-strokes-for-beginners" },
     ],
     breadcrumbs: [{ name: "Calligraphy", href: "/calligraphy" }],
     softwareSchema: {
@@ -406,7 +359,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { name: "Text to Handwriting Converter", href: "/" },
     ],
     relatedArticles: [
-      { name: "Professional Signature Ideas & Examples", href: "/blog/professional-signature-ideas" },
     ],
     breadcrumbs: [{ name: "Signature Generator", href: "/signature-generator" }],
     softwareSchema: {
@@ -631,56 +583,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
   },
 
   // LANDING SILOS
-  "/teacher-resources": {
-    title: "Free Printable Teacher Worksheets & Templates | HandwritingMaker",
-    description: "Access our directory of free resources for elementary school classrooms. Printable tracing guides, primary papers, logs, calendars, and planners.",
-    h1: "Free Teacher Worksheets & Classroom Resources",
-    intro: "Classroom organization and handwriting worksheets are essential for early childhood educators. This silo directories links to our tracing tools, primary guides, homework logs, and assignment templates, helping you build materials for your classes in seconds.",
-    conclusion: "Improve student letter layouts using custom-designed worksheets.",
-    lastUpdated: "2026-06-26",
-    author: AUTHOR_INFO,
-    faqs: [],
-    relatedTools: [
-      { name: "Letter Tracing Generator", href: "/letter-tracing" },
-      { name: "Primary Writing Paper", href: "/notebook-paper/primary-writing" },
-      { name: "Reading Log Template", href: "/printables/reading-log" },
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Teacher Resources", href: "/teacher-resources" }],
-  },
-  "/student-resources": {
-    title: "Free Printable Student Organizers & Note-taking | HandwritingMaker",
-    description: "Download school note templates and planners. Get Cornell notes sheets, assignment trackers, study logs, Pomodoro calendars, and ruled papers.",
-    h1: "Free Student note templates & Organizers",
-    intro: "Conquer college semesters and exam review cycles. Access our printable Cornell note sheets, homework trackers, weekly calendars, and master study logs.",
-    conclusion: "Organize binders and study folders with structured printables.",
-    lastUpdated: "2026-06-26",
-    author: AUTHOR_INFO,
-    faqs: [],
-    relatedTools: [
-      { name: "Cornell Notes Generator", href: "/cornell-notes" },
-      { name: "Assignment Tracker", href: "/printables/assignment" },
-      { name: "Study Planner pomodoro", href: "/printables/study-planner" },
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Student Resources", href: "/student-resources" }],
-  },
-  "/study-resources": {
-    title: "Active Recall Study Resources & Note Grids | HandwritingMaker",
-    description: "Download active recall templates, Pomodoro calendars, study checklists, Cornell notes, and college ruled papers.",
-    h1: "Active Recall Study Resources & Note Grids",
-    intro: "Active recall and spaced repetition are the most scientifically backed study methods. This directory compiles Cornell notes templates, Pomodoro trackers, formula grids, and concept review trackers.",
-    conclusion: "Boost retention and exam scores using structured recall templates.",
-    lastUpdated: "2026-06-26",
-    author: AUTHOR_INFO,
-    faqs: [],
-    relatedTools: [
-      { name: "Study Planner Generator", href: "/printables/study-planner" },
-      { name: "Cornell Notes Maker", href: "/cornell-notes" },
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Study Resources", href: "/study-resources" }],
-  },
 
   // OTHERS
   "/fonts": {
@@ -782,27 +684,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedClosingLineHtml: "For ready-made tracing practice, try the <a href=\"/tools/tracing-worksheet-generator\" class=\"text-indigo-600 font-semibold hover:underline\">Tracing Worksheet Generator</a> — or the <a href=\"/tools/name-tracing-generator\" class=\"text-indigo-600 font-semibold hover:underline\">Name Tracing Generator</a> for personalized name sheets.",
     breadcrumbs: [{ name: "Handwriting Worksheet Creator", href: "/tools/handwriting-worksheet-creator" }]
-  },
-  "/tools/handwriting-practice-generator": {
-    title: "Online Handwriting Practice Generator | HandwritingMaker",
-    description: "Generate printable handwriting practice worksheets for students, toddlers, or adults. Select print block or cursive scripts and download for free.",
-    h1: "Online Handwriting Practice Generator",
-    intro: "Improve penmanship with our online practice sheets generator. Enter sentences, quotes, or vocabulary words, toggle guideline rules, customize heights, and export standard print PDFs instantly.",
-    conclusion: "Practice daily using custom sentences and words tailored to your writing goals.",
-    lastUpdated: "2026-07-05",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "How do I practice cursive writing?", a: "Switch the font setting to 'Cursive Loop' to instantly convert your sentences into elegant connected script guidelines." },
-      { q: "Are these worksheets print-ready?", a: "Yes. They export as PDF documents in A4 or Letter size, ready to print on a standard home printer." }
-    ],
-    relatedTools: [
-      { name: "Cursive Practice Sheets", href: "/tools/cursive-practice-sheets" },
-      { name: "Sentence Tracing Generator", href: "/tools/sentence-tracing-generator" }
-    ],
-    relatedArticles: [
-      { name: "Best Handwriting Practice Sheets for Adults", href: "/blog/best-handwriting-practice-sheets-for-adults" }
-    ],
-    breadcrumbs: [{ name: "Handwriting Practice Generator", href: "/tools/handwriting-practice-generator" }]
   },
   // NOTE: "/tools/custom-handwriting-worksheets" was merged into "/tools/printable-handwriting-worksheets"
   // on 2026-10-07 (301 redirect in next.config.mjs) — identical generator preset, was a true orphan
@@ -991,24 +872,6 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     relatedClosingLineHtml: "Once the alphabet feels easy, the <a href=\"/tools/name-tracing-generator\" class=\"text-indigo-600 font-semibold hover:underline\">Name Tracing Generator</a> personalizes practice around each child’s name, and the <a href=\"/tools/tracing-worksheet-generator\" class=\"text-indigo-600 font-semibold hover:underline\">Tracing Worksheet Generator</a> handles any other words you want to add.",
     breadcrumbs: [{ name: "Alphabet Tracing Generator", href: "/tools/alphabet-tracing-generator" }]
   },
-  "/tools/blank-handwriting-paper": {
-    title: "Free Lined Blank Handwriting Paper | HandwritingMaker",
-    description: "Download printable blank handwriting paper with dotted guidelines. Choose Letter or A4 sizes, adjust line spacing, and print.",
-    h1: "Free Lined Blank Handwriting Paper",
-    intro: "Print clean blank handwriting paper sheets for spelling tests, journal practice, or freehand drawing. Set the layout spacing, toggle dotted or solid lines, and export blank grids instantly.",
-    conclusion: "Stop purchasing expensive pre-printed writing tablets: customize and print sheets for free.",
-    lastUpdated: "2026-07-05",
-    author: AUTHOR_INFO,
-    faqs: [
-      { q: "How do I generate a completely blank handwriting paper sheet?", a: "Clear all text from the input settings, select the 'Free Writing' layout, choose your guideline style, and click download." }
-    ],
-    relatedTools: [
-      { name: "Handwriting Paper Generator", href: "/tools/handwriting-paper-generator" },
-      { name: "Notebook Paper Creator", href: "/notebook-paper" }
-    ],
-    relatedArticles: [],
-    breadcrumbs: [{ name: "Blank Handwriting Paper", href: "/tools/blank-handwriting-paper" }]
-  },
   "/tools/handwriting-paper-generator": {
     title: "Printable Lined Handwriting Paper Generator | HandwritingMaker",
     description: "Generate customized lined handwriting paper templates. Adjust line spacing heights, grid colors, and export Letter or A4 PDFs.",
@@ -1024,7 +887,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
       { q: "How is this different from a worksheet generator?", a: "This tool makes blank lined paper with no text on it — the writer supplies the words. Worksheet generators like the Handwriting Worksheet Creator fill the lines with your spelling lists or sentences for structured practice." },
     ],
     relatedTools: [
-      { name: "Blank Handwriting Paper", href: "/tools/blank-handwriting-paper" },
+      { name: "Notebook Paper Generator", href: "/notebook-paper" },
       { name: "Notebook Paper", href: "/notebook-paper" }
     ],
     relatedArticles: [],
@@ -1398,42 +1261,4 @@ Customize name worksheets for your class or toddler using our [Letter Tracing Ge
   // NOTE: "how-to-improve-handwriting" was removed (2026-08-17) — it was a ~120-word
   // duplicate of the much stronger /blog/how-to-improve-handwriting-as-an-adult article
   // and was diluting that page's ranking signal. Now 301-redirected in next.config.mjs.
-  "modern-calligraphy": {
-    slug: "modern-calligraphy",
-    title: "Modern Calligraphy for Beginners: Getting Started Guide",
-    description: "A beginner's tutorial for learning modern calligraphy. Choose pens, draw thick/thin lines, and write cursive shapes.",
-    h1: "Modern Calligraphy for Beginners",
-    category: "calligraphy",
-    lastUpdated: "2026-06-26",
-    relatedTool: { name: "Calligraphy Practice Generator", href: "/calligraphy" },
-    contentMarkdown: `
-### Script Dynamics: Pressure Controls
-The defining feature of calligraphy is line weight variation: downstrokes are thick, upstrokes are thin.
-
-- **Dip Pens & Brush Pens:** Apply pressure on downstrokes to spread the nib or brush tip. Lighten pressure on upstrokes to produce hairline lines.
-- **Guideline Angle:** Standard calligraphy uses angled slants (typically 55 degrees) to keep loops parallel.
-
-Generate custom grid guides using our online [Calligraphy Practice Generator](/calligraphy).
-    `,
-  },
-  "professional-signature-ideas": {
-    slug: "professional-signature-ideas",
-    title: "Professional Signature Ideas & Handwriting Inspiration",
-    description: "Get inspiration for designing a professional signature. Compare elegant, luxury, minimalist loops and underlines.",
-    h1: "Professional Signature Ideas & Inspiration",
-    category: "signature",
-    lastUpdated: "2026-06-26",
-    relatedTool: { name: "Typed Signature Generator", href: "/signature-generator" },
-    contentMarkdown: `
-### Elements of an Eye-Catching Signature
-A professional signature should project confidence and style. Consider these design factors:
-
-- **Large First Letter:** Exaggerate the initials (e.g., first and last letters) to anchor the signature.
-- **Connected Cursive Swirls:** Keep characters flowing together smoothly.
-- **Underline Swoosh:** A bold underline swirl adds luxury context.
-- **Angle Slant:** Slanting your signature slightly upward to the right projects optimism.
-
-Generate e-signatures or download vector SVGs instantly with our [Signature Generator](/signature-generator).
-    `,
-  },
 };

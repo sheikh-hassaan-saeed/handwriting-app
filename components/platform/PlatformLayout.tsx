@@ -4,6 +4,7 @@ import { SEOPageConfig } from "@/lib/seo";
 import SEOComponent from "./SEOComponent";
 import Breadcrumbs from "./Breadcrumbs";
 import FaqAccordion from "../FaqAccordion";
+import { renderMarkdown } from "@/lib/markdown";
 
 interface PlatformLayoutProps {
   path: string;
@@ -90,25 +91,11 @@ export default function PlatformLayout({
 
           {/* Core educational body */}
           {contentMarkdown && (
-          <div id="features-guide" className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">Guide</h2>
-            {(
-              <div
-                className="text-gray-600 leading-relaxed text-sm sm:text-base space-y-4"
-                dangerouslySetInnerHTML={{
-                  // Header/list patterns are matched line-by-line (^...$/gm) BEFORE newlines
-                  // are converted to <br/>, otherwise a greedy .* with no real linebreaks left
-                  // to stop at will swallow every subsequent header into a single match.
-                  __html: contentMarkdown
-                    .replace(/^### (.*)$/gm, "<h3 class='text-lg font-bold text-gray-700 mt-4 mb-2'>$1</h3>")
-                    .replace(/^## (.*)$/gm, "<h2 class='text-xl font-bold text-gray-800 mt-6 mb-3'>$1</h2>")
-                    .replace(/^- \*\*(.*?)\*\*(.*)$/gm, "<li><strong>$1</strong>$2</li>")
-                    .replace(/^\|.*\|$/gm, "") // remove raw table markdown lines cleanly
-                    .replace(/\n/g, "<br/>")
-                }}
-              />
-            )}
-          </div>
+            <div
+              id="features-guide"
+              className="mb-8 text-sm sm:text-base not-prose"
+              dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}
+            />
           )}
 
           <div className="mb-8 border-t border-gray-150 pt-6">
@@ -179,9 +166,7 @@ export default function PlatformLayout({
             <Link href="/" className="hover:text-indigo-600">Home Converter</Link>
             <Link href="/printables" className="hover:text-indigo-600">Planners</Link>
             <Link href="/notebook-paper" className="hover:text-indigo-600">Grids</Link>
-            <Link href="/teacher-resources" className="hover:text-indigo-600">Teachers</Link>
-            <Link href="/student-resources" className="hover:text-indigo-600">Students</Link>
-            <Link href="/study-resources" className="hover:text-indigo-600">Study Resources</Link>
+            <Link href="/resources" className="hover:text-indigo-600">Resources</Link>
             <Link href="/fonts" className="hover:text-indigo-600">Fonts</Link>
             <Link href="/blog" className="hover:text-indigo-600">Blog</Link>
             <Link href="/about" className="hover:text-indigo-600">About</Link>

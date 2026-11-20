@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: config.title,
   description: config.description,
   alternates: { canonical: `${PATH}` },
+  robots: { index: false, follow: true },
 };
 
 export default function MonthlyPlannerPage() {

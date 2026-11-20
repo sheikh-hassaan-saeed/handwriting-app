@@ -11,14 +11,12 @@ interface PageProps {
 
 const VALID_SLUGS = [
   "handwriting-worksheet-creator",
-  "handwriting-practice-generator",
   "printable-handwriting-worksheets",
   "tracing-worksheet-generator",
   "name-tracing-generator",
   "sentence-tracing-generator",
   "alphabet-tracing-generator",
   "cursive-alphabet-practice-sheets",
-  "blank-handwriting-paper",
   "handwriting-paper-generator",
   "handwriting-worksheets-grade-1",
   "handwriting-worksheets-grade-2",
@@ -71,17 +69,6 @@ function getPresetForSlug(slug: string) {
         guideline: "dotted" as const,
         repetitions: 3 as const,
         lineSpacing: 75,
-        fontSizeRatio: 45,
-      };
-    case "handwriting-practice-generator":
-      return {
-        input: "Practice makes perfect.",
-        layout: "sentence" as const,
-        letterStyle: "dottedTrace" as const,
-        fontStyle: "print" as const,
-        guideline: "dotted" as const,
-        repetitions: 2 as const,
-        lineSpacing: 80,
         fontSizeRatio: 45,
       };
     case "printable-handwriting-worksheets":
@@ -148,17 +135,6 @@ function getPresetForSlug(slug: string) {
         guideline: "dotted" as const,
         repetitions: 1 as const,
         lineSpacing: 70,
-        fontSizeRatio: 45,
-      };
-    case "blank-handwriting-paper":
-      return {
-        input: "",
-        layout: "free" as const,
-        letterStyle: "solid" as const,
-        fontStyle: "print" as const,
-        guideline: "dotted" as const,
-        repetitions: 1 as const,
-        lineSpacing: 75,
         fontSizeRatio: 45,
       };
     case "handwriting-paper-generator":

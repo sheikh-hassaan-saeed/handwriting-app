@@ -7,6 +7,7 @@ import { BLOG_ARTICLES, AUTHOR_INFO } from "@/lib/seo";
 import { SITE_URL } from "@/lib/constants";
 import Breadcrumbs from "@/components/platform/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
+import { renderMarkdown, extractHeadings } from "@/lib/markdown";
 
 interface Props {
   params: {
@@ -47,84 +48,6 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-function parseMarkdownToHtml(markdown: string): string {
-  // Replace carriage returns
-  let html = markdown.replace(/\r\n/g, "\n");
-
-  // Bold
-  html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-  // Italics
-  html = html.replace(/\*(.*?)\*/g, "<em>$1</em>");
-  // Inline Code
-  html = html.replace(/`(.*?)`/g, "<code class='bg-gray-100 text-indigo-600 px-1.5 py-0.5 rounded text-sm font-mono'>$1</code>");
-
-  // Blockquotes
-  html = html.replace(/^\s*>\s+(.*)$/gm, "<blockquote class='border-l-4 border-indigo-500 pl-4 py-1 my-4 text-gray-500 italic'>$1</blockquote>");
-
-  // Headers (H3, H2)
-  html = html.replace(/^\s*###\s+(.*)$/gm, (match, title) => {
-    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return `<h3 id="${id}" class="text-lg font-bold text-gray-700 mt-4 mb-2 scroll-mt-20">${title}</h3>`;
-  });
-  html = html.replace(/^\s*##\s+(.*)$/gm, (match, title) => {
-    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return `<h2 id="${id}" class="text-xl font-bold text-gray-800 mt-6 mb-3 scroll-mt-20">${title}</h2>`;
-  });
-  html = html.replace(/^\s*#\s+(.*)$/gm, (match, title) => {
-    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return `<h1 id="${id}" class="text-2xl font-extrabold text-gray-900 mt-10 mb-5 scroll-mt-20">${title}</h1>`;
-  });
-
-  // Links: [text](url)
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "<a href='$2' class='text-indigo-600 hover:underline font-semibold'>$1</a>");
-
-  // Tables parsing line-by-line
-  const lines = html.split("\n");
-  let inTable = false;
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (line.startsWith("|") && line.endsWith("|")) {
-      if (!inTable) {
-        inTable = true;
-        lines[i] = "<div class='overflow-x-auto my-6 border border-gray-200 rounded-xl'><table class='min-w-full divide-y divide-gray-200 text-sm'><thead class='bg-gray-50'><tr>" + 
-          line.split("|").slice(1, -1).map(cell => `<th class='px-4 py-3 text-left font-bold text-gray-700 uppercase tracking-wider'>${cell.trim()}</th>`).join("") + 
-          "</tr></thead><tbody class='bg-white divide-y divide-gray-100'>";
-      } else if (line.includes("---")) {
-        lines[i] = "";
-      } else {
-        lines[i] = "<tr>" + 
-          line.split("|").slice(1, -1).map(cell => `<td class='px-4 py-3 text-gray-600'>${cell.trim()}</td>`).join("") + 
-          "</tr>";
-      }
-    } else {
-      if (inTable) {
-        inTable = false;
-        lines[i] = "</tbody></table></div>" + lines[i];
-      }
-    }
-  }
-  html = lines.join("\n");
-
-  // Lists: Unordered lists starting with - or *
-  html = html.replace(/^\s*[\-\*]\s+(.*)$/gm, "<li class='text-gray-600 mb-1.5'>$1</li>");
-  
-  // Wrap list items in <ul>
-  html = html.replace(/(<li.*?>[\s\S]*?<\/li>)+/g, (match) => {
-    return `<ul class='list-disc pl-5 my-4 space-y-1.5'>${match}</ul>`;
-  });
-
-  // Paragraphs
-  const paragraphs = html.split(/\n\s*\n/);
-  for (let i = 0; i < paragraphs.length; i++) {
-    const p = paragraphs[i].trim();
-    if (p && !p.startsWith("<h") && !p.startsWith("<ul") && !p.startsWith("<li") && !p.startsWith("<div") && !p.startsWith("<table") && !p.startsWith("<tbody") && !p.startsWith("<thead") && !p.startsWith("<tr") && !p.startsWith("<blockquote") && !p.startsWith("<a")) {
-      paragraphs[i] = `<p class='mb-4 text-gray-600 leading-relaxed'>${p}</p>`;
-    }
-  }
-  html = paragraphs.join("\n");
-
-  return html;
-}
 
 export default function dynamicBlogPage({ params }: Props) {
   const article = BLOG_ARTICLES[params.slug];
@@ -201,16 +124,10 @@ export default function dynamicBlogPage({ params }: Props) {
   } : null;
 
   // Render article markdown
-  const bodyHtml = parseMarkdownToHtml(article.contentMarkdown);
+  const bodyHtml = renderMarkdown(article.contentMarkdown);
 
   // Dynamically extract headings from markdown
-  const headingMatches = article.contentMarkdown.match(/^\s*#{2,3}\s+(.*)$/gm) || [];
-  const headings = headingMatches.map((match) => {
-    const isH3 = match.trim().startsWith("###");
-    const text = match.replace(/^\s*#{2,3}\s+/, "").trim();
-    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return { text, id, isH3 };
-  });
+  const headings = extractHeadings(article.contentMarkdown);
 
   // Approximate reading time (200 words per minute)
   const wordCount = article.contentMarkdown.split(/\s+/).length;

@@ -237,7 +237,7 @@ export default function CornellNotesGenerator({ defaultLayout }: { defaultLayout
 
     drawCornellPage(tempCtx, w, h);
     const imgData = tempCanvas.toDataURL("image/png");
-    pdf.addImage(imgData, "PNG", 0, 0, w, h);
+    pdf.addImage(imgData, "PNG", 0, 0, pdf.internal.pageSize.getWidth(), pdf.internal.pageSize.getHeight());
     pdf.save(`cornell-notes-${layout}.pdf`);
   }, [paperSize, drawCornellPage, layout]);
 

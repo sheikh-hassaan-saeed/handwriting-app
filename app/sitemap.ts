@@ -21,7 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // 1. Gather all configuration pages from SEO_DATA
-  const configPages = Object.keys(SEO_DATA).map((path) => {
+  // Planner sub-pages are noindex (tools only); the /printables hub is the indexed page.
+  const configPages = Object.keys(SEO_DATA).filter((path) => !path.startsWith("/printables/")).map((path) => {
     const config = SEO_DATA[path];
     const isRoot = path === "/";
     return {

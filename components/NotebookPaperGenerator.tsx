@@ -35,13 +35,13 @@ export default function NotebookPaperGenerator({ defaultPreset }: { defaultPrese
   // Sync defaults based on layout type selection
   useEffect(() => {
     if (layout === "wide-ruled") {
-      setLineSpacing(34);
-      setMarginWidth(100);
+      setLineSpacing(33); // 11/32 in at 96 px/in
+      setMarginWidth(120); // 1.25 in
       setLineColor("#bfdbfe");
       setMarginColor("#fca5a5");
     } else if (layout === "college-ruled") {
-      setLineSpacing(27);
-      setMarginWidth(100);
+      setLineSpacing(27); // 9/32 in at 96 px/in
+      setMarginWidth(120);
       setLineColor("#bfdbfe");
       setMarginColor("#fca5a5");
     } else if (layout === "primary") {
@@ -55,12 +55,12 @@ export default function NotebookPaperGenerator({ defaultPreset }: { defaultPrese
       setLineColor("#9ca3af");
       setMarginColor("#f87171");
     } else if (layout === "graph") {
-      setLineSpacing(22);
+      setLineSpacing(19); // ~5 mm
       setMarginWidth(0);
       setLineColor("#e2e8f0");
       setMarginColor("#fca5a5");
     } else if (layout === "dot-grid") {
-      setLineSpacing(22);
+      setLineSpacing(19); // ~5 mm
       setMarginWidth(0);
       setLineColor("#cbd5e1");
     } else if (layout === "cornell") {
@@ -420,7 +420,7 @@ export default function NotebookPaperGenerator({ defaultPreset }: { defaultPrese
       if (p > 1) pdf.addPage();
       drawPageToContext(tempCtx, p, w, h);
       const imgData = tempCanvas.toDataURL("image/png");
-      pdf.addImage(imgData, "PNG", 0, 0, w, h);
+      pdf.addImage(imgData, "PNG", 0, 0, pdf.internal.pageSize.getWidth(), pdf.internal.pageSize.getHeight());
     }
 
     pdf.save(`printable-notebook-${layout}.pdf`);

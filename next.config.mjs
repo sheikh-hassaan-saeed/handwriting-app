@@ -50,6 +50,56 @@ const nextConfig = {
         destination: "/tools/name-tracing-generator",
         permanent: true,
       },
+      {
+        source: "/blog/professional-signature-ideas",
+        destination: "/signature-generator",
+        permanent: true,
+      },
+      {
+        source: "/blog/modern-calligraphy",
+        destination: "/calligraphy",
+        permanent: true,
+      },
+      {
+        source: "/teacher-resources",
+        destination: "/resources",
+        permanent: true,
+      },
+      {
+        source: "/student-resources",
+        destination: "/resources",
+        permanent: true,
+      },
+      {
+        source: "/study-resources",
+        destination: "/resources",
+        permanent: true,
+      },
+      {
+        source: "/cornell-notes/template",
+        destination: "/cornell-notes",
+        permanent: true,
+      },
+      {
+        source: "/letter-tracing/custom-name",
+        destination: "/tools/name-tracing-generator",
+        permanent: true,
+      },
+      {
+        source: "/letter-tracing/name/:slug*",
+        destination: "/tools/name-tracing-generator",
+        permanent: true,
+      },
+      {
+        source: "/tools/blank-handwriting-paper",
+        destination: "/tools/handwriting-paper-generator",
+        permanent: true,
+      },
+      {
+        source: "/tools/handwriting-practice-generator",
+        destination: "/tools/handwriting-practice-sheets",
+        permanent: true,
+      },
     ];
   },
 };

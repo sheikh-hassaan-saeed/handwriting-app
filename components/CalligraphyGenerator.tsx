@@ -251,9 +251,6 @@ export default function CalligraphyGenerator({ defaultPreset }: { defaultPreset?
   }, [drawCalligraphyWorksheet]);
 
   const handleDownloadPDF = async () => {
-    const baseSize = paperPixelSize(paperSize);
-    const w = baseSize.w;
-    const h = baseSize.h;
 
     const { jsPDF } = await import("jspdf");
     const pdf = new jsPDF({
@@ -266,7 +263,7 @@ export default function CalligraphyGenerator({ defaultPreset }: { defaultPreset?
     await drawCalligraphyWorksheet();
     if (canvasRef.current) {
       const imgData = canvasRef.current.toDataURL("image/png");
-      pdf.addImage(imgData, "PNG", 0, 0, w, h);
+      pdf.addImage(imgData, "PNG", 0, 0, pdf.internal.pageSize.getWidth(), pdf.internal.pageSize.getHeight());
       pdf.save(`calligraphy-${stylePreset}-practice.pdf`);
     }
   };

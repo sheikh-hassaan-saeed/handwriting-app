@@ -11,7 +11,7 @@ const staticPosts = [
   {
     slug: "how-to-improve-handwriting-as-an-adult",
     title: "How to Improve Handwriting as an Adult (7 Techniques That Actually Work)",
-    description: "Struggling with messy handwriting as an adult? Discover 7 practical techniques to improve your handwriting fast  -  with free practice sheets and practical tips. No talent required.",
+    description: "Struggling with messy handwriting as an adult? Here are 7 practical techniques for neater handwriting, with free practice sheets and simple daily drills.",
     date: "2026-06-18",
   },
   {
@@ -34,9 +34,15 @@ const staticPosts = [
   },
   {
     slug: "handwriting-without-tears-alternatives-free",
-    title: "Free Handwriting Without Tears Alternatives (Online Tools & Printables)",
-    description: "Explore free Handwriting Without Tears alternatives, including online worksheet makers and printables that supplement at-home handwriting practice.",
+    title: "Free Handwriting Without Tears Worksheet Maker (Alternatives)",
+    description: "Looking for a free Handwriting Without Tears worksheet maker? Generate custom practice sheets and printables for extra at-home practice in seconds.",
     date: "2026-06-25",
+  },
+  {
+    slug: "cursive-strokes-for-beginners",
+    title: "Cursive Strokes for Beginners: The 5 Shapes Behind Every Letter",
+    description: "Learn the five core cursive strokes before tackling any letter. Understanding upstrokes, downstrokes, ovals, loops, and joins makes the entire cursive alphabet easier to learn.",
+    date: "2026-11-02",
   },
 ];
 

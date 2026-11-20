@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title:
     "How to Improve Handwriting as an Adult (7 Techniques That Actually Work)",
   description:
-    "Struggling with messy handwriting as an adult? Discover 7 practical techniques to improve your handwriting fast, with free practice sheets and practical tips. No talent required.",
+    "Struggling with messy handwriting as an adult? Here are 7 practical techniques for neater handwriting, with free practice sheets and simple daily drills.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     title:
       "How to Improve Handwriting as an Adult (7 Techniques That Actually Work)",
     description:
-      "Struggling with messy handwriting as an adult? Discover 7 practical techniques to improve your handwriting fast, with free practice sheets and practical tips. No talent required.",
+      "Struggling with messy handwriting as an adult? Here are 7 practical techniques for neater handwriting, with free practice sheets and simple daily drills.",
     url: PAGE_URL,
     siteName: "HandwritingMaker",
     type: "article",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title:
       "How to Improve Handwriting as an Adult (7 Techniques That Actually Work)",
     description:
-      "Struggling with messy handwriting as an adult? Discover 7 practical techniques to improve your handwriting fast, with free practice sheets and practical tips.",
+      "Struggling with messy handwriting as an adult? Here are 7 practical techniques for neater handwriting, with free practice sheets and simple daily drills.",
   },
   alternates: {
     canonical: PAGE_URL,
