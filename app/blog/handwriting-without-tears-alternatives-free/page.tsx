@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import Breadcrumbs from "@/components/platform/Breadcrumbs";
 import FaqAccordion from "@/components/FaqAccordion";
 import { SITE_URL } from "@/lib/constants";
 
@@ -122,9 +123,20 @@ const faqItems = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+    { "@type": "ListItem", position: 3, name: "Handwriting Without Tears Worksheet Maker", item: PAGE_URL },
+  ],
+};
+
 export default function BlogPost() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -134,6 +146,8 @@ export default function BlogPost() {
           <Link href="/" className="text-sm text-indigo-600 hover:underline font-medium">Free Handwriting Tool</Link>
         </div>
       </header>
+
+      <Breadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Handwriting Without Tears Worksheet Maker", href: "/blog/handwriting-without-tears-alternatives-free" }]} />
 
       <main className="bg-white">
         <div className="bg-gradient-to-br from-indigo-50 to-white border-b border-indigo-100 py-10 px-4">

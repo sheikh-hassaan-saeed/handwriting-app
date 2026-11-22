@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
-import FaqAccordion from "@/components/FaqAccordion";
+import Breadcrumbs from "@/components/platform/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "Best Handwriting Practice Sheets for Adults (Free Printables)";
@@ -40,93 +40,21 @@ const articleSchema = {
   mainEntityOfPage: PAGE_URL,
 };
 
-const faqSchema = {
+const breadcrumbSchema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What are the best handwriting practice sheets for adults?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The best sheets for adults use simple ruled guidelines without childish graphics, support both cursive and print, and can be customized with your own words rather than generic letter drills.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How often should adults use practice sheets?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Daily use for 10 to 15 minutes produces the most consistent results. A short daily session is easier to keep up than an occasional long one, and your hand stays fresh enough to write carefully.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Should adults use lined paper or dotted trace sheets?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Start with dotted trace sheets for a week or two to rebuild correct letter shapes, then switch to plain lined sheets so you are writing from memory rather than tracing.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can practice sheets help with cursive handwriting specifically?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Cursive practice sheets that show connected letterforms help adults relearn the joins between letters, which is usually the hardest part of returning to cursive after years of print or typing.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does it take to see results from adult handwriting practice?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most adults notice their letter consistency and spacing improve within 2 to 3 weeks of practicing 10 to 15 minutes a day. More natural, faster handwriting typically takes 6 to 8 weeks of consistent daily practice to feel permanent.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What's the best worksheet to improve penmanship as an adult?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "A worksheet that lets you practice your own words rather than generic letter drills, with plain ruled guidelines and no childish decoration. Starting with a dotted trace version for a week before switching to a plain lined sheet improves penmanship fastest, since it rebuilds correct letter shapes before asking you to write from memory.",
-      },
-    },
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+    { "@type": "ListItem", position: 3, name: "Best Handwriting Practice Sheets for Adults", item: PAGE_URL },
   ],
 };
-
-const faqItems = [
-  {
-    q: "What are the best handwriting practice sheets for adults?",
-    a: "The best sheets for adults use simple ruled guidelines without childish graphics, support both cursive and print, and can be customized with your own words rather than generic letter drills.",
-  },
-  {
-    q: "How often should adults use practice sheets?",
-    a: "Daily use for 10 to 15 minutes produces the most consistent results. A short daily session is easier to keep up than an occasional long one, and your hand stays fresh enough to write carefully.",
-  },
-  {
-    q: "Should adults use lined paper or dotted trace sheets?",
-    a: "Start with dotted trace sheets for a week or two to rebuild correct letter shapes, then switch to plain lined sheets so you are writing from memory rather than tracing.",
-  },
-  {
-    q: "Can practice sheets help with cursive handwriting specifically?",
-    a: "Yes. Cursive practice sheets that show connected letterforms help adults relearn the joins between letters, which is usually the hardest part of returning to cursive after years of print or typing.",
-  },
-  {
-    q: "How long does it take to see results from adult handwriting practice?",
-    a: "Most adults notice their letter consistency and spacing improve within 2 to 3 weeks of practicing 10 to 15 minutes a day. More natural, faster handwriting typically takes 6 to 8 weeks of consistent daily practice to feel permanent.",
-  },
-  {
-    q: "What's the best worksheet to improve penmanship as an adult?",
-    a: "A worksheet that lets you practice your own words rather than generic letter drills, with plain ruled guidelines and no childish decoration. Starting with a dotted trace version for a week before switching to a plain lined sheet improves penmanship fastest, since it rebuilds correct letter shapes before asking you to write from memory.",
-  },
-];
 
 export default function BlogPost() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -134,6 +62,8 @@ export default function BlogPost() {
           <Link href="/" className="text-sm text-indigo-600 hover:underline font-medium">Free Handwriting Tool</Link>
         </div>
       </header>
+
+      <Breadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Best Handwriting Practice Sheets for Adults", href: "/blog/best-handwriting-practice-sheets-for-adults" }]} />
 
       <main className="bg-white">
         <div className="bg-gradient-to-br from-indigo-50 to-white border-b border-indigo-100 py-10 px-4">
@@ -230,9 +160,6 @@ export default function BlogPost() {
           <p className="mt-4">
             It also helps to track which specific letters keep causing problems rather than judging a whole page at once. Circle the two or three letters per practice sheet that look least consistent, then use those exact letters as the focus of your next session. Over a few weeks, the list of consistently problematic letters tends to shrink quickly once they get dedicated, isolated attention instead of being lost in a full page of writing.
           </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-6">Frequently Asked Questions</h2>
-          <FaqAccordion items={faqItems} />
 
           <div className="mt-10 rounded-2xl bg-indigo-50 border border-indigo-100 p-7 text-center">
             <p className="text-lg font-bold text-gray-900 mb-2">

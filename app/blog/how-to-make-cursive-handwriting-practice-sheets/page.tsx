@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
-import FaqAccordion from "@/components/FaqAccordion";
+import Breadcrumbs from "@/components/platform/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "How to Make Cursive Handwriting Practice Sheets (Free Generator)";
@@ -40,69 +40,21 @@ const articleSchema = {
   mainEntityOfPage: PAGE_URL,
 };
 
-const faqSchema = {
+const breadcrumbSchema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is the easiest way to make cursive practice sheets?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Using a free online cursive handwriting sheet generator is the fastest method. Type your text, choose cursive style, and download a ready-to-print PDF in seconds, no ruler or drawing required.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What paper should I use for cursive practice sheets?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Standard printer paper works fine for daily practice. For sheets you plan to reuse, print on cardstock and use a dry-erase or wipeable pen so the same sheet lasts for weeks.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Should beginners trace cursive letters before writing freehand?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Tracing dotted cursive letters for the first few sessions builds the correct stroke direction and connection pattern before asking your hand to recall the shape from memory.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How many lines should a cursive practice sheet have?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Ten to fifteen lines per sheet is a comfortable amount for one practice session, long enough for meaningful repetition without causing hand fatigue that degrades the later lines.",
-      },
-    },
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+    { "@type": "ListItem", position: 3, name: "How to Make Cursive Handwriting Practice Sheets", item: PAGE_URL },
   ],
 };
-
-const faqItems = [
-  {
-    q: "What is the easiest way to make cursive practice sheets?",
-    a: "Using a free online cursive handwriting sheet generator is the fastest method. Type your text, choose cursive style, and download a ready-to-print PDF in seconds, no ruler or drawing required.",
-  },
-  {
-    q: "What paper should I use for cursive practice sheets?",
-    a: "Standard printer paper works fine for daily practice. For sheets you plan to reuse, print on cardstock and use a dry-erase or wipeable pen so the same sheet lasts for weeks.",
-  },
-  {
-    q: "Should beginners trace cursive letters before writing freehand?",
-    a: "Yes. Tracing dotted cursive letters for the first few sessions builds the correct stroke direction and connection pattern before asking your hand to recall the shape from memory.",
-  },
-  {
-    q: "How many lines should a cursive practice sheet have?",
-    a: "Ten to fifteen lines per sheet is a comfortable amount for one practice session, long enough for meaningful repetition without causing hand fatigue that degrades the later lines.",
-  },
-];
 
 export default function BlogPost() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -110,6 +62,8 @@ export default function BlogPost() {
           <Link href="/" className="text-sm text-indigo-600 hover:underline font-medium">Free Handwriting Tool</Link>
         </div>
       </header>
+
+      <Breadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "How to Make Cursive Handwriting Practice Sheets", href: "/blog/how-to-make-cursive-handwriting-practice-sheets" }]} />
 
       <main className="bg-white">
         <div className="bg-gradient-to-br from-indigo-50 to-white border-b border-indigo-100 py-10 px-4">
@@ -132,7 +86,7 @@ export default function BlogPost() {
             This guide covers what actually makes a cursive sheet effective, how to build one manually if you prefer full control, how to generate one online for free, and a quick reference for forming the trickiest cursive letters correctly.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What Makes a Good Cursive Practice Sheet?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What a Home-Made Cursive Sheet Needs</h2>
           <p>
             A good cursive sheet has three things: a clear baseline and midline so letter height stays consistent, enough repetition per line to actually build muscle memory, and real words or sentences rather than only isolated letters, since cursive is defined by how letters connect, not just how each one looks alone.
           </p>
@@ -188,9 +142,6 @@ export default function BlogPost() {
           <p className="mt-4">
             A useful diagnostic exercise is to write the full lowercase alphabet once in cursive, then circle every letter that took noticeably more effort or looked inconsistent compared to the rest. Build your next several practice sheets specifically around those circled letters and the words that contain them, rather than generic alphabet drills that spend equal time on letters you have already mastered.
           </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-6">Frequently Asked Questions</h2>
-          <FaqAccordion items={faqItems} />
 
           <div className="mt-10 rounded-2xl bg-indigo-50 border border-indigo-100 p-7 text-center">
             <p className="text-lg font-bold text-gray-900 mb-2">

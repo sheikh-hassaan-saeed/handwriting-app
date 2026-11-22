@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
-import FaqAccordion from "@/components/FaqAccordion";
+import Breadcrumbs from "@/components/platform/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 const TITLE = "How to Convert Your Handwriting into a Font (Free and Paid Methods)";
@@ -40,69 +40,21 @@ const articleSchema = {
   mainEntityOfPage: PAGE_URL,
 };
 
-const faqSchema = {
+const breadcrumbSchema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Can I convert my handwriting to a font for free?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Calligraphr offers a free tier that supports up to 75 characters per font, which is enough for a complete basic alphabet, numbers, and common punctuation.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What file format do I need to scan my handwriting?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "A clear PNG or JPEG scan at 300 DPI or higher works best. Most font generator tools also accept a filled-in PDF template directly.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does it take to make a handwriting font?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Filling out a template and generating a basic font with a tool like Calligraphr typically takes 30 to 60 minutes, most of which is spent writing out the letters neatly.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I sell a font made from my own handwriting?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "In most cases yes, since you own the copyright to your own handwriting, but always check the specific terms of the tool you used to generate the font file before selling it commercially.",
-      },
-    },
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+    { "@type": "ListItem", position: 3, name: "How to Convert Your Handwriting into a Font", item: PAGE_URL },
   ],
 };
-
-const faqItems = [
-  {
-    q: "Can I convert my handwriting to a font for free?",
-    a: "Yes. Calligraphr offers a free tier that supports up to 75 characters per font, which is enough for a complete basic alphabet, numbers, and common punctuation.",
-  },
-  {
-    q: "What file format do I need to scan my handwriting?",
-    a: "A clear PNG or JPEG scan at 300 DPI or higher works best. Most font generator tools also accept a filled-in PDF template directly.",
-  },
-  {
-    q: "How long does it take to make a handwriting font?",
-    a: "Filling out a template and generating a basic font with a tool like Calligraphr typically takes 30 to 60 minutes, most of which is spent writing out the letters neatly.",
-  },
-  {
-    q: "Can I sell a font made from my own handwriting?",
-    a: "In most cases yes, since you own the copyright to your own handwriting, but always check the specific terms of the tool you used to generate the font file before selling it commercially.",
-  },
-];
 
 export default function BlogPost() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -110,6 +62,8 @@ export default function BlogPost() {
           <Link href="/" className="text-sm text-indigo-600 hover:underline font-medium">Free Handwriting Tool</Link>
         </div>
       </header>
+
+      <Breadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "How to Convert Your Handwriting into a Font", href: "/blog/how-to-convert-handwriting-to-a-font" }]} />
 
       <main className="bg-white">
         <div className="bg-gradient-to-br from-indigo-50 to-white border-b border-indigo-100 py-10 px-4">
@@ -148,7 +102,7 @@ export default function BlogPost() {
             Calligraphr is the most accessible way to make your handwriting into a font and the best starting point for most people. Download a template PDF from the Calligraphr website, print it, and you will see a grid of boxes, each labeled with a letter, number, or punctuation mark. Write each character by hand inside its box using a pen with consistent thickness, then scan or photograph the completed page.
           </p>
           <p className="mt-4">
-            Upload the image back to Calligraphr, and the tool automatically detects each character, traces it into a vector shape, and lets you preview the result before generating the final font file. The free tier supports up to 75 characters, which covers a full uppercase and lowercase alphabet plus the most common punctuation. Paid tiers unlock more characters and ligatures for connected cursive strokes.
+            Upload the image back to Calligraphr, and the tool automatically detects each character, traces it into a vector shape, and lets you preview the result before generating the final font file. The free tier supports up to 75 characters, which covers a full uppercase and lowercase alphabet plus the most common punctuation. Paid tiers add more characters and ligatures for connected cursive strokes.
           </p>
           <p className="mt-4">
             Most first-time users complete the entire process, from downloading the template to installing the finished font, in under an hour. If the automatic character detection misreads a letter, Calligraphr lets you redraw just that one character digitally rather than rescanning the whole template, which saves time when only one or two letters need a fix.
@@ -209,9 +163,6 @@ export default function BlogPost() {
             </Link>{" "}
             gallery shows a range of pre-made script and print styles you can use directly in designs without building a font from scratch.
           </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-6">Frequently Asked Questions</h2>
-          <FaqAccordion items={faqItems} />
 
           <div className="mt-10 rounded-2xl bg-indigo-50 border border-indigo-100 p-7 text-center">
             <p className="text-lg font-bold text-gray-900 mb-2">

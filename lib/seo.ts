@@ -143,8 +143,8 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "Printable Graph Grid Paper Generator - Free Math Grids",
     description: "Generate and download free graph paper sheets. Adjust grid size, grid line colors, margins, and print on A4 or Letter pages.",
     h1: "Printable Graph Grid Paper Generator",
-    intro: "Math graph paper utilizes square grid lines to simplify drafting equations, geometry grids, sketches, engineering drafts, and blueprints. Choose grid spacing from 2mm up to 20mm, select thin grid colors (faint grey, blue, or green), and export your grid instantly.",
-    conclusion: "Align your calculations or pixel-art sketches with custom-colored high-res printable graph sheets.",
+    intro: "Math graph paper utilizes square grid lines to simplify drafting equations, geometry grids, sketches, engineering drafts, and blueprints. The default square is about 5 mm, and the grid slider runs from roughly 1.3 mm to 26 mm. Pick a line colour and export the grid as a PDF.",
+    conclusion: "Print a grid at the square size your work needs, then check it with a ruler before you start.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [
@@ -206,7 +206,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "Printable Kindergarten Letter Writing Paper - Free PDF",
     description: "Download free printable kindergarten writing paper. Features large guidelines, red margins, and dashed midline helpers for early alphabet shapes.",
     h1: "Printable Kindergarten Letter Writing Paper",
-    intro: "Kindergarten writing paper features extra-wide line spacing (typically 1.0 inch or 64px) to accommodate toddler gross motor movements. The wide solid borders and dashed center lines make it easy for nursery children to trace and copy their very first letters.",
+    intro: "Kindergarten writing paper features extra-wide line spacing (about 17 mm, or 64px in the generator) to accommodate toddler gross motor movements. The wide solid borders and dashed center lines make it easy for nursery children to trace and copy their very first letters.",
     conclusion: "Print large-format guidelines sheets for nursery handwriting practice.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
@@ -286,11 +286,11 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
 
   // HANDWRITING PRACTICE
   "/handwriting-practice": {
-    title: "Free Handwriting Practice Sheet Generator | HandwritingMaker",
-    description: "Generate free printable handwriting practice sheets instantly. Choose cursive or print, set spacing, select presets, or enter custom text. PDF download.",
-    h1: "Handwriting Practice Sheet Generator",
-    intro: "Penmanship is a skill that develops through consistent practice. With our generator, you can type target words, paragraphs, or sentences that are meaningful to your student, making the handwriting exercises far more engaging. Choose print or cursive script, adjust the spacing to fit their current fine motor skills, and print.",
-    conclusion: "Create unlimited custom penmanship sheets with alphabetical drills or quotes to build a beautiful writing hand.",
+    title: "Handwriting Practice: Which Sheet or Tool to Use | HandwritingMaker",
+    description: "Start here to choose the right free handwriting practice tool: adult print and cursive drills, classroom worksheets, tracing, or ruled paper.",
+    h1: "Handwriting Practice: Pick the Right Sheet",
+    intro: "Handwriting practice looks different for a five-year-old, a teacher planning a spelling week and an adult trying to write neatly again. This page sends you to the tool that fits, and explains what a good practice routine looks like.",
+    conclusion: "Not sure where to begin? Open the practice sheet generator, type a sentence you actually write often, and print one page to try.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [
@@ -373,8 +373,8 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "Printable Planners & Worksheet Template Library | HandwritingMaker",
     description: "Download free printable planners, calendars, logs, and homework templates. Get daily planners, weekly logs, study charts, graph paper. One-click PDF download.",
     h1: "Printable Templates Library",
-    intro: "Browse our directory of free planners, checklists, reading logs, and academic grids. Generate high-quality A4 PDF sheets instantly with no login or email required.",
-    conclusion: "Stay organized and productive. Choose a pre-made planner layout or click customize to adapt parameters to your workspace.",
+    intro: "A library of printable planners, logs and paper templates. Each card downloads straight to PDF, and the Customize link opens the same layout in its own page. The guide below says what is on each planner and who it suits.",
+    conclusion: "Every download is a plain A4 PDF with no watermark. Print at 100% scale so the boxes and lines keep their intended size.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [
@@ -459,7 +459,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     title: "Printable Task To-Do List Template - Free PDF Generator",
     description: "Get a printable to-do list checkbox template. Two columns for work assignments, daily goals, routines, and habits tracking.",
     h1: "Printable Task To-Do List Template",
-    intro: "Checking off completed items triggers a dopamine release that keeps you writing and learning. This checklist template divides tasks into work objectives and habit logs, ensuring you stay organized.",
+    intro: "A two-column checklist: the left column is for tasks, the right column is for personal items and habits, with 22 checkbox rows in each.",
     conclusion: "Manage projects cleanly with checkboxes.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
@@ -548,7 +548,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "How many habits can I track on one page?", a: "This template features 12 custom habit rows mapped against a 31-day calendar check grid." },
+      { q: "How many habits can I track on one page?", a: "This template has 15 habit rows, each with a box for every day from 1 to 31, so one page covers a full month." },
     ],
     relatedTools: [
       { name: "Daily Planner", href: "/printables/daily-planner" },
@@ -569,7 +569,7 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [
-      { q: "What lines are on the journal template?", a: "It features 32 ruled horizontal lines with a margin border at 50px." },
+      { q: "What lines are on the journal template?", a: "The page has 28 evenly spaced ruled lines, a title area and a date line at the top." },
     ],
     relatedTools: [
       { name: "Notebook Paper Generator", href: "/notebook-paper" },
@@ -586,11 +586,11 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
 
   // OTHERS
   "/fonts": {
-    title: "Handwriting & Calligraphy Cursive Fonts Guide | HandwritingMaker",
-    description: "Explore realistic handwriting cursive fonts loaded from Google Fonts. Compare Caveat, Patrick Hand, Homemade Apple, Great Vibes, and Sacramento styles.",
-    h1: "Handwriting Cursive Fonts Guide",
-    intro: "Our tools utilize standard Google Fonts to render realistic penmanship. This directory compares print scripts, slanted cursive, doctor scrawls, minimalist outlines, and luxury signature scripts.",
-    conclusion: "Choose the perfect handwriting typeface for your quotes, traces, and signatures.",
+    title: "Handwriting Fonts Used in Our Generators | HandwritingMaker",
+    description: "See every handwriting and script font used by HandwritingMaker's tools, with live samples, what each is best for, and which generator uses it.",
+    h1: "Handwriting Fonts Used in Our Generators",
+    intro: "Every generator on this site draws text with one of a small set of Google Fonts. Here is each font with a live sample, what it is suited to, and where it is used, so you can pick the right style before you print.",
+    conclusion: "Fonts are loaded from Google Fonts. If a sample looks plain, wait a moment for the font to load.",
     lastUpdated: "2026-06-26",
     author: AUTHOR_INFO,
     faqs: [],
@@ -600,6 +600,26 @@ export const SEO_DATA: Record<string, SEOPageConfig> = {
     ],
     relatedArticles: [],
     breadcrumbs: [{ name: "Fonts Guide", href: "/fonts" }],
+  },
+  "/resources": {
+    title: "Handwriting Resources for Teachers, Students and Adults | HandwritingMaker",
+    description: "Which free handwriting tools suit teachers, students and adult learners, and why, with links to the right generator for each job.",
+    h1: "Handwriting Resources by Audience",
+    intro: "The site has a lot of generators. This page groups them by who is using them, so a teacher, a student or an adult relearning handwriting can find the right one quickly.",
+    conclusion: "Everything here is free, runs in your browser and exports a PDF with no watermark. If a tool you need is missing, email us and tell us what it should do.",
+    lastUpdated: "2026-11-22",
+    author: AUTHOR_INFO,
+    faqs: [],
+    relatedTools: [
+      { name: "Handwriting Practice Hub", href: "/handwriting-practice" },
+      { name: "Printable Worksheets Directory", href: "/tools/printable-handwriting-worksheets" },
+      { name: "Notebook Paper Generator", href: "/notebook-paper" }
+    ],
+    relatedArticles: [
+      { name: "Handwriting line height by age", href: "/blog/handwriting-line-height-guide-by-age" },
+      { name: "Print vs cursive: which to teach first", href: "/blog/print-vs-cursive-which-to-teach-first" }
+    ],
+    breadcrumbs: [{ name: "Resources", href: "/resources" }]
   },
   "/about": {
     title: "About Us - HandwritingMaker Printable Platform",

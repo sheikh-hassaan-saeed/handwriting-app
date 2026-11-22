@@ -1,5 +1,7 @@
 # AdSense Approval Audit — handwritingmaker.com
 
+> **Status note (2026-11-22):** this report describes the state at audit time. Its pending items have since been actioned (see the commit history): author and About filled in, thin posts rewritten, merges and redirects applied, planners set to noindex, `/resources` and `/fonts` built. Owner inputs listed below were completed.
+
 Audit date: 2026-11-20. Covers every route in the codebase (165 prerendered pages) plus live checks of the production domain.
 
 Fixes are committed locally in two commits (`ef21513`, `9e83b08`) and **not pushed**. They include owner-input placeholders that would render on the live site, so fill those in (Section 6) before deploying.
